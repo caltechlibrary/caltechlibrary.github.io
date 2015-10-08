@@ -1,0 +1,104 @@
+/**
+ * style.css - stylesheet for the Caltech Library's Digital Library Development Group's sandbox.
+ */
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+}
+
+header {
+    position: relative;
+    padding: 0.48em;
+    color: white;
+    background-color: darkblue;
+    bottom-border: 0.24em white solid;
+}
+
+header img {
+    height: 5em;
+    width: 5em;
+}
+
+header h1 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Open Sans, Helvetica, Sans-Serif;
+    font-size: 3em;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    width: auto;
+    height: 90%;
+}
+
+aside {
+    position: relative;
+    display: inline-block;
+}
+
+footer {
+    display: block;
+    padding: 0.48em;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: darkblue;
+    top-border: 0.24em white solid;
+
+    font-size: 80%;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+footer h1 {
+    position: relative;
+    display: inline;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0.24em;
+    padding-right: 0.24em;
+    font-family: Open Sans, Helvetica, Sans-Serif;
+    font-size: 3em;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+footer span {
+    position: relative;
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer address {
+    position: relative;
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, footer a:hover {
+    padding: 0;
+    display: inline;
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+}
+
