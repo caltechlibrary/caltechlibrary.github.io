@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: orange;
     background-color: slategrey;
+    font-family: Open Sans, Helvetica, Sans-Serif;
     font-size: 16px;
 }
 
@@ -14,7 +15,8 @@ header {
     padding: 0.48em;
     color: antiquewhite;
     background-color: slategrey;
-    bottom-border: 0.24em orange solid;
+    border-bottom: 0.1em solid grey;
+    z-index: 2;
 }
 
 header img {
@@ -28,7 +30,6 @@ header h1 {
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: Open Sans, Helvetica, Sans-Serif;
     font-size: 3em;
     font-weight: normal;
     vertical-align: top;
@@ -37,6 +38,7 @@ header h1 {
 
 a, a:link, a:active, a:hover, a:focus {
     color: orange;
+    background-color: inherit;
     text-decoration: none;
 }
 
@@ -67,11 +69,12 @@ footer {
     height: auto;
     color: white;
     background-color: slategrey;
-    top-border: 0.24em white solid;
+    border-top: 0.1em solid grey;
 
     font-size: 80%;
     text-align: left;
     vertical-align: bottom;
+    z-index: 2;
 }
 
 footer h1 {
