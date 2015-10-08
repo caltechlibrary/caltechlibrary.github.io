@@ -20,6 +20,10 @@ header {
 }
 
 header img {
+    position: relative;
+    display: inline;
+    padding: 0;
+    margin: 0;
     height: 5em;
     width: 5em;
 }
@@ -32,7 +36,7 @@ header h1 {
     padding: 0;
     font-size: 3em;
     font-weight: normal;
-    vertical-align: top;
+    vertical-align: 0.78em;
     color: orange;
 }
 
@@ -43,8 +47,41 @@ a, a:link, a:active, a:hover, a:focus {
 }
 
 nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto; 
+    font-size: 80%; 
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background-color: darkgrey;
+}
+
+nav menu {
+    margin: 0;
+    padding: 0;
     position: relative;
     display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+}
+
+nav menu li {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-transform: uppercase;
+}
+
+nav menu li > menu li {
+    display: block;
+    text-transform: lowercase;
+    text-align: left;
+    vertical-align: bottom;
 }
 
 section {
@@ -58,8 +95,20 @@ section {
 }
 
 aside {
-    position: relative;
+    position: float;
+    float: right;
+    padding-right: 2em;
     display: inline-block;
+    text-align: left;
+}
+
+aside h2 {
+    font-size: 1em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+aside ul {
+    list-style-type: none;
 }
 
 footer {
@@ -114,3 +163,8 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
     text-decoration: none;
 }
 
+
+.cl-hide {
+    display: none;
+    visibility: none;
+}
