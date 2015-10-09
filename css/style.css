@@ -72,13 +72,24 @@ nav menu {
 nav menu li {
     position: relative;
     display: inline-block;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
     text-transform: uppercase;
 }
 
 nav menu li > menu li {
+    display: none;
+}
+
+mav menu li:hover > menu {
+    list-style-type: none;
+    top: 2em;
+}
+nav menu li:hover > menu li {
+    position: relative;
     display: block;
+    margin: 0;
+    padding: 0;
     text-transform: lowercase;
     text-align: left;
     vertical-align: bottom;
@@ -89,12 +100,14 @@ section {
     display: inline-block;
     padding: 1em;
     width: 100%;
-    height: 90%;
     color: black;
     background-color: antiquewhite;
 }
 
 aside {
+    margin: 0;
+    border: 0;
+    padding: 0;
     position: float;
     float: right;
     padding-right: 2em;
@@ -108,13 +121,13 @@ aside h2 {
     text-transform: uppercase;
 }
 aside ul {
+    margin: 0;
     list-style-type: none;
 }
 
 footer {
-    position: absolute;
+    position: relative;
     display: block;
-    bottom: -2em;
     padding: 0.48em;
     width: 100%;
     height: 3em;
@@ -172,4 +185,9 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
     position: none;
     display: none;
     visibility: none;
+}
+
+.cl-main {
+    max-width: 80%;
+    display: inline-block;
 }
