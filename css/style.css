@@ -112,17 +112,19 @@ aside ul {
 }
 
 footer {
+    position: absolute;
     display: block;
+    bottom: -2em;
     padding: 0.48em;
     width: 100%;
-    height: auto;
+    height: 3em;
     color: white;
     background-color: slategrey;
     border-top: 0.1em solid grey;
 
     font-size: 80%;
     text-align: left;
-    vertical-align: bottom;
+    vertical-align: middle;
     z-index: 2;
 }
 
@@ -135,9 +137,8 @@ footer h1 {
     padding-left: 0.24em;
     padding-right: 0.24em;
     font-family: Open Sans, Helvetica, Sans-Serif;
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
-    vertical-align: bottom;
     color: orange;
     background-color: slategrey;
 }
@@ -145,13 +146,15 @@ footer h1 {
 footer span {
     position: relative;
     display: inline;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 0;
+    padding-left: 0.24em;
+    padding-right: 0.24em;
 }
 
 footer address {
     position: relative;
     display: inline;
+    margin: 0;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -159,12 +162,14 @@ footer address {
 footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, footer a:hover {
     padding: 0;
     display: inline;
+    margin: 0;
     color: orange;
     text-decoration: none;
 }
 
 
 .cl-hide {
+    position: none;
     display: none;
     visibility: none;
 }
