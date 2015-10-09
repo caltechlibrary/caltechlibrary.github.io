@@ -90,7 +90,7 @@
 .usb-menu ul li > span {
     position:relative;
     display: block;
-    color: black;
+    color: slategrey;
 }
 
 .usb-menu-item-selected, .usb-menu-item-selected span, .usb-menu-item-selected a, .usb-menu-item-selected a:link, .usb-menu-item-selected a:visited {
