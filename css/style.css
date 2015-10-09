@@ -81,10 +81,6 @@ nav menu li > menu li {
     display: none;
 }
 
-mav menu li:hover > menu {
-    list-style-type: none;
-    top: 2em;
-}
 nav menu li:hover > menu li {
     position: relative;
     display: block;
@@ -182,7 +178,6 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
 
 
 .cl-hide {
-    position: none;
     display: none;
     visibility: none;
 }
