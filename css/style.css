@@ -4,6 +4,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     color: orange;
     background-color: slategrey;
     font-family: Open Sans, Helvetica, Sans-Serif;
@@ -12,8 +14,10 @@ body {
 
 header {
     position: relative;
+    display: block;
+    width: 100%;
     padding: 0.48em;
-    color: antiquewhite;
+    color: ghostwhite;
     background-color: slategrey;
     border-bottom: 0.1em solid grey;
     z-index: 2;
@@ -40,8 +44,8 @@ header h1 {
     color: orange;
 }
 
-a, a:link, a:active, a:hover, a:focus {
-    color: orange;
+a, a:link, a:visited, a:active, a:hover, a:focus {
+    color: saddlebrown;
     background-color: inherit;
     text-decoration: none;
 }
@@ -60,12 +64,17 @@ nav {
     background-color: darkgrey;
 }
 
+nav a, nav a:link, nav a:visited, nav a:active, nav a:hover, nav a:focus {
+    color: white;
+    background-color: inherit;
+    text-decoration: none;
+}
+
 nav div {
     display: inline-block;
     min-width: 20%;
     margin: 0;
     padding-left: 1em; 
-    padding-right: 1em; 
 }
 
 nav div h2 {
@@ -98,7 +107,7 @@ section {
     padding: 1em;
     width: 100%;
     color: black;
-    background-color: antiquewhite;
+    background-color: ghostwhite;
 }
 
 aside {
@@ -107,6 +116,8 @@ aside {
     padding: 0;
     position: float;
     float: left;
+    display: inline-block;
+    max-width: 20%;
     padding-right: 2em;
     display: inline-block;
     text-align: left;
@@ -185,6 +196,8 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
 }
 
 .cl-main {
-    max-width: 80%;
+    position: float;
+    float: left;
+    max-width: 75%;
     display: inline-block;
 }
