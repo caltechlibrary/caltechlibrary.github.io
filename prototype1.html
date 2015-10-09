@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-<a href="/"><img src="assets/orangebooks-logo.png" alt="Caltech Library logo"></a>
-<h1>Caltech Library</h1>
+    <a href="/"><img src="assets/orangebooks-logo.png" alt="Caltech Library logo"></a>
+    <h1>Caltech Library</h1>
 </header>
 <nav>
     <div>
@@ -54,130 +54,147 @@
 </nav>
 
 <section>
-    <aside>
-        <p><a href="">Library Hours and Locations</a></li>
-        <h2><a href="#">Donate to Caltech Library</a></h2>
-
-        <h2>Resources</h2>
-        <ul>
-            <li><a href="#">Web of Science</a></li>
-            <li><a href="#">PubMed</a></li>
-            <li><a href="#">SciFinder</a></li>
-            <li><a href="#">MatchSciNet</a></li>
-            <li><a href="#">LexisNexis</a></li>
-            <li><a href="#">GeoRef</a></li>
-            <li><a href="#">Reaxys</a></li>
-            <li><a href="#">IEEE Xplore</a></li>
-            <li><a href="#">JSTOR</a></li>
-            <li><a href="#">Oxford English Dictionary</a></li>
-            <li><a href="#">WorldCat</a></li>
-            <li><a href="#">Request an Article</a></li>
-            <li><a href="#">Citation Linker</a></li>
-        </ul>
-        <h2>CODA and Author Services</h2>
-        <ul>
-            <li><a href="#">CaltechAUTHORS
-                <ul><li><a href="#">How to Deposit</a></li></ul>
-            </a></li>
-            <li><a href="#">CaltechTHESIS
-                <ul><li><a href="#">How to Deposit</a></li></ul>
-            </a></li>
-            <li><a href="#">Cltech Open Access</a></li>
-            <li><a href="#">OA Waiver Form</a></li>
-            <li><a href="#">For Authors</a></li>
-            <li><a href="#">Copyright Support</a></li>
-            <li><a href="#">Publish on Demand</a></li>
-        </ul>
-        <h2>Browse Books and Journals</h2>
-        <ul>
-            <li><a href="#">Course Reserves</a></li>
-            <li><a href="#">eJournals</a></li>
-            <li><a href="#">Ebooks</a></li>
-            <li><a href="#">Leisure Reading</a></li>
-            <li><a href="#">Leisure Movies</a></li>
-            <li><a href="#">Suggest a book for Purchase</a></li>
-        </ul>
-    </aside>
     <div class="cl-main">
-        <p>
 
-    <!-- START: Unified Searchbox HTML fragment and JavaScript -->
+        <!-- START: Unified Searchbox HTML fragment and JavaScript -->
+        <div id="usb-searchbox" class="usb-searchbox usb-hide">
+            <noscript>
+                <ul class="usb-no-js">
+                    <li><a href="https://caltech.tind.io">Library Catalog</a></li>
+                    <li><a href="http://sfx.caltech.edu:8088/caltech/az">Find eJournals</a></li>
+                    <li><a href="https://caltech.tind.io/search?ln=en&cc=Course+Reserves&p=&f=&action_search=Search">Course Reserves</a></li>
+                    <li><a href="http://libguides.caltech.edu/CODA">Caltech CODA</a></li>
+                    <li><a href="https://cse.google.com/cse/home?cx=005709273917748521174:po9fevg5ksw&ie=UTF-8&sa=Search+Site#gsc.tab=0&gsc.q=test&gsc.page=1">Search Website</a></li>
+                </ul>
+            </noscript>
 
+            <div class="usb-search-resources">
+                <label id="usb-resource-label" class="usb-menu-label">Search</label>
+                <div id="usb-search-resources" class="usb-menu">
+                    <a id="usb-resource-menu-selector" href="#" tabindex="1" class="usb-menu-select-button">
+                    <span id="usb-resource-menu-selected" class="usb-menu-selected">Library Catalog</span>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="8.071px" height="14px" viewBox="0 0 8.071 14" enable-background="new 0 0 8.071 14" xml:space="preserve">
+                    <path d="M0.069 8.74c0.08-0.159 0.252-0.264 0.436-0.274 0.023 0 1.743-0.104 3.531-0.104s3.508 0.104 3.53 0.104C7.751 8.476 7.911 8.581 8.003 8.74c0.092 0.161 0.092 0.356 0 0.517 -1.364 2.431-3.508 4.517-3.6 4.598 -0.206 0.194-0.528 0.194-0.734 0 -0.091-0.081-2.235-2.167-3.6-4.598C-0.023 9.096-0.023 8.901 0.069 8.74M8.003 5.259c-0.08 0.16-0.252 0.264-0.437 0.275 -0.022 0-1.742 0.103-3.53 0.103S0.528 5.535 0.505 5.535C0.321 5.523 0.161 5.419 0.069 5.259c-0.092-0.161-0.092-0.355 0-0.516 1.365-2.431 3.508-4.517 3.6-4.598 0.206-0.194 0.528-0.194 0.734 0 0.092 0.081 2.235 2.167 3.6 4.598C8.095 4.904 8.095 5.099 8.003 5.259"></path>
+                    </svg></a>
 
-    <noscript>
-        <ul class="usb-no-js">
-            <li><a href="https://caltech.tind.io">Library Catalog</a></li>
-            <li><a href="http://sfx.caltech.edu:8088/caltech/az">Find eJournals</a></li>
-            <li><a href="https://caltech.tind.io/search?ln=en&cc=Course+Reserves&p=&f=&action_search=Search">Course Reserves</a></li>
-            <li><a href="http://libguides.caltech.edu/CODA">Caltech CODA</a></li>
-            <li><a href="https://cse.google.com/cse/home?cx=005709273917748521174:po9fevg5ksw&ie=UTF-8&sa=Search+Site#gsc.tab=0&gsc.q=test&gsc.page=1">Search Website</a></li>
-        </ul>
-    </noscript>
+                    <ul id="usb-resource-ul">
+                        <li><span class="usb-menu-item-primary"><a id="tind" href="#">Library Catalog</a></span> <span class="usb-menu-item-secondary">Books and Print Journals</span></li>
+                        <li><span class="usb-menu-item-primary"><a id="sfx" href="#">Find eJournals</a></span> <span class="usb-menu-item-secondary">Access by Title</span></li>
+                        <li><span class="usb-menu-item-primary"><a id="tindCourseReserves" href="#">Course Reserves</a></span></li>
+                        <li><span class="usb-menu-item-primary"><a id="coda" href="#">Caltech CODA</a></span> <span class="usb-menu-item-secondary">Collection of Open Digital Archives, Institutional Repository</span></li>
+                        <li><span class="usb-menu-item-primary"><a id="website" href="#">Search Website</a></span> <span class="usb-menu-item-secondary">Library website and LibGuides</span></li>
+                     </ul>
+                 </div><!-- END: id="usb-search-resources" -->
+             </div><!-- END: class="usb-search-resources" -->
 
-    <div id="usb-searchbox" class="usb-searchbox usb-hide">
-        <div class="usb-search-resources">
-            <label id="usb-resource-label" class="usb-menu-label">Search</label>
-            <div id="usb-search-resources" class="usb-menu">
-                <a id="usb-resource-menu-selector" href="#" tabindex="1" class="usb-menu-select-button">
-                <span id="usb-resource-menu-selected" class="usb-menu-selected">Library Catalog</span>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="8.071px" height="14px" viewBox="0 0 8.071 14" enable-background="new 0 0 8.071 14" xml:space="preserve">
-                <path d="M0.069 8.74c0.08-0.159 0.252-0.264 0.436-0.274 0.023 0 1.743-0.104 3.531-0.104s3.508 0.104 3.53 0.104C7.751 8.476 7.911 8.581 8.003 8.74c0.092 0.161 0.092 0.356 0 0.517 -1.364 2.431-3.508 4.517-3.6 4.598 -0.206 0.194-0.528 0.194-0.734 0 -0.091-0.081-2.235-2.167-3.6-4.598C-0.023 9.096-0.023 8.901 0.069 8.74M8.003 5.259c-0.08 0.16-0.252 0.264-0.437 0.275 -0.022 0-1.742 0.103-3.53 0.103S0.528 5.535 0.505 5.535C0.321 5.523 0.161 5.419 0.069 5.259c-0.092-0.161-0.092-0.355 0-0.516 1.365-2.431 3.508-4.517 3.6-4.598 0.206-0.194 0.528-0.194 0.734 0 0.092 0.081 2.235 2.167 3.6 4.598C8.095 4.904 8.095 5.099 8.003 5.259"></path>
-                </svg></a>
+             <div id="usb-search-filters" class="usb-search-filters">
+                 <label id="usb-filter-label" class="usb-menu-label">By</label>
+                 <div id="usb-filter" class="usb-menu">
+                     <a id="usb-filter-menu-selector" href="#" tabindex="2" class="usb-menu-select-button">
+                     <span id="usb-filter-menu-selected" class="usb-menu-selected"></span>
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="8.071px" height="14px" viewBox="0 0 8.071 14" enable-background="new 0 0 8.071 14" xml:space="preserve">
+                     <path d="M0.069 8.74c0.08-0.159 0.252-0.264 0.436-0.274 0.023 0 1.743-0.104 3.531-0.104s3.508 0.104 3.53 0.104C7.751 8.476 7.911 8.581 8.003 8.74c0.092 0.161 0.092 0.356 0 0.517 -1.364 2.431-3.508 4.517-3.6 4.598 -0.206 0.194-0.528 0.194-0.734 0 -0.091-0.081-2.235-2.167-3.6-4.598C-0.023 9.096-0.023 8.901 0.069 8.74M8.003 5.259c-0.08 0.16-0.252 0.264-0.437 0.275 -0.022 0-1.742 0.103-3.53 0.103S0.528 5.535 0.505 5.535C0.321 5.523 0.161 5.419 0.069 5.259c-0.092-0.161-0.092-0.355 0-0.516 1.365-2.431 3.508-4.517 3.6-4.598 0.206-0.194 0.528-0.194 0.734 0 0.092 0.081 2.235 2.167 3.6 4.598C8.095 4.904 8.095 5.099 8.003 5.259"></path>
+                     </svg></a>
+                     <ul id="usb-filter-ul">
+                     </ul>
+                 </div><!-- END: id="usb-search-filters" -->
+             </div><!-- END: class="usb-search-filters" -->
 
-                <ul id="usb-resource-ul">
-                    <li><span class="usb-menu-item-primary"><a id="tind" href="#">Library Catalog</a></span> <span class="usb-menu-item-secondary">Books and Print Journals</span></li>
-                    <li><span class="usb-menu-item-primary"><a id="sfx" href="#">Find eJournals</a></span> <span class="usb-menu-item-secondary">Access by Title</span></li>
-                    <li><span class="usb-menu-item-primary"><a id="tindCourseReserves" href="#">Course Reserves</a></span></li>
-                    <li><span class="usb-menu-item-primary"><a id="coda" href="#">Caltech CODA</a></span> <span class="usb-menu-item-secondary">Collection of Open Digital Archives, Institutional Repository</span></li>
-                    <li><span class="usb-menu-item-primary"><a id="website" href="#">Search Website</a></span> <span class="usb-menu-item-secondary">Library website and LibGuides</span></li>
-                 </ul>
-             </div><!-- END: id="usb-search-resources" -->
-         </div><!-- END: class="usb-search-resources" -->
+             <div class="usb-search-query">
+                 <label class="usb-query-label">For</label>
+                 <div class="usb-query-input">
+                     <form id="usb-query-form">
+                         <input id="usb-query-input" tabindex="3" type="search" size="36">
+                         <button><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" aria-hidden="true" class="icon-search">
+                         <path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
+                         </svg></button>
+                     </form><!-- END: id="usb-query-form" -->
+                 </div><!-- END: class="usb-query-input" -->
+             </div><!-- END: class="usb-search-query-form" -->
+         </div><!-- END: id="usb-searchbox" -->
 
-         <div id="usb-search-filters" class="usb-search-filters">
-             <label id="usb-filter-label" class="usb-menu-label">By</label>
-             <div id="usb-filter" class="usb-menu">
-                 <a id="usb-filter-menu-selector" href="#" tabindex="2" class="usb-menu-select-button">
-                 <span id="usb-filter-menu-selected" class="usb-menu-selected"></span>
-                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="8.071px" height="14px" viewBox="0 0 8.071 14" enable-background="new 0 0 8.071 14" xml:space="preserve">
-                 <path d="M0.069 8.74c0.08-0.159 0.252-0.264 0.436-0.274 0.023 0 1.743-0.104 3.531-0.104s3.508 0.104 3.53 0.104C7.751 8.476 7.911 8.581 8.003 8.74c0.092 0.161 0.092 0.356 0 0.517 -1.364 2.431-3.508 4.517-3.6 4.598 -0.206 0.194-0.528 0.194-0.734 0 -0.091-0.081-2.235-2.167-3.6-4.598C-0.023 9.096-0.023 8.901 0.069 8.74M8.003 5.259c-0.08 0.16-0.252 0.264-0.437 0.275 -0.022 0-1.742 0.103-3.53 0.103S0.528 5.535 0.505 5.535C0.321 5.523 0.161 5.419 0.069 5.259c-0.092-0.161-0.092-0.355 0-0.516 1.365-2.431 3.508-4.517 3.6-4.598 0.206-0.194 0.528-0.194 0.734 0 0.092 0.081 2.235 2.167 3.6 4.598C8.095 4.904 8.095 5.099 8.003 5.259"></path>
-                 </svg></a>
-                 <ul id="usb-filter-ul">
-                 </ul>
-             </div><!-- END: id="usb-search-filters" -->
-         </div><!-- END: class="usb-search-filters" -->
-
-         <div class="usb-search-query">
-             <label class="usb-query-label">For</label>
-             <div class="usb-query-input">
-                 <form id="usb-query-form">
-                     <input id="usb-query-input" tabindex="3" type="search" size="36">
-                     <button><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="16" viewBox="0 0 12 12" aria-hidden="true" class="icon-search">
-                     <path d="M7.273 0.727q1.187 0 2.19 0.585t1.588 1.588 0.585 2.19-0.585 2.19-1.588 1.588-2.19 0.585q-1.278 0-2.33-0.676l-3.284 3.301q-0.295 0.284-0.688 0.284-0.403 0-0.688-0.284t-0.284-0.688 0.284-0.688l3.301-3.284q-0.676-1.051-0.676-2.33 0-1.188 0.585-2.19t1.588-1.588 2.19-0.585zM7.273 8q0.591 0 1.128-0.23t0.929-0.622 0.622-0.929 0.23-1.128-0.23-1.128-0.622-0.929-0.929-0.622-1.128-0.23-1.128 0.23-0.929 0.622-0.622 0.929-0.23 1.128 0.23 1.128 0.622 0.929 0.929 0.622 1.128 0.23z"></path>
-                     </svg></button>
-                 </form><!-- END: id="usb-query-form" -->
-             </div><!-- END: class="usb-query-input" -->
-         </div><!-- END: class="usb-search-query-form" -->
-     </div><!-- END: id="usb-searchbox" -->
-
-     <script rel="javascript" type="text/javascript" src="js/usb.js"></script>
-     <!--   END: Unified Searchbox HTML fragment and JavaScript -->
+         <script rel="javascript" type="text/javascript" src="js/usb.js"></script>
+         <!--   END: Unified Searchbox HTML fragment and JavaScript -->
 
 
-        <!-- NEW -->
-        <p>Feed of library News</p>
         <!-- New Additions and aquisitions -->
-        <p>Feed New in Caltech Authors</p>
+        <div class="cl-caltech-authors">
+            <h2>New from <a href="">Caltech Authors</a></h2>
+        </div>
+        <!-- NEWS -->
+        <div class="cl-library-news">
+            <h2>Library <a href="">News</a></h2>
+        </div>
         <!-- Events -->
-        <p>Feed of upcoming library classes</p>
+        <div class="cl-events">
+            <h2>Upcoming</h2>
+        </div>
 
     </div><!-- END: .cl-main -->
+    <aside>
+        <div class="cl=context-block">
+            <h2><a href="#" title="Donate to Caltech Library">Donate</a></h2>
+        </div>
+        <div class="cl-context-block">
+            <h2><a href="#" title="A listing of hours for each location">Hours</a> and <a href="#" title="Branch and departmental locations">Locations</a></h2>
+        </div>
+        <div class="cl-context-block">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Web of Science</a></li>
+                <li><a href="#">PubMed</a></li>
+                <li><a href="#">SciFinder</a></li>
+                <li><a href="#">MatchSciNet</a></li>
+                <li><a href="#">LexisNexis</a></li>
+                <li><a href="#">GeoRef</a></li>
+                <li><a href="#">Reaxys</a></li>
+                <li><a href="#">IEEE Xplore</a></li>
+                <li><a href="#">JSTOR</a></li>
+                <li><a href="#">Oxford English Dictionary</a></li>
+                <li><a href="#">WorldCat</a></li>
+                <li><a href="#">Request an Article</a></li>
+                <li><a href="#">Citation Linker</a></li>
+            </ul>
+        </div>
+        <div class="cl-context-block">
+            <h2><a href="#" title="Collection of Open Digital Archives">CODA</a></h2>
+            <ul>
+                <li><a href="#">CaltechAUTHORS</a>
+                    <ul><li><a href="#">How to Deposit</a></li></ul>
+                </a></li>
+                <li><a href="#">CaltechTHESIS</a>
+                    <ul><li><a href="#">How to Deposit</a></li></ul>
+                </a></li>
+            </ul>
+        </div>
+        <div class="cl-context-block">
+            <h2><a href="#" title="Information on how to deposit, copyright suppport and on demand publishing">Author Services</a></h2>
+            <ul>
+                <li><a href="#">Caltech Open Access</a></li>
+                <li><a href="#"><abbr title="Open Access">OA</abbr> Waiver Form</a></li>
+                <li><a href="#">For Authors</a></li>
+                <li><a href="#">Copyright Support</a></li>
+                <li><a href="#">Publish on Demand</a></li>
+            </ul>
+        </div>
+        <div class="cl-context-block">
+            <h2>Browse Books and Journals</h2>
+            <ul>
+                <li><a href="#">Course Reserves</a></li>
+                <li><a href="#">eJournals</a></li>
+                <li><a href="#">Ebooks</a></li>
+                <li><a href="#">Leisure Reading</a></li>
+                <li><a href="#">Leisure Movies</a></li>
+                <li><a href="#">Suggest a book for Purchase</a></li>
+            </ul>
+        </div>
+    </aside>
 </section>
 
 <footer>
 <span><h1><A href="http://caltech.edu">Caltech</a></h1></span>
 <span>&copy; 2015 <a href="http://library.caltech.edu/CLS_Copyright.htm">Caltech library</a></span>
-<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address> 
+<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address>
 <span>Phone: <a href="tel:+1-626-395-3405">(626)395-3405</a></span>
 <span><a href="mailto:library@caltech.edu">Email Us</a></span>
 </footer>
