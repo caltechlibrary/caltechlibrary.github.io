@@ -54,42 +54,43 @@ nav {
     width: 100%;
     height: auto; 
     font-size: 80%; 
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     color: black;
     background-color: darkgrey;
 }
 
-nav menu {
+nav div {
+    display: inline-block;
+    min-width: 20%;
     margin: 0;
-    padding: 0;
-    position: relative;
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: top;
+    padding-left: 1em; 
+    padding-right: 1em; 
 }
 
-nav menu li {
-    position: relative;
-    display: inline-block;
-    margin-left: 5em;
-    margin-right: 5em;
-    text-transform: uppercase;
-}
-
-nav menu li > menu li {
-    display: none;
-}
-
-nav menu li:hover > menu li {
+nav div h2 {
     position: relative;
     display: block;
+    min-width: 20%;
     margin: 0;
-    padding: 0;
-    text-transform: lowercase;
-    text-align: left;
-    vertical-align: bottom;
+    font-size: 1.42em;
 }
+
+nav div > ul {
+    display: none;
+    padding-left: 0.24em;
+    padding-right: 0.24em;
+}
+
+
+nav:hover div > ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    vertical-align: top;
+    text-transform: lowercase;
+}
+
 
 section {
     position: relative;
@@ -105,7 +106,7 @@ aside {
     border: 0;
     padding: 0;
     position: float;
-    float: right;
+    float: left;
     padding-right: 2em;
     display: inline-block;
     text-align: left;
@@ -118,6 +119,7 @@ aside h2 {
 }
 aside ul {
     margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
