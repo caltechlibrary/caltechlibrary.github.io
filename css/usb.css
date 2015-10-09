@@ -56,7 +56,7 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    padding-top: 0.42em; 
+    padding-top: 0.42em;
     padding-right: 0.42em;
     min-width: 3.42em;
     color: inherit;
@@ -72,7 +72,7 @@
     list-style-type: none;
     background-color: inherit;
     border: 1px solid white;
-    box-shadow: 0.24em 0 0.24em #043584;
+    box-shadow: 0.12em 0 0.24em black;
     margin: 0;
     padding: 0;
     min-width: 16em;
@@ -84,7 +84,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 0.12em solid #043584;
+    border-bottom: 0.12em solid black;
 }
 
 .usb-menu ul li > span {
@@ -131,7 +131,7 @@
 
 .usb-menu-item-primary a:hover, .usb-menu-item-primary a:focus, .usb-menu-item-secondary a:visited {
     text-decoration: none;
-    background-color: saddlebrown;
+    background-color: slategrey;
 }
 
 .usb-menu-item-secondary {
@@ -180,4 +180,3 @@
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
     text-align: center;
 }
-
