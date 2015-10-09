@@ -65,7 +65,8 @@ nav {
 
 nav div {
     display: inline-block;
-    padding-left: 10em;
+    /* padding-left: 10em; */
+    padding-left: 4em;
 }
 
 nav a, nav a:link, nav a:visited, nav a:active, nav a:hover, nav a:focus {
@@ -114,7 +115,7 @@ section h2 {
 aside {
     margin: 0;
     border: 0;
-    padding: 0;
+    padding-left: 1em;
     position: relative;
     display: inline-block;
     text-align: left;
@@ -126,7 +127,7 @@ aside h2 {
 }
 
 aside h2 > a {
-    font-style: bold;
+    font-style: normal;
 }
 
 aside ul {
@@ -164,35 +165,18 @@ footer {
     z-index: 2;
 }
 
-footer h1 {
+footer h1, footer span, footer address {
     position: relative;
-    display: inline;
+    display: inline-block;
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
     padding-left: 0.24em;
     padding-right: 0.24em;
     font-family: Open Sans, Helvetica, Sans-Serif;
+    font-size: 1em;
+}
+
+footer h1 {
     font-size: 2em;
-    text-align: left;
-    color: orange;
-    background-color: slategrey;
-}
-
-footer span {
-    position: relative;
-    display: inline;
-    margin: 0;
-    padding-left: 0.24em;
-    padding-right: 0.24em;
-}
-
-footer address {
-    position: relative;
-    display: inline;
-    margin: 0;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, footer a:hover {

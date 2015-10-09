@@ -20,9 +20,8 @@
 .usb-search-resources, .usb-search-filters {
     position: relative;
     display: inline-flex;
-    margin: 1em;
-    width: 20em;
-    height: auto;
+    padding: 0.24em;
+    width: 18em;
 }
 
 .usb-search-resources span, .usb-search-filters span {
@@ -30,9 +29,8 @@
     display: inline-block;
     top: 0;
     left: 0;
-    width: 16em;
-    height: auto;
-    padding: 0.32em;
+    width: 14em;
+    padding: 0.24em;
     text-align: left;
     vertical-align: middle;
     color: white;
@@ -44,7 +42,7 @@
     position: relative;
     display: inline-block;
     top: 0;
-    left: 15em;
+    left: 13em;
     padding: 0.24em;
     width: 1.24em;
     height: 1.24em;
@@ -56,9 +54,9 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    padding-top: 0.42em;
-    padding-right: 0.42em;
-    min-width: 3.42em;
+    padding-top: 0.24em;
+    padding-right: 0.24em;
+    width: 3em;
     color: inherit;
     background-color: inherit;
     text-align: right;
@@ -75,8 +73,6 @@
     box-shadow: 0.12em 0 0.24em black;
     margin: 0;
     padding: 0;
-    min-width: 16em;
-    height: auto;
 }
 
 .usb-menu ul li {
@@ -144,15 +140,13 @@
 
 .usb-search-query {
     position: relative;
-    display: inline-flex;
+    display: inline-block;
 }
 
 
 .usb-query-input {
-    display: inline-flex;
+    display: inline-block;
     position: relative;
-    min-width: 20%;
-    max-width: 60%;
 }
 
 .usb-query-input > form {
@@ -164,18 +158,16 @@
     position: relative;
     display: inline-block;
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
-    font-size: 1.0em;
+    font-size: 0.82em;
     text-align: left;
-    height: 2em;
-    top: 0.1em;
     -webkit-appearance: none;/* Fix to allow styling in webkit */
 }
 
 .usb-query-input > form > button {
     position: relative;
     display: inline-block;
-    min-width: 3.42em;
-    margin-left: 0.42em;
+    min-width: 1.24em;
+    margin-left: 0.24em;
     font-size: 1em;
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
     text-align: center;
