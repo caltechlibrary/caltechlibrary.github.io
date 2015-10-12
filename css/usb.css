@@ -38,6 +38,10 @@
     z-index: 1;
 }
 
+.usb-search-resources:hover ul, .usb-search-filters:hover ul {
+    display: inline-block;
+}
+
 .usb-menu-select-button svg {
     position: relative;
     display: inline-block;

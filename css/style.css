@@ -57,16 +57,17 @@ nav {
     position: relative;
     display: block;
     width: 100%;
-    font-size: 78%;
+    font-size: 0.78em;
     vertical-align: middle;
     color: black;
     background-color: darkgrey;
+    text-align: left;
 }
 
 nav div {
     display: inline-block;
     /* padding-left: 10em; */
-    padding-left: 4em;
+    margin-left: 10em;
 }
 
 nav a, nav a:link, nav a:visited, nav a:active, nav a:hover, nav a:focus {
@@ -92,7 +93,7 @@ nav div > ul {
     text-align: left;
 }
 
-nav:hover ul, nav a:focus+ul {
+.cl-nav-ul-display-inline-block, nav:hover ul, nav a:focus+ul {
     display: inline-block;
     list-style-type: none;
     margin: 0;
@@ -118,7 +119,7 @@ aside {
     padding-left: 1em;
     position: relative;
     display: inline-block;
-    text-align: left;
+    text-align: right;
 }
 
 aside h2 {
@@ -141,7 +142,7 @@ aside ul li {
     font-size: 0.82em;
 }
 
-aside:hover div ul {
+.cl-aside-display-block, aside:hover div ul {
     display: block;
 }
 
@@ -199,4 +200,14 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
     padding-left: 1em;
     max-width: 72%;
     vertical-align: top;
+}
+
+.cl-authors-item h1, .cl-news-item h1 {
+    font-size: 0.78em;
+    font-style: bold;
+}
+
+.cl-authors-item > div, .cl-news-item > div {
+    font-size: 0.68em;
+    font-style: italic;
 }
