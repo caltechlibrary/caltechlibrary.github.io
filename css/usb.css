@@ -116,6 +116,7 @@
 
 
 .usb-menu-item-primary {
+    font-weight: bolder;
     display: block;
     font-weight: bold;
     text-transform: none;
@@ -123,23 +124,23 @@
 }
 
 .usb-menu-item-primary a, .usb-menu-item-primary a:link, .usb-menu-item-primary a:active {
+    font-weight: bolder;
     text-decoration: none;
     color: white;
     background-color: darkgrey;
 }
 
-.usb-menu-item-primary a:hover, .usb-menu-item-primary a:focus, .usb-menu-item-secondary a:visited {
+.usb-menu-item-primary a:hover, .usb-menu-item-primary a:focus {
     text-decoration: none;
-    color: white;
-    background-color: lightgrey;
 }
 
-.usb-menu-item-secondary {
+span.usb-menu-item-secondary {
     display: block;
     font-weight: lighter;
     text-transform: none;
     text-decoration: none;
     text-align: left;
+    color: black;
 }
 
 .usb-search-query {
