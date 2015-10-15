@@ -11,17 +11,19 @@
 }
 
 .usb-searchbox {
-    margin: 0;
-    padding: 0;
-    color: inherit;
-    background-color: inherit;
+    display: block;
+    position: relative;
+    padding: 1.0em;
+    color: black;
+    background-color: white;
 }
 
 .usb-search-resources, .usb-search-filters {
     position: relative;
     display: inline-flex;
-    padding: 0.24em;
-    width: 18em;
+    margin: 1em;
+    width: 20em;
+    height: auto;
 }
 
 .usb-search-resources span, .usb-search-filters span {
@@ -29,28 +31,24 @@
     display: inline-block;
     top: 0;
     left: 0;
-    width: 14em;
-    padding: 0.24em;
+    width: 16em;
+    height: auto;
+    padding: 0.32em;
     text-align: left;
     vertical-align: middle;
-    color: white;
-    background-color: darkgrey;
+    background-color: #EEF2FB;
     z-index: 1;
-}
-
-.usb-search-resources:hover ul, .usb-search-filters:hover ul {
-    display: inline-block;
 }
 
 .usb-menu-select-button svg {
     position: relative;
     display: inline-block;
     top: 0;
-    left: 13em;
+    left: 15em;
     padding: 0.24em;
     width: 1.24em;
     height: 1.24em;
-    background-color: darkgrey;
+    background-color: #EEF2FB;
     z-index: 2;
 }
 
@@ -58,11 +56,11 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    padding-top: 0.24em;
-    padding-right: 0.24em;
-    width: 3em;
-    color: inherit;
-    background-color: inherit;
+    padding-top: 0.42em; 
+    padding-right: 0.42em;
+    min-width: 3.42em;
+    color: black;
+    background-color: white;
     text-align: right;
 }
 
@@ -74,9 +72,11 @@
     list-style-type: none;
     background-color: inherit;
     border: 1px solid white;
-    box-shadow: 0.12em 0 0.24em black;
+    box-shadow: 0.24em 0 0.24em #043584;
     margin: 0;
     padding: 0;
+    min-width: 16em;
+    height: auto;
 }
 
 .usb-menu ul li {
@@ -84,17 +84,16 @@
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 0.12em solid black;
+    border-bottom: 0.12em solid #043584;
 }
 
 .usb-menu ul li > span {
     position:relative;
     display: block;
-    color: slategrey;
 }
 
 .usb-menu-item-selected, .usb-menu-item-selected span, .usb-menu-item-selected a, .usb-menu-item-selected a:link, .usb-menu-item-selected a:visited {
-    background-color: orange;
+    background-color: lightgrey;
 }
 
 
@@ -125,18 +124,19 @@
 
 .usb-menu-item-primary a, .usb-menu-item-primary a:link, .usb-menu-item-primary a:active {
     text-decoration: none;
-    color: white;
-    background-color: darkgrey;
+    color: black;
+    background-color: #EEF2FB;
 }
 
 .usb-menu-item-primary a:hover, .usb-menu-item-primary a:focus, .usb-menu-item-secondary a:visited {
     text-decoration: none;
-    background-color: slategrey;
+    color: white;
+    background-color: #043584;
 }
 
 .usb-menu-item-secondary {
     display: block;
-    font-style: italic;
+    font-weight: lighter;
     text-transform: none;
     text-decoration: none;
     text-align: left;
@@ -144,13 +144,15 @@
 
 .usb-search-query {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 
 .usb-query-input {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
+    min-width: 20%;
+    max-width: 60%;
 }
 
 .usb-query-input > form {
@@ -162,17 +164,20 @@
     position: relative;
     display: inline-block;
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
-    font-size: 0.82em;
+    font-size: 1.0em;
     text-align: left;
+    height: 2em;
+    top: 0.1em;
     -webkit-appearance: none;/* Fix to allow styling in webkit */
 }
 
 .usb-query-input > form > button {
     position: relative;
     display: inline-block;
-    min-width: 1.24em;
-    margin-left: 0.24em;
+    min-width: 3.42em;
+    margin-left: 0.42em;
     font-size: 1em;
     vertical-align: middle; /* This is optional but it makes legacy IEs look better */
     text-align: center;
 }
+

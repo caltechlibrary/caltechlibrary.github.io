@@ -14,32 +14,32 @@
                 filter: [
                     {
                         label: "Keyword",
-                        input: {name: "ebscohostkeywords", value: "", "type": "hidden"}
+                        input: {name: "searchFieldSelector", value: "", "type": "hidden" }
                     },
                     {
                         label: "Title",
-                        input: {name: "ebscohostkeywords", value: "TI", "type": "hidden"}
+                        input: {name: "searchFieldSelector", value: "TI", "type": "hidden"}
                     },
                     {
                         label: "Author",
-                        input: {name: "ebscohostkeywords", value: "AU", "type": "hidden"}
+                        input: {name: "searchFieldSelector", value: "AU", "type": "hidden"}
                     },
                     {
                         label: "Subject",
-                        input: {name: "ebscohostkeywords", value: "SU", "type": "hidden"}
+                        input: {name: "searchFieldSelector", value: "SU", "type": "hidden"}
                     }
                 ],
                 form: {
                     id: "ebscohostCustomSearchBox",
-                    "onSubmit": "return ebscoHostSearchGo(this);",
+                    onSubmit: "return ebscoHostSearchGo(this);",
                     method: "POST",
                     action: "",
                     input: [
-                        {id: "ebscohostwindow", name: "ebscohostwindow", "type": "hidden", value: "0"},
-                		{id: "ebscohosturl", name: "ebscohosturl", "type": "hidden", value: "https://clsproxy.library.caltech.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8984125&groupid=main&profid=eds&mode=bool&lang=en&authtype=ip"},
-                		{id: "ebscohostsearchsrc", name: "ebscohostsearchsrc", "type": "hidden", value: "db"},
-                		{id: "ebscohostsearchmode", name: "ebscohostsearchmode", "type": "hidden", value: "+"},
-                		{id: "ebscohostkeywords", name: "ebscohostkeywords", "type": "hidden", value: ""},
+                        {id: "ebscohostwindow", name: "ebscohostwindow", "type": "hidden", value: "0" },
+                        {id: "ebscohosturl", name: "ebscohosturl", "type": "hidden", value: "https://clsproxy.library.caltech.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8984125&groupid=main&profid=eds&mode=bool&lang=en&authtype=ip&ssl=Y"},
+                        {id: "ebscohostsearchsrc", name: "ebscohostsearchsrc", "type": "hidden", value: "db" },
+                        {id: "ebscohostsearchmode", name: "ebscohostsearchmode", "type": "hidden", value: "+" },
+                        {id: "ebscohostkeywords", name: "ebscohostkeywords", "type": "hidden", value: "" },
                         {id: "usb-query-input", name: "ebscohostsearchtext", value: "", placeholder: "Search books, articles & more", "type": "text"}
                     ]
                 }
@@ -77,6 +77,7 @@
                     }
                 ],
                 form: {
+                    onSubmit: "return tindHostSearchGo(this);",
                     method: "GET",
                     action: "https://caltech.tind.io/search",
                     input: [
@@ -99,7 +100,22 @@
                     method: "GET",
                     action: "http://sfx.caltech.edu:8088/caltech/az",
                     input: [
+
+                        {name: "param_letter_group_script_save", value: "", "type": "hidden"},
+                        {name: "param_current_view_save", value: "detail", "type": "hidden"},
+                        {name: "param_textSearchType_save", value: "startsWith", "type": "hidden"},
+                        {name: "param_lang_save", value: "eng", "type": "hidden"},
+                        {name: "param_chinese_checkbox_type_save", value: "Pinyin", "type": "hidden"},
                         {name: "param_perform_save", value: "searchTitle", "type": "hidden"},
+                        {name: "param_letter_group_save", value: "", "type": "hidden"},
+                        {name: "param_chinese_checkbox_save", value: "0", "type": "hidden"},
+                        {name: "param_services2filter_save", value: "getFullTxt", "type": "hidden"},
+                        {name: "param_services2filter_save", value: "getSelectedFullTxt", "type": "hidden"},
+                        {name: "param_starts_with_browse_save", value : "0", "type": "hidden"},
+                        {name: "param_jumpToPage_save", value: "", "type": "hidden"},
+                        {name: "param_type_save", value: "textSearch", "type": "hidden"},
+                        {name: "param_langcode_save", value: "en", "type": "hidden"},
+                        {name: "param_ui_control_scripts_save", "value": "", "type": "hidden"},
                         {name: "param_pattern_value", value: "", placeholder: "search by journal title", "type": "search", size: 64, maxlength: 128}
                     ]
                 }
@@ -117,6 +133,7 @@
                     }
                 ],
                 form: {
+                    onSubmit: "return tindHostSearchGo(this);",
                     method: "GET",
                     action: "https://caltech.tind.io/search",
                     input: [
@@ -280,8 +297,8 @@
         //NOTE: Update the filter UL list
         if (resource.filter !== undefined && resource.filter.length > 0) {
             resource.filter.forEach(function (obj, i) {
-                var li = doc.createElement("li"),
-                    a = null;
+                var li = doc.createElement("li");
+
                 li.innerHTML = liTemplate.replace("{{label}}", obj.label);
                 if (i === 0) {
                     li.className = "usb-menu-item-selected";
@@ -289,10 +306,7 @@
                         filterMenuSelected.textContent = obj.label;
                     }
                 }
-                a = li.querySelector("a");
-                if (a !== null) {
-                    a.addEventListener("click", eventListener);
-                }
+                li.addEventListener("click", eventListener);
                 ul.appendChild(li);
             });
             return resource.filter.length;
@@ -322,7 +336,7 @@
         if (form.action !== "") {
             formElement.setAttribute("action", form.action);
         } else {
-            formElement.removeAttribute("action");            
+            formElement.removeAttribute("action");
         }
 
         for (i = 0; i < inputs.length; i += 1) {
@@ -342,10 +356,8 @@
             }
         }
         if (form.onSubmit !== undefined) {
-            console.log("DEBUG adding onSubmit", form.onSubmit);
             formElement.setAttribute("onSubmit", form.onSubmit);
         } else if (formElement.hasAttribute("onSubmit") === true) {
-            console.log("DEBUG removing onSubmit");
             formElement.removeAttribute("onsubmit");
         }
     }
@@ -408,15 +420,11 @@
             menuSelected = cur.querySelector(".usb-menu-selected"),
             previouslySelected = cur.querySelector(".usb-menu-item-selected"),
             resources = doc.getElementById("usb-search-resources"),
-            resourceSelected = resources.querySelector("li.usb-menu-item-selected") || null,
-            resourceId = "",
-            resourceAnchor = null;
+            resourceSelected = resources.querySelector(".usb-menu-item-selected") || null,
+            resourceId = "";
 
         if (resourceSelected !== null) {
-            resourceAnchor = resourceSelected.getElementsByTagName("a");
-            if (resourceAnchor !== null && resourceAnchor[0].id !== undefined) {
-                resourceId = resourceAnchor[0].id;
-            }
+            resourceId = resourceSelected.getAttribute("data-resource");
         }
 
         if (previouslySelected !== null) {
@@ -440,8 +448,9 @@
      */
     function resourcesEventHandler(ev) {
         var menuCount = 0,
-            resourceId = "",
             elem = ev.target,
+            resourceId = elem.getAttribute("data-resource"),
+            anchor = doc.getElementById(resourceId),
             filterUL = doc.getElementById("usb-filter-ul"),
             filtersSelectButton = doc.getElementById("usb-filter-menu-selector"),
             resourceUL = doc.getElementById("usb-resource-ul"),
@@ -454,10 +463,10 @@
         if (previouslySelected !== null) {
             removeClass(previouslySelected, "usb-menu-item-selected");
         }
-        addClass(elem.parentNode.parentNode, "usb-menu-item-selected");
-        menuSelected.textContent = elem.textContent;
 
-        resourceId = elem.id;
+        addClass(anchor.parentNode, "usb-menu-item-selected");
+        menuSelected.textContent = anchor.textContent;
+
         updateQueryForm(searchWidget, searchQueryForm, resourceId);
         updateFilterMenu(searchWidget, filterUL, searchQueryForm, resourceId, filtersEventHandler);
         // Per K.A. we're not going to pop the filterUL and instead jump to the search input box.
@@ -477,7 +486,10 @@
             activeResource = searchWidget[resourceId],
             queryInput = doc.getElementById("usb-query-input"),
             resourceUL = doc.getElementById("usb-resource-ul"),
+            /*
             resourceMenuItems = resourceUL.querySelectorAll(".usb-menu-item-primary a"),
+            */
+            resourceMenuItems = resourceUL.querySelectorAll("li"),
             filterUL = doc.getElementById("usb-filter-ul"),
             searchResources = doc.getElementById("usb-search-resources"),
             filterMenuSelected = doc.getElementById('usb-filter-menu-selected'),
@@ -497,8 +509,9 @@
         // Add resource listeners and find correct resourceId to initialize query form an filter with.
         for (i = 0; i < resourceMenuItems.length; i += 1) {
             if (i === 0) {
-                resourceId = resourceMenuItems[i].id;
-                addClass(resourceMenuItems[i].parentNode.parentNode, "usb-menu-item-selected");
+                resourceId = resourceMenuItems[i].getAttribute("data-resource");
+                /*addClass(resourceMenuItems[i].parentNode.parentNode, "usb-menu-item-selected");*/
+                addClass(resourceMenuItems[i], "usb-menu-item-selected");
             }
             addMenuItemListener(resourceMenuItems[i], "click", resourcesEventHandler, false);
         }
