@@ -92,7 +92,7 @@
                     pubDate = items[i].getElementsByTagName("pubDate")[0].textContent || '';
                     if (pubDate !== '') {
                         day = new Date(pubDate);
-                        pubDate = '<div class="' + className + '-pubdate">' +
+                        pubDate = '<div class="' + className + '-pubdate">published ' +
                             monthnames[day.getMonth()] + ' ' + day.getDay() +
                             ', ' + day.getFullYear() +
                             '</div>';

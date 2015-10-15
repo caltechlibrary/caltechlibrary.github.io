@@ -203,12 +203,13 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
 }
 
 .cl-authors-item h1, .cl-annoucements-item h1, .cl-classes-item h1 {
-    font-size: 0.78em;
+    font-size: 1em;
     margin-bottom: 0.12em;
 }
 
 .cl-authors-item h2, .cl-annoucements-item h2, .cl-classes-item h2 {
-    font-size: 0.78em;
+    font-size: 1em;
+    margin-bottom: 0.12em;
 }
 
 .cl-authors-item > div, .cl-announcements-item > div, .cl-classes-item > div {
@@ -223,7 +224,7 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
 }
 
 .cl-authors-item-description, .cl-annoucements-item-description, .cl-classes-item-description {
-    font-size: 0.58em;
+    font-size: 0.78em;
     font-style: none;
     margin-bottom: 2em;
 }
