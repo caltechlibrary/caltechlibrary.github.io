@@ -36,7 +36,8 @@
     padding: 0.32em;
     text-align: left;
     vertical-align: middle;
-    background-color: #EEF2FB;
+    color: white;
+    background-color: darkgrey;
     z-index: 1;
 }
 
@@ -48,7 +49,7 @@
     padding: 0.24em;
     width: 1.24em;
     height: 1.24em;
-    background-color: #EEF2FB;
+    background-color: darkgrey;
     z-index: 2;
 }
 
@@ -72,7 +73,6 @@
     list-style-type: none;
     background-color: inherit;
     border: 1px solid white;
-    box-shadow: 0.24em 0 0.24em #043584;
     margin: 0;
     padding: 0;
     min-width: 16em;
@@ -84,7 +84,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 0.12em solid #043584;
+    border-bottom: 0.12em solid white;
 }
 
 .usb-menu ul li > span {
@@ -124,14 +124,14 @@
 
 .usb-menu-item-primary a, .usb-menu-item-primary a:link, .usb-menu-item-primary a:active {
     text-decoration: none;
-    color: black;
-    background-color: #EEF2FB;
+    color: white;
+    background-color: darkgrey;
 }
 
 .usb-menu-item-primary a:hover, .usb-menu-item-primary a:focus, .usb-menu-item-secondary a:visited {
     text-decoration: none;
     color: white;
-    background-color: #043584;
+    background-color: lightgrey;
 }
 
 .usb-menu-item-secondary {
