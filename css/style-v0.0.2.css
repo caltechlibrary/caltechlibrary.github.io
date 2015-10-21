@@ -2,11 +2,13 @@
  * style-v0.0.2.css - Alternative stylesheet for the Caltech Library's Digital Library Development Group's sandbox.
  */
 body {
+    /*
     margin: 0;
     border: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    */
     color: #E3662D;
     background-color: white;
     font-family: Open Sans, Helvetica, Sans-Serif;
@@ -138,8 +140,16 @@ nav div > ul {
 section {
     position: relative;
     display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
     color: black;
     background-color: white;
+}
+
+div.usb-searchbox {
+    margin: 0;
+    padding: 0;
 }
 
 section h2 {
@@ -147,10 +157,14 @@ section h2 {
 }
 
 aside {
-    border: 0;
-    padding-left: 1em;
     position: relative;
     display: inline-block;
+    margin: 0;
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 0;
 }
 
 aside h2 {
@@ -185,7 +199,8 @@ aside ul > ul {
 footer {
     position: relative;
     display: block;
-    height: 3em;
+    height: auto;
+    width: 100%;
     color: white;
     background-color: darkslategrey;
     font-size: 0.82em;
@@ -222,9 +237,13 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
 .cl-main {
     position: relative;
     display: inline-block;
+    width: auto;
     margin: 0;
     border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 1em;
+    padding-right: 0;
     max-width: 72%;
     vertical-align: top;
 }
@@ -233,20 +252,20 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
     position: relative;
     display: block;
     height: auto;
-    margin-left: 20%;
-    margin-right: 0;
-    padding: 0;
-    border: 0;
-}
-
-.cl-unified-search-box ul {
-    width: 60%;
+    width: auto;
     margin: 0;
     border: 0;
     padding: 0;
-    list-style-type: none;
 }
 
+.usb-searchbox {
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 1em;
+}
 
 .cl-authors-item h1, .cl-annoucements-item h1, .cl-classes-item h1 {
     font-size: 1em;
