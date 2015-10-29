@@ -104,7 +104,7 @@ nav div > ul {
 section {
     position: relative;
     display: inline-block;
-    width: auto;
+    width: 100%;
     color: black;
     background-color: white;
     margin: 0;
