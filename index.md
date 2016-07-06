@@ -16,7 +16,7 @@
 ### Go Packages and Command Line Tools
 
 + [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper for the ORCID API
-+ [ostdlib](https://github.com/caltechlibrary/ostdlib) - A standard JavaScript library and REPL for integrating (https://github.com/robertkrimen/otto)otto | JavaScript package in Go based programs
++ [ostdlib](https://github.com/caltechlibrary/ostdlib) - A standard JavaScript library and REPL for integrating [otto](https://github.com/robertkrimen/otto)JavaScript package in Go based programs
 + [BibTeX bibfilter](https://github.com/caltechlibrary/bibtex), a filter utility
 + [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
