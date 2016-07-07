@@ -95,8 +95,9 @@ nav div > ul {
 }
 
 section > ul {
-    margin-left: 0.24em;
-    list-style-type: circle;
+    padding-left: 0;
+    margin-left: 1.24em;
+    list-style-type: square;
 }
 
 .cl-nav-ul-display-inline-block, nav:hover ul, nav a:focus+ul {
