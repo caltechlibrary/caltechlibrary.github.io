@@ -1,5 +1,6 @@
 /**
- * style.css - stylesheet for the Caltech Library's Digital Library Development Group's sandbox.
+ * style.css - stylesheet for the Caltech Library's 
+ * Digital Library Development sandbox.
  */
 body {
      margin: 0;
@@ -91,6 +92,11 @@ nav div > ul {
      display: none;
      padding-left: 0.24em;
      text-align: left;
+}
+
+section > ul {
+    margin-left: 0.2em;
+    list-style-type: disc;
 }
 
 .cl-nav-ul-display-inline-block, nav:hover ul, nav a:focus+ul {
