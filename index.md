@@ -13,13 +13,18 @@
 + [A test VM for evaluating Vireo 3](https://github.com/caltechlibrary/vireo-test-vm)
 
 
-### Go Packages and Command Line Tools
+### Tools and Applications
+
++ [bibfilter](https://caltechlibrary.github.io/bibtex), a command line BibTeX filter utility
+    + [Web version of bibfilter](https://caltechlibrary.github.io/bibtex/webapp)
++ [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
+
+### Golang packages
 
 + [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper for the ORCID API
 + [ostdlib](https://github.com/caltechlibrary/ostdlib) - A standard JavaScript library and REPL for integrating the [otto](https://github.com/robertkrimen/otto) JavaScript package with Go based programs
-+ [BibTeX bibfilter](https://github.com/caltechlibrary/bibtex), a filter utility
-+ [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
++ [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
 
 
 ### Shell scripts
