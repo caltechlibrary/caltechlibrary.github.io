@@ -71,8 +71,14 @@ nav div {
      margin-right: 0;
 }
 
-nav a, nav a:link, nav a:visited, nav a:active, nav a:hover, nav a:focus {
+nav a, nav a:link, nav a:visited, nav a:active {
      color: white;
+     background-color: inherit;
+     text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+     color: orange;
      background-color: inherit;
      text-decoration: none;
 }
@@ -93,14 +99,6 @@ nav div > ul {
      text-align: left;
 }
 
-.cl-nav-ul-display-inline-block, nav:hover ul, nav a:focus+ul {
-     display: inline-block;
-     list-style-type: none;
-     margin: 0;
-     vertical-align: top;
-     text-transform: lowercase;
-}
-
 section {
      position: relative;
      display: inline-block;
@@ -116,6 +114,13 @@ section {
 
 section h2 {
      font-size: 1.12em;
+}
+
+section ul {
+    display: block;
+    list-style-type: square;
+    padding: 0;
+    margin-left: 1.24em;
 }
 
 aside {
@@ -145,10 +150,6 @@ aside ul {
 
 aside ul li {
      font-size: 0.82em;
-}
-
-.cl-aside-display-block, aside:hover div ul {
-     display: block;
 }
 
 aside ul > ul {
@@ -191,46 +192,5 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
      margin: 0;
      color: orange;
      text-decoration: none;
-}
-
-
-.cl-hide {
-     display: none;
-     visibility: none;
-}
-
-.cl-main {
-     position: relative;
-     display: inline-block;
-     padding-left: 1em;
-     max-width: 72%;
-     vertical-align: top;
-}
-
-.cl-authors-item h1, .cl-annoucements-item h1, .cl-classes-item h1 {
-     font-size: 1em;
-     margin-bottom: 0.12em;
-}
-
-.cl-authors-item h2, .cl-annoucements-item h2, .cl-classes-item h2 {
-     font-size: 1em;
-     margin-bottom: 0.12em;
-}
-
-.cl-authors-item > div, .cl-announcements-item > div, .cl-classes-item > div {
-     font-size: 0.58em;
-     font-style: italic;
-}
-
-.cl-authors-item-pubdate, .cl-annoucements-item-pubdate, .cl-classes-item-pubdate {
-     margin: 0;
-     font-size: 0.58em;
-     margin-bottom: 0.12em;
-}
-
-.cl-authors-item-description, .cl-annoucements-item-description, .cl-classes-item-description {
-     font-size: 0.78em;
-     font-style: none;
-     margin-bottom: 2em;
 }
 
