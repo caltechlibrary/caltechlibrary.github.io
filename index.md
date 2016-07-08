@@ -1,6 +1,6 @@
 # Digital Library Development Sandbox
 
-These are experimental projects developed in the Digital Library Development group of Caltech Library.
+These are experimental projects developed by the Digital Library Development group at Caltech Library.
 
 ### Middleware, systems integration and site generation
 
