@@ -1,12 +1,12 @@
 ## Digital Library Development Sandbox
 
-### Middleware, systems tools and site generation
+### Middleware, systems integration and site generation
 
 + [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API tools written in Go/JavaScript
 
 
-### Virtual Machines and Containers
+### Virtual machines and containers
 
 + [ArchivesSpace under Vagrant](https://github.com/caltechlibrary/archivesspace_vagrant)
 + [Caltech Library on Docker Hub](https://hub.docker.com/u/caltechlibrary)
@@ -15,7 +15,7 @@
     + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
 
 
-### Command Line Tools and Web Applications
+### Web applications and command line tools
 
 + [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a BibTeX filter web app
     + [bibfilter](https://caltechlibrary.github.io/bibtex/installation.html), includes bibfilter command line utility
