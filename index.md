@@ -1,4 +1,4 @@
-## Digital Library Development Sandbox
+# Digital Library Development Sandbox
 
 ### Middleware, systems integration and site generation
 

@@ -112,8 +112,18 @@ section {
      padding-right: 0;
 }
 
+section h1 {
+    font-size: 1.32em;
+}
+
 section h2 {
-     font-size: 1.12em;
+    font-size: 1.12em;
+    font-weight: italic;
+}
+
+section h3 {
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 section ul {
