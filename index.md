@@ -19,7 +19,7 @@
 
 + [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a BibTeX filter web app
     + [bibfilter](https://caltechlibrary.github.io/bibtex/installation.html), command line version
-+ [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
++ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web pages slides
 
 
 ### Golang packages
