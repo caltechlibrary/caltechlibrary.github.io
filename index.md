@@ -1,5 +1,7 @@
 # Digital Library Development Sandbox
 
+These are experimental projects developed in the Digital Library Development group of Caltech Library.
+
 ### Middleware, systems integration and site generation
 
 + [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
