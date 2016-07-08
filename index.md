@@ -1,6 +1,6 @@
 ## Digital Library Development Sandbox
 
-### Web and data harvesting
+### Middleware, systems tools and site generation
 
 + [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API tools written in Go/JavaScript
@@ -10,14 +10,18 @@
 
 + [ArchivesSpace under Vagrant](https://github.com/caltechlibrary/archivesspace_vagrant)
 + [Caltech Library on Docker Hub](https://hub.docker.com/u/caltechlibrary)
-+ [A test VM for evaluating Vireo 3](https://github.com/caltechlibrary/vireo-test-vm)
++ [test-vm](https://github.com/caltechlibrary/test-vm) - A minimal Vagrant VM based on Ubuntu Server 16.04 LTS
+    + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh) - setup Vireo ETD
+    + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
 
 
-### Tools and Applications
+### Command Line Tools and Web Applications
 
-+ [bibfilter](https://caltechlibrary.github.io/bibtex), a command line BibTeX filter utility
-    + [Web version of bibfilter](https://caltechlibrary.github.io/bibtex/webapp)
++ [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a BibTeX filter web app
+    + [bibfilter](https://caltechlibrary.github.io/bibtex/installation.html), includes bibfilter command line utility
+    + [source code](https://github.com/caltechlibrary/bibtext)
 + [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
+
 
 ### Golang packages
 

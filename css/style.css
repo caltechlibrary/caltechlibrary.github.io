@@ -107,7 +107,7 @@ section {
      background-color: white;
      margin: 0;
      padding-top 0;
-     padding-bottom: 0;
+     padding-bottom: 2em;
      padding-left: 1em;
      padding-right: 0;
 }
@@ -118,9 +118,10 @@ section h2 {
 
 section ul {
     display: block;
+    list-style: inside;
     list-style-type: square;
-    padding: 0;
-    margin-left: 1.24em;
+    margin: 0;
+    padding-left: 1.24em;
 }
 
 aside {
