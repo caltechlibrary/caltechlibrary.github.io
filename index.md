@@ -18,7 +18,7 @@
 ### Web applications and command line tools
 
 + [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a BibTeX filter web app
-    + [bibfilter](https://caltechlibrary.github.io/bibtex/installation.html), includes bibfilter command line utility
+    + [bibfilter](https://caltechlibrary.github.io/bibtex/installation.html), command line version
     + [source code](https://github.com/caltechlibrary/bibtext)
 + [md2slides](https://github.com/caltechlibrary/md2slides), markdown to web pages slides
 
