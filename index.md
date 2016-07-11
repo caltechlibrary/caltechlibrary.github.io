@@ -21,7 +21,7 @@ This sandbox contains experimental projects.
 
 + [bibfilter](https://caltechlibrary.github.io/bibtex), a command line BibTeX filter
     + [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a web application BibTeX filter
-+ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web pages slides
++ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 
 
 ### Golang packages
