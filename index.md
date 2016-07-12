@@ -14,6 +14,7 @@ This sandbox contains experimental projects.
 
 + [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API tools written in Go/JavaScript
++ [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper and some Bash scripts for the ORCID API
 
 
 ### Virtual machines and containers
@@ -27,7 +28,6 @@ This sandbox contains experimental projects.
 
 ### Golang packages
 
-+ [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper for the ORCID API
 + [ostdlib](https://github.com/caltechlibrary/ostdlib) - A standard JavaScript library and REPL for integrating the [otto](https://github.com/robertkrimen/otto) JavaScript package with Go based programs
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
