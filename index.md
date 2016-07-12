@@ -2,6 +2,14 @@
 
 This sandbox contains experimental projects.
 
+
+### Web applications and command line tools
+
++ [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
+    + [webapp](https://caltechlibrary.github.io/bibtex/webapp), BibTex web tools
++ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
+
+
 ### Middleware, systems integration and site generation
 
 + [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
@@ -15,13 +23,6 @@ This sandbox contains experimental projects.
 + [test-vm](https://github.com/caltechlibrary/test-vm) - A minimal Vagrant VM based on Ubuntu Server 16.04 LTS
     + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh) - setup Vireo ETD 3
     + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
-
-
-### Web applications and command line tools
-
-+ [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
-    + [webapp](https://caltechlibrary.github.io/bibtex/webapp), BibTex web tools
-+ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 
 
 ### Golang packages
