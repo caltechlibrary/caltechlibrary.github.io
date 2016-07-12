@@ -19,8 +19,8 @@ This sandbox contains experimental projects.
 
 ### Web applications and command line tools
 
-+ [bibfilter](https://caltechlibrary.github.io/bibtex), a command line BibTeX filter
-    + [bibfilter](https://caltechlibrary.github.io/bibtex/webapp), a web application BibTeX filter
++ [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
+    + [webapp](https://caltechlibrary.github.io/bibtex/webapp), BibTex web tools
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 
 
