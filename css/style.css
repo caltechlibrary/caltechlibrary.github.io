@@ -99,6 +99,19 @@ nav div > ul {
      text-align: left;
 }
 
+nav ul {
+     display: inline-block;
+     padding-left: 0.24em;
+     list-style-type: none;
+     text-align: left;
+     text-decoration: none; 
+}
+
+nav ul li {
+     display: inline;
+     padding: 1em;
+}
+
 section {
      position: relative;
      display: inline-block;
