@@ -38,5 +38,7 @@ This sandbox contains experimental projects.
 
 ### Shell scripts
 
++ [install-golang](https://github.com/caltechlibrary/install-golang), install's Go 1.4.3 and Go 1.6.3 in your home directory
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
+
 
