@@ -2,11 +2,16 @@
 # A simple Makefile to generate caltechlibrary.github.io with
 # shorthand.
 #
-index.html: index.md index.shorthand
-	shorthand index.shorthand > index.html
+build: README.md page.shorthand
+	./mk-website.bash
 
+clean:
+	/bin/rm -f *.html
+
+# We're not using publish.bash here because this website doesn't
+# require publication via gh-pages branch.
 publish:
-	shorthand index.shorthand > index.html
+	./mk-website.bash
 	git commit -am "Publishing website"
 	git push origin master
 
