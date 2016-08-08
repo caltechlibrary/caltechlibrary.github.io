@@ -123,6 +123,7 @@ section {
      position: relative;
      display: inline-block;
      width: 100%;
+     min-height: 84%;
      color: black;
      background-color: white;
      margin: 0;
