@@ -5,6 +5,11 @@
 build: README.md page.tmpl
 	./mk-website.bash
 
+save:
+	./mk-website.bash
+	git commit -am "quick save"
+	git push origin master
+
 clean:
 	/bin/rm -f *.html
 
