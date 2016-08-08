@@ -8,7 +8,8 @@ This sandbox contains experimental projects.
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [webapp](https://caltechlibrary.github.io/bibtex/webapp), BibTeX web tools
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
-+ [shorthand](https://caltechlibrary.github.io/shorthand), a text label expander and Markdown processor
++ [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
+    + [shorthand](https://caltechlibrary.github.io/shorthand), a text label expander and Markdown processor (precursor to mkpage)
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
