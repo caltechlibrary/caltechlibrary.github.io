@@ -2,7 +2,7 @@
 # A simple Makefile to generate caltechlibrary.github.io with
 # shorthand.
 #
-build: README.md page.shorthand
+build: README.md page.tmpl
 	./mk-website.bash
 
 clean:
