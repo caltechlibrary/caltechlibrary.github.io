@@ -33,9 +33,12 @@ This sandbox contains experimental projects.
 
 ### Golang packages
 
++ [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
++ [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [ostdlib](https://github.com/caltechlibrary/ostdlib) - A standard JavaScript library and REPL for integrating the [otto](https://github.com/robertkrimen/otto) JavaScript package with Go based programs
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
-+ [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
++ [xlquery](https://github.com/xlquery), a package for querying EPrints (and eventually other) repositories
+    + [xlquery/rss2](https://github.com/caltechlibrary/xlquery) - is a subpackage that can be used indepently to work with RSS2 content
 
 
 ### Shell scripts
