@@ -10,6 +10,7 @@ This sandbox contains experimental projects.
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
     + [shorthand](https://caltechlibrary.github.io/shorthand), a text label expander and Markdown processor (precursor to mkpage)
++ [xlquery](https://caltechlibrary.github.io/xlquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
