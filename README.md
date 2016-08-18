@@ -6,11 +6,12 @@ This sandbox contains experimental projects.
 ### Web applications and command line tools
 
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
-    + [webapp](https://caltechlibrary.github.io/bibtex/webapp), BibTeX web tools
+    + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
     + [shorthand](https://caltechlibrary.github.io/shorthand), a text label expander and Markdown processor (precursor to mkpage)
 + [xlquery](https://caltechlibrary.github.io/xlquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
+    + [web version](https://caltechlibrary.github.io/xlquery) of tool
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
