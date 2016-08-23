@@ -21,7 +21,7 @@ body {
      color: #FF6E1E;
      background-color: white;
      font-family: Open Sans, Helvetica, Sans-Serif;
-     font-size: 16px;
+     font-size: calc(1em+1vm);
 }
 
 header {
@@ -164,7 +164,7 @@ section h3 {
 section ul {
     display: block;
     list-style: inside;
-    list-style-type: square;
+    list-style-type: '- ';
     margin: 0;
     padding-left: 1.24em;
 }
