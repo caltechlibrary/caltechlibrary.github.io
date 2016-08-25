@@ -13,6 +13,9 @@ save:
 	git commit -am "Publishing website"
 	git push origin master
 
+website:
+	./mk-website.bash
+
 # We're not using publish.bash here because this website doesn't
 # require publication via gh-pages branch.
 publish:
