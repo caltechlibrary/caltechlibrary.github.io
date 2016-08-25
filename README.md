@@ -17,7 +17,7 @@ This sandbox contains experimental projects.
 
 ### Middleware, systems integration and site generation
 
-+ [cait](https://github.com/caltechlibrary/cait) - Caltech Archives Integration Tools
++ [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API client tools written in Go/JavaScript
 + [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper and some Bash scripts for the ORCID API
 
