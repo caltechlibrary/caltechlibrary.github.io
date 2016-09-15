@@ -53,7 +53,7 @@ function mkSite() {
 }
 
 echo "Checking necessary software is installed"
-softwareCheck shorthand
+softwareCheck mkpage
 echo "Generating website"
 mkSite "."
 
