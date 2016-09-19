@@ -141,7 +141,7 @@ section {
      position: relative;
      display: inline-block;
      width: 100%;
-     min-height: 84%;
+     height: 100%;
      color: black;
      background-color: white;
      margin: 0;
@@ -208,7 +208,7 @@ aside ul > ul {
 }
 
 footer {
-     position: relative;
+     position: fixed;
      bottom: 0;
      display: block;
      width: 100%;
