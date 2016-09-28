@@ -19,7 +19,6 @@ This sandbox contains experimental projects.
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API client tools written in Go/JavaScript
-+ [ot](https://github.com/caltechlibrary/ot) - Go/JavaScript wrapper and some Bash scripts for the ORCID API
 
 
 ### Virtual machines and containers
@@ -46,5 +45,6 @@ This sandbox contains experimental projects.
 
 + [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.7 in your home directory
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
++ [ot](https://github.com/caltechlibrary/ot) - A set of Bash scripts and Golang template for working with the ORCID API
 
 
