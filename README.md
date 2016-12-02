@@ -15,10 +15,10 @@ This sandbox contains experimental projects.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
-### Middleware, systems integration and site generation
+### Middleware, systems integration and website generation
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
-+ [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API client tools written in Go/JavaScript
++ [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API harvest and client tools written in Go
 
 
 ### Virtual machines and containers
