@@ -11,7 +11,6 @@ This sandbox contains experimental projects.
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
     + [shorthand](https://github.com/caltechlibrary/shorthand), a text label expander and Markdown processor (precursor to mkpage)
 + [xlquery](https://caltechlibrary.github.io/xlquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
-    + [web version](https://caltechlibrary.github.io/xlquery) of tool
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
