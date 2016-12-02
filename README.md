@@ -33,6 +33,8 @@ This sandbox contains experimental projects.
 ### Golang packages
 
 + [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
++ [tmplfn](https://github.com/caltechlibrary/tmplfn), a package for standardizing template functions across Go template projects
++ [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
 + [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [xlquery](https://github.com/xlquery), a package for querying EPrints (and eventually other) repositories
