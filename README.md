@@ -38,7 +38,7 @@ This sandbox contains experimental projects.
 + [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [excelquery](https://github.com/excelquery), a package for querying EPrints (and eventually other) repositories
-    + [excelquery/rss2](https://github.com/caltechlibrary/excelquery) - is a subpackage that can be used indepently to work with RSS2 content
++ [rss2](https://github.com/caltechlibrary/rss2) - is a subpackage that can be used indepently to work with RSS2 content
 
 
 ### Shell scripts
