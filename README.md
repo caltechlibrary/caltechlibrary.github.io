@@ -37,7 +37,7 @@ This sandbox contains experimental projects.
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
 + [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
-+ [excelquery](https://github.com/excelquery), a package for querying EPrints (and eventually other) repositories
++ [excelquery](https://github.com/caltechlibrary/excelquery), a package for querying EPrints (and eventually other) repositories
 + [rss2](https://github.com/caltechlibrary/rss2) - a package that can be used to work with RSS2 content
 
 
