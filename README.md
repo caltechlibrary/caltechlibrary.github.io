@@ -29,15 +29,6 @@ This sandbox contains experimental projects.
     + servepages - a static content web server that supports a site specific search based on Bleve and the index created with _indexpages_
 
 
-### Virtual machines and containers
-
-+ [ArchivesSpace under Vagrant](https://github.com/caltechlibrary/archivesspace_vagrant)
-+ [Caltech Library on Docker Hub](https://hub.docker.com/u/caltechlibrary)
-+ [test-vm](https://github.com/caltechlibrary/test-vm) - A minimal Vagrant VM based on Ubuntu Server 16.04 LTS
-    + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh) - setup Vireo ETD 3
-    + [setup-archivesspace.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-archivesspace.sh) - setup ArchivesSpace 1.4.2
-    + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
-
 
 ### Golang packages
 
@@ -53,5 +44,14 @@ This sandbox contains experimental projects.
 + [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.7 in your home directory
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
 + [ot](https://github.com/caltechlibrary/ot) - A set of Bash scripts and Golang template for working with the ORCID API
+
+### Virtual machines and containers
+
++ [ArchivesSpace under Vagrant](https://github.com/caltechlibrary/archivesspace_vagrant)
++ [Caltech Library on Docker Hub](https://hub.docker.com/u/caltechlibrary)
++ [test-vm](https://github.com/caltechlibrary/test-vm) - A minimal Vagrant VM based on Ubuntu Server 16.04 LTS
+    + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh) - setup Vireo ETD 3
+    + [setup-archivesspace.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-archivesspace.sh) - setup ArchivesSpace 1.4.2
+    + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
 
 
