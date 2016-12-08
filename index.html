@@ -42,8 +42,24 @@
 <h3>Middleware, systems integration and website generation</h3>
 
 <ul>
-<li><a href="https://caltechlibrary.github.io/cait">cait</a> - Caltech Archives Integration Tools</li>
-<li><a href="https://github.com/caltechlibrary/epgo">epgo</a> - E-Print REST API harvest and client tools written in Go</li>
+<li><a href="https://caltechlibrary.github.io/cait">cait</a> - Caltech Archives Integration Tools
+
+<ul>
+<li>cait - a tool to harvest content from ArchiveSpace</li>
+<li>genpages - a tool to generate webpages from repository content</li>
+<li>sitemapper - a tool for generate sitemaps</li>
+<li>indexpages - a indexer that crawls the generated pages in JSON format and builds/updates a Bleve index</li>
+<li>servepages - a static content web server that supports a site specific search based on Bleve and the index created with <em>indexpages</em></li>
+</ul></li>
+<li><a href="https://github.com/caltechlibrary/epgo">epgo</a> - E-Print REST API harvest and client tools written in Go
+
+<ul>
+<li>epgo - a tool to harvest content from EPrints</li>
+<li>genpages - a tool to generate webpages from an EPrints repository harvest</li>
+<li>sitemapper - a tool for generate sitemaps</li>
+<li>indexpages - a indexer that crawls the generated pages in JSON format and builds/updates a Bleve index</li>
+<li>servepages - a static content web server that supports a site specific search based on Bleve and the index created with <em>indexpages</em></li>
+</ul></li>
 </ul>
 
 <h3>Virtual machines and containers</h3>
