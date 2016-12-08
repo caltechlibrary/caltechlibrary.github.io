@@ -10,7 +10,7 @@ This sandbox contains experimental projects.
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
     + [shorthand](https://github.com/caltechlibrary/shorthand), a text label expander and Markdown processor (precursor to mkpage)
-+ [xlquery](https://caltechlibrary.github.io/xlquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
++ [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
 
@@ -37,8 +37,8 @@ This sandbox contains experimental projects.
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
 + [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
-+ [xlquery](https://github.com/xlquery), a package for querying EPrints (and eventually other) repositories
-    + [xlquery/rss2](https://github.com/caltechlibrary/xlquery) - is a subpackage that can be used indepently to work with RSS2 content
++ [excelquery](https://github.com/excelquery), a package for querying EPrints (and eventually other) repositories
+    + [excelquery/rss2](https://github.com/caltechlibrary/excelquery) - is a subpackage that can be used indepently to work with RSS2 content
 
 
 ### Shell scripts
