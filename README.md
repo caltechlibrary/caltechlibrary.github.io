@@ -9,7 +9,6 @@ This sandbox contains experimental projects.
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
-    + [shorthand](https://github.com/caltechlibrary/shorthand), a text label expander and Markdown processor (precursor to mkpage)
 + [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 
@@ -35,7 +34,6 @@ This sandbox contains experimental projects.
 + [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
 + [tmplfn](https://github.com/caltechlibrary/tmplfn), a package for standardizing template functions across Go template projects
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
-+ [md2slides](https://github.com/caltechlibrary/md2slides), a package to privide light weight slide generation support from Markdown
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [rss2](https://github.com/caltechlibrary/rss2) - a package that can be used to work with RSS2 content
 
