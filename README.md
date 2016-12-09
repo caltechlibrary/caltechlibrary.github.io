@@ -16,19 +16,7 @@ This sandbox contains experimental projects.
 ### Middleware, systems integration and website generation
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
-    + cait - a tool to harvest content from ArchiveSpace
-    + genpages - a tool to generate webpages from repository content 
-    + sitemapper - a tool for generate sitemaps
-    + indexpages - a indexer that crawls the generated pages in JSON format and builds/updates a Bleve index
-    + servepages - a static content web server that supports a site specific search based on Bleve and the index created with _indexpages_
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API harvest and client tools written in Go
-    + epgo - a tool to harvest content from EPrints
-    + genpages - a tool to generate webpages from an EPrints repository harvest
-    + sitemapper - a tool for generate sitemaps
-    + indexpages - a indexer that crawls the generated pages in JSON format and builds/updates a Bleve index
-    + servepages - a static content web server that supports a site specific search based on Bleve and the index created with _indexpages_
-
-
 
 ### Golang packages
 
