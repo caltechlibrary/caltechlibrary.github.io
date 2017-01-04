@@ -2,6 +2,9 @@
 # A simple Makefile to generate caltechlibrary.github.io with
 # shorthand.
 #
+
+BRANCH = $(shell git branch | grep "* " | cut -d\   -f 2)
+
 build: *.md page.tmpl
 	./mk-website.bash
 
@@ -11,7 +14,11 @@ clean:
 save:
 	./mk-website.bash
 	git commit -am "Publishing website"
-	git push origin master
+	git push origin $(BRANCH)
+
+refresh:
+	git fetch origin
+	git pull origin $(BRANCH)
 
 website:
 	./mk-website.bash
