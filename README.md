@@ -5,6 +5,7 @@ This sandbox contains experimental projects.
 
 ### Web applications and command line tools
 
++ [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
 + [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
