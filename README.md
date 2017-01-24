@@ -8,10 +8,11 @@ This sandbox contains experimental projects.
 + [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
-+ [md2slides](https://caltechlibrary.github.io/md2slides), convert markdown to web page slides
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
 + [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
++ [shelltools](https://caltechlibrary.github.io/shelltools), misc. command line utilities, useful in Bash scripts
++ [jsontools](https://caltechlibrary.github.io/jsontools), command line utilities for working with JSON data
 
 
 ### Middleware, systems integration and website generation
