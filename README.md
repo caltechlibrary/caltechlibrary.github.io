@@ -12,7 +12,7 @@ This sandbox contains experimental projects.
 + [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 + [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
 + [shelltools](https://caltechlibrary.github.io/shelltools), misc. command line utilities, useful in Bash scripts
-+ [jsontools](https://caltechlibrary.github.io/jsontools), command line utilities for working with JSON, Excel and CSV data
++ [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data
 
 
 ### Middleware, systems integration and website generation
