@@ -17,7 +17,6 @@ This sandbox contains experimental projects.
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API harvest and client tools written in Go
-    + [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 
 ### Golang packages
 
