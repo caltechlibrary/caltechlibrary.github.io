@@ -6,19 +6,18 @@ This sandbox contains experimental projects.
 ### Web applications and command line tools
 
 + [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
++ [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
-+ [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor
-+ [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
-+ [ws](https://caltechlibrary.github.io/ws), a simple web server for static page development
++ [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor, slide generator, web server and more
 + [shelltools](https://caltechlibrary.github.io/shelltools), misc. command line utilities, useful in Bash scripts
-+ [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data
 
 
 ### Middleware, systems integration and website generation
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
 + [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API harvest and client tools written in Go
+    + [excelquery](https://caltechlibrary.github.io/excelquery), An experiment in processing EPrints search results in an .xlsx Workbook file.
 
 ### Golang packages
 
