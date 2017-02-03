@@ -16,7 +16,7 @@ This sandbox contains experimental projects.
 ### Middleware, systems integration and website generation
 
 + [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
-+ [epgo](https://github.com/caltechlibrary/epgo) - E-Print REST API harvest and client tools written in Go
++ [epgo](https://caltechlibrary.github.io/epgo) - E-Print REST API harvest and client tools written in Go
 
 ### Golang packages
 
