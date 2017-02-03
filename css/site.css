@@ -169,6 +169,68 @@ section ul {
     padding-left: 1.24em;
 }
 
+table {
+    table-layout: fixed;
+    max-width: 60%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+thead th:nth-child(1) {
+    width: auto;
+}
+
+thead th:nth-child(2) {
+    width: auto;
+}
+
+thead th:nth-child(3) {
+    width: auto;
+}
+
+thead th:nth-child(4) {
+    width: auto;
+}
+
+th, td {
+    padding-top: 0.24em;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 0;
+    text-align: center;
+}
+
+th {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.9em;
+    text-align: center
+}
+
+td {
+    font-size: 0.8em;
+}
+
+thead tr:nth-child(1) {
+    background-color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+tr {
+    border-bottom: 1px groove black;
+}
+
+tr:nth-child(even) {
+    background-color: wheat;
+}
+
 aside {
      margin: 0;
      border: 0;
