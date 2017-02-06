@@ -6,7 +6,7 @@ This sandbox contains experimental projects.
 ### Web applications and command line tools
 
 + [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
-+ [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data
++ [datatools](https://github.com/caltechlibrary/datatools), command line utilities for working with JSON, Excel Workbook and CSV data
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor, slide generator, web server and more
