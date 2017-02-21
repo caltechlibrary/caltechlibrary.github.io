@@ -29,7 +29,8 @@ This sandbox contains experimental projects.
 
 ### Shell scripts
 
-+ [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.7 in your home directory
++ [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.8 in your home directory on Linux/Windows and Raspberry Pi
+    + If you're using Mac OS X Sierra just download and install the pre-compiled version from https://golang.org/dl/
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
 + [ot](https://github.com/caltechlibrary/ot) - A set of Bash scripts and Golang template for working with the ORCID API
 
