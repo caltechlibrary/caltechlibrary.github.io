@@ -11,7 +11,9 @@ This sandbox contains experimental projects.
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
 + [mkpage](https://caltechlibrary.github.io/mkpage), an experimental template and markdown processor, slide generator, web server and more
 + [shelltools](https://caltechlibrary.github.io/shelltools), misc. command line utilities, useful in Bash scripts
-
++ [caltechdata_read](https://caltechlibrary.github.io/caltechdata_read), extract data from CaltechDATA repository 
++ [caltechdata_plot](https://caltechlibrary.github.io/caltechdata_plot),
+display a plot of data hosted in the CaltechDATA repository. Demo at [plots.caltechlibrary.org](plots.caltechlibrary.org) 
 
 ### Middleware, systems integration and website generation
 
