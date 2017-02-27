@@ -28,6 +28,10 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [rss2](https://github.com/caltechlibrary/rss2) - a package that can be used to work with RSS2 content
 
+## PHP Libraries
+
++ [safer-php](https://github.com/caltechlibrary/safer-php) - a little library for vetting input values in PHP based on pseudo types
++ [ep-php](https://github.com/caltechlibrary/ep-php) - an EPrint 3.3 REST API library for easily retrieval of XML or JSON EPrint records based on EPrint ID
 
 ### Shell scripts
 
