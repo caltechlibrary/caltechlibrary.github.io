@@ -17,8 +17,8 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 
 ### Middleware, systems integration and website generation
 
-+ [cait](https://caltechlibrary.github.io/cait) - Caltech Archives Integration Tools
-+ [epgo](https://caltechlibrary.github.io/epgo) - E-Print REST API harvest and client tools written in Go
++ [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools
++ [epgo](https://caltechlibrary.github.io/epgo), EPrint REST API harvest and client tools written in Go
 
 ### Golang packages
 
@@ -26,27 +26,27 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [tmplfn](https://github.com/caltechlibrary/tmplfn), a package for standardizing template functions across Go template projects
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
 + [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
-+ [rss2](https://github.com/caltechlibrary/rss2) - a package that can be used to work with RSS2 content
++ [rss2](https://github.com/caltechlibrary/rss2), a package that can be used to work with RSS2 content
 
 ## PHP Libraries
 
-+ [safer-php](https://github.com/caltechlibrary/safer-php) - a little library for vetting input values in PHP based on pseudo types
-+ [ep-php](https://github.com/caltechlibrary/ep-php) - an EPrint 3.3 REST API library for easily retrieval of XML or JSON EPrint records based on EPrint ID
++ [safer-php](https://github.com/caltechlibrary/safer-php), a little library for vetting input values in PHP based on pseudo types
++ [ep-php](https://github.com/caltechlibrary/ep-php), an EPrint 3.3 REST API library for easily retrieval of XML or JSON EPrint records based on EPrint ID
 
 ### Shell scripts
 
 + [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.8 in your home directory on Linux/Windows and Raspberry Pi
     + If you're using Mac OS X Sierra just download and install the pre-compiled version from https://golang.org/dl/
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
-+ [ot](https://github.com/caltechlibrary/ot) - A set of Bash scripts and Golang template for working with the ORCID API
++ [ot](https://github.com/caltechlibrary/ot), a set of Bash scripts and Golang template for working with the ORCID API
 
 ### Virtual machines and containers
 
 + [ArchivesSpace under Vagrant](https://github.com/caltechlibrary/archivesspace_vagrant)
 + [Caltech Library on Docker Hub](https://hub.docker.com/u/caltechlibrary)
-+ [test-vm](https://github.com/caltechlibrary/test-vm) - A minimal Vagrant VM based on Ubuntu Server 16.04 LTS
-    + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh) - setup Vireo ETD 3
-    + [setup-archivesspace.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-archivesspace.sh) - setup ArchivesSpace 1.4.2
-    + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh) - setup EPrints 3.3.15
++ [test-vm](https://github.com/caltechlibrary/test-vm), a minimal Vagrant VM based on Ubuntu Server 16.04 LTS
+    + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh), setup Vireo ETD 3
+    + [setup-archivesspace.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-archivesspace.sh), setup ArchivesSpace 1.4.2
+    + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh), setup EPrints 3.3.15
 
 
