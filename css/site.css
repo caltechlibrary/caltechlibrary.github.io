@@ -169,6 +169,17 @@ section ul {
     padding-left: 1.24em;
 }
 
+section a:link, section a:visited {
+    /* orange: #FF6E1E; */
+    font-style: italic;
+    font-weight: normal;
+}
+
+section a:active, section a:hover, section a:focus {
+    /* orange: #FF6E1E; */
+    color: #FF6E1E;
+}
+
 table {
     table-layout: fixed;
     max-width: 60%;
