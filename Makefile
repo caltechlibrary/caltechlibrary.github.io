@@ -3,7 +3,7 @@
 # shorthand.
 #
 
-BRANCH = $(shell git branch | grep "* " | cut -d\   -f 2)
+BRANCH = $(shell git branch | grep -E "\* " | cut -d\   -f 2)
 
 build: *.md page.tmpl
 	./mk-website.bash
@@ -13,7 +13,7 @@ clean:
 
 save:
 	./mk-website.bash
-	git commit -am "Publishing website"
+	if [ "$(msg)" != "" ]; then git commit -am "$(msg)"; else git commit -am "Quick Save"; fi
 	git push origin $(BRANCH)
 
 refresh:
