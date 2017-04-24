@@ -32,6 +32,7 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 
 + [safer-php](https://github.com/caltechlibrary/safer-php), a little library for vetting input values in PHP based on pseudo types
 + [ep-php](https://github.com/caltechlibrary/ep-php), an EPrint 3.3 REST API library for easily retrieval of XML or JSON EPrint records based on EPrint ID
++ [eprintsDepositHelper](https://github.com/caltechlibrary/eprintsDepositHelper) a fork of https://github.com/davidfkane/eprintsDepositHelper
 
 ### Shell scripts
 
