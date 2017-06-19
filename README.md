@@ -39,7 +39,7 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.8 in your home directory on Linux/Windows and Raspberry Pi
     + If you're using Mac OS X Sierra just download and install the pre-compiled version from https://golang.org/dl/
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
-+ [ot](https://github.com/caltechlibrary/ot), a set of Bash scripts and Golang template for working with the ORCID API
++ [ot](https://caltechlibrary.github.io/ot), a set of Bash scripts and Golang template for working with the ORCID API
 
 ### Virtual machines and containers
 
