@@ -15,10 +15,11 @@ This sandbox contains experimental projects.
 + [caltechdata_plot](https://github.com/caltechlibrary/caltechdata_plot),
 display a plot of data hosted in the CaltechDATA repository. Demo at [plots.caltechlibrary.org](plots.caltechlibrary.org) 
 
-### Middleware, systems integration and website generation
+### Harvesters and systems integration 
 
-+ [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools
-+ [epgo](https://caltechlibrary.github.io/epgo), EPrint REST API harvest and client tools written in Go
++ [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools, ArchivesSpace harvesting tool for repository, accessions and agent objects
++ [ep](https://caltechlibrary.github.io/ep), ep is a Go package and provides _epgo_  a tool to harvest EPrints via EPrint REST API harvest
++ [ot](https://caltechlibrary.github.io/ot), is a Go package and provides _orcid_ an ORCID harvesting tool for v2.0 of the ORCID API
 
 ### Golang packages
 
@@ -39,7 +40,6 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.8 in your home directory on Linux/Windows and Raspberry Pi
     + If you're using Mac OS X Sierra just download and install the pre-compiled version from https://golang.org/dl/
 + [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
-+ [ot](https://caltechlibrary.github.io/ot), a set of Bash scripts and Golang template for working with the ORCID API
 
 ### Virtual machines and containers
 
