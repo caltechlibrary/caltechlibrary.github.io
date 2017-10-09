@@ -17,8 +17,8 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 ### Harvesters and systems integration 
 
 + [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools, ArchivesSpace harvesting tool for repository, accessions and agent objects
-+ [ep](https://caltechlibrary.github.io/ep), ep is a Go package and provides _ep_ a tool to harvest EPrints via EPrint REST API supporting our [CaltechAUTHORS](http://authors.library.caltech.edu) and [CaltechTHESIS](http://thesis.library.caltech.edu) repositories
-+ [ot](https://caltechlibrary.github.io/ot), is a Go package and provides _orcid_, an ORCID harvesting tool, for v2.0 of the ORCID API
++ [eprinttools](https://caltechlibrary.github.io/eprinttools), ep is a Go package and provides _ep_ a tool to harvest EPrints via EPrint REST API supporting our [CaltechAUTHORS](http://authors.library.caltech.edu) and [CaltechTHESIS](http://thesis.library.caltech.edu) repositories
++ [orcidtools](https://caltechlibrary.github.io/orcidtools), is a Go package and provides _orcid_, an ORCID harvesting tool, for v2.0 of the ORCID API
 
 ### Golang packages
 
