@@ -25,7 +25,6 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
 + [tmplfn](https://github.com/caltechlibrary/tmplfn), a package for standardizing template functions across Go template projects
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
-+ [tok](https://github.com/caltechlibrary/tok), a simple tokenization library
 + [rss2](https://github.com/caltechlibrary/rss2), a package that can be used to work with RSS2 content
 
 ## PHP Libraries
@@ -33,12 +32,6 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [safer-php](https://github.com/caltechlibrary/safer-php), a little library for vetting input values in PHP based on pseudo types
 + [ep-php](https://github.com/caltechlibrary/ep-php), an EPrint 3.3 REST API library for easily retrieval of XML or JSON EPrint records based on EPrint ID
 + [eprintsDepositHelper](https://github.com/caltechlibrary/eprintsDepositHelper) a fork of https://github.com/davidfkane/eprintsDepositHelper
-
-### Shell scripts
-
-+ [install-golang](https://github.com/caltechlibrary/install-golang), install Go 1.4.3 and Go 1.8 in your home directory on Linux/Windows and Raspberry Pi
-    + If you're using Mac OS X Sierra just download and install the pre-compiled version from https://golang.org/dl/
-+ [ASpace shell scripts](https://github.com/caltechlibrary/aspace-shell-scripts)
 
 ### Virtual machines and containers
 
@@ -48,5 +41,4 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
     + [setup-vireo.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-vireo.sh), setup Vireo ETD 3
     + [setup-archivesspace.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-archivesspace.sh), setup ArchivesSpace 1.4.2
     + [setup-eprints.sh](https://raw.githubusercontent.com/caltechlibrary/test-vm/master/setup-eprints.sh), setup EPrints 3.3.15
-
 
