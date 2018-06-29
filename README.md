@@ -13,6 +13,7 @@ This sandbox contains experimental projects.
 + [caltechdata_read](https://github.com/caltechlibrary/caltechdata_read), extract data from CaltechDATA repository 
 + [caltechdata_plot](https://github.com/caltechlibrary/caltechdata_plot),
 display a plot of data hosted in the CaltechDATA repository. Demo at [plots.caltechlibrary.org](plots.caltechlibrary.org) 
++ [namaste](https://caltechlibrary.github.io/namaste) an "Name as text" implementation in Go support local disc, S3 and Google Cloud Storage
 
 ### Harvesters and systems integration 
 
