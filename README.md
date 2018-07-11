@@ -20,7 +20,8 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools, ArchivesSpace harvesting tool for repository, accessions and agent objects
 + [eprinttools](https://caltechlibrary.github.io/eprinttools), ep is a Go package and provides _ep_ a tool to harvest EPrints via EPrint REST API supporting our [CaltechAUTHORS](http://authors.library.caltech.edu) and [CaltechTHESIS](http://thesis.library.caltech.edu) repositories
 + [orcidtools](https://caltechlibrary.github.io/orcidtools), is a Go package and provides _orcid_, an ORCID harvesting tool, for v2.0 of the [ORCID API](https://orcid.org/organizations/integrators/API)
-+ [crossrefapi](https://caltechlibrary.github.io/crossrefapi), is a Go package for working politely with the [CrossRef API](https://api.crossref.org).
++ [crossrefapi](https://caltechlibrary.github.io/crossrefapi), is a Go package for working politely with the public [CrossRef API](https://api.crossref.org). A command line tool returning JSON is also included in this repository.
++ [dataciteapi](https://caltechlibrary.github.io/dataciteapi), is a Go package for working with the public [DataCite API](https://api.datacite.org). A command line tool returning JSON is also included in this repository.
 
 ### Golang packages
 
