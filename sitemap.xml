@@ -8,14 +8,80 @@
     </url>
 
     <url>
-        <loc>http://caltechlibrary.github.io/bibtext/</loc>
-        <lastmod>2016-07-12</lastmod>
+        <loc>http://caltechlibrary.github.io/dataset/</loc>
+        <lastmod>2018-08-28</lastmod>
         <changefreq>monthly</changefreq>
     </url>
 
     <url>
-        <loc>http://caltechlibrary.github.io/md2slides/</loc>
-        <lastmod>2016-07-08</lastmod>
+        <loc>http://caltechlibrary.github.io/datatools/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/mkpage/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/caltechdata_read/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/caltechdata_plot/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/namaste/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/cait/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/eprinttools/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/orcidtools/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/crossrefapi/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/dataciteapi/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/cli/</loc>
+        <lastmod>2018-08-28</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>http://caltechlibrary.github.io/bibtex/</loc>
+        <lastmod>2018-08-28</lastmod>
         <changefreq>monthly</changefreq>
     </url>
 
