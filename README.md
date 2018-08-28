@@ -14,6 +14,7 @@ This sandbox contains experimental projects.
 + [caltechdata_plot](https://github.com/caltechlibrary/caltechdata_plot),
 display a plot of data hosted in the CaltechDATA repository. Demo at [plots.caltechlibrary.org](plots.caltechlibrary.org) 
 + [namaste](https://caltechlibrary.github.io/namaste) an "Name as text" implementation in Go support local disc, S3 and Google Cloud Storage
++ [cli](https://caltechlibrary.github.io/cli) provides two tools [cligenerate](https://caltechlibrary.github.io/cli/docs/cligenerate.html) and [pkgassets](https://caltechlibrary.github.io/cli/docs/pkgassets.html) for building better command line user interfaces
 
 ### Harvesters and systems integration 
 
@@ -31,7 +32,7 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 
 + [bibtex](https://github.com/caltechlibrary/bibtex), a package for working with BibTeX content
 + [tmplfn](https://github.com/caltechlibrary/tmplfn), a package for standardizing template functions across Go template projects
-+ [cli](https://github.com/caltechlibrary/cli), a package for standardizing common cli options across Go based projects
++ [cli](https://github.com/caltechlibrary/cli), a package for standardizing command line user interfaces across Go based projects
 + [rss2](https://github.com/caltechlibrary/rss2), a package that can be used to work with RSS2 content
 
 ## PHP Libraries
