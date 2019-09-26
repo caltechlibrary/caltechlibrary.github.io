@@ -6,7 +6,7 @@ This sandbox contains experimental projects.
 ### Web applications and command line tools
 
 + [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
-    + [py_dataset](https://caltechlibrary.github.io/py_dataset), a Python library for working with dataset collections.
+    + [py_dataset](https://github.com/caltechlibrary/py_dataset), a Python library for working with dataset collections.
 + [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data. Included are misc. command line utilities, useful in Bash scripts
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
