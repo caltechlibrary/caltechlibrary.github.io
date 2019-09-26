@@ -6,6 +6,7 @@ This sandbox contains experimental projects.
 ### Web applications and command line tools
 
 + [dataset](https://caltechlibrary.github.io/dataset), a Go package and command line tool for storing JSON documents in collections and buckets
+    + [py_dataset](https://caltechlibrary.github.io/py_dataset), a Python library for working with dataset collections.
 + [datatools](https://caltechlibrary.github.io/datatools), command line utilities for working with JSON, Excel Workbook and CSV data. Included are misc. command line utilities, useful in Bash scripts
 + [bibtex](https://caltechlibrary.github.io/bibtex), BibTeX package and command line tools
     + [web version](https://caltechlibrary.github.io/bibtex/webapp) of tools
@@ -18,7 +19,6 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 
 ### Harvesters and systems integration 
 
-+ [cait](https://caltechlibrary.github.io/cait), Caltech Archives Integration Tools, ArchivesSpace harvesting tool for repository, accessions and agent objects
 + [eprinttools](https://caltechlibrary.github.io/eprinttools), is a Go package for working with EPrints API and EPrints XML
     + _ep_, a tool to harvest EPrints via EPrint REST API design specifically to work with [CaltechAUTHORS](http://authors.library.caltech.edu) and [CaltechTHESIS](http://thesis.library.caltech.edu)
     + _eputil_, a tool to harvest EPrints via EPrints REST API returning JSON output
