@@ -39,7 +39,7 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 
 ## JavaScript libraries
 
-+ [cl-js](https://github.com/caltechlibrary/cl-js/), a JavaScript library for working with Caltech Library resources and materials
++ [cl-js](https://caltechlibrary.github.io/cl-js/), a JavaScript library for working with Caltech Library resources and materials
 
 ## PHP Libraries
 
