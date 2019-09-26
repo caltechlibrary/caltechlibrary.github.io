@@ -37,6 +37,10 @@ display a plot of data hosted in the CaltechDATA repository. Demo at [plots.calt
 + [cli](https://github.com/caltechlibrary/cli), a package for standardizing command line user interfaces across Go based projects
 + [rss2](https://github.com/caltechlibrary/rss2), a package that can be used to work with RSS2 content
 
+## JavaScript libraries
+
++ [cl-js](https://github.com/caltechlibrary/cl-js/), a JavaScript library for working with Caltech Library resources and materials
+
 ## PHP Libraries
 
 + [safer-php](https://github.com/caltechlibrary/safer-php), a little library for vetting input values in PHP based on pseudo types
