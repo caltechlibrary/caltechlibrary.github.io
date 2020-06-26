@@ -28,5 +28,5 @@ website:
 publish:
 	./mk_website.py
 	git commit -am "Publishing website"
-	git push origin master
+	git push origin main
 
