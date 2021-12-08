@@ -3,7 +3,7 @@
 
 This sandbox contains experimental projects. It reflects some of the
 work of the digital library development groups' developers and staff.
-The majority of these projects are hosted at [GitHub](https://github.com/caltechlibrary") and available under [Open Sources](https://en.wikipedia.org/wiki/Open_source) licenses.
+The majority of these projects are hosted at [GitHub](https://github.com/caltechlibrary") and available under [Open Source](https://en.wikipedia.org/wiki/Open_source) licenses.
 
 <!-- ## Articles and Musings -->
 
