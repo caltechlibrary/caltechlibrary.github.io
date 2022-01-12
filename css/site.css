@@ -62,7 +62,8 @@ header a, header a:link, header a:visited, header a:active, header a:hover, head
 
 
 a, a:link, a:visited {
-     color: #76777B;
+     /* color: #76777B; */
+     color: #76776B;
      background-color: inherit;
      text-decoration: none;
 }
@@ -81,7 +82,8 @@ nav {
      font-size: 0.78em;
      vertical-align: middle;
      color: black;
-     background-color: #AAA99F; /* #76777B;*/
+     /* background-color: #AAA99F; /* #76777B;*/
+     background-color: black;
      text-align: left;
 }
 
@@ -99,7 +101,7 @@ nav a, nav a:link, nav a:visited, nav a:active {
 }
 
 nav a:hover, nav a:focus {
-     color: #FF6E1E;
+     color: #FF6E1E; 
      background-color: inherit;
      text-decoration: none;
 }
@@ -218,7 +220,8 @@ footer {
      width: 100%;
      height: 2em;
      color: white;
-     background-color: #616265;
+     /* background-color: #616265; */
+     background-color: black; */
 
      font-size: 80%;
      text-align: left;
