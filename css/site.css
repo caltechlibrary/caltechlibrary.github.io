@@ -5,10 +5,10 @@
  *
  * Secondary pallet:
  *
- * lightgrey: #C8C8C8
- * grey: #76777B
- * darkgrey: #616265
  * slategrey: #AAA99F
+ * lightgrey: #C8C8C8
+ * grey: #76776B
+ * darkgrey: #616265
  *
  * Impact Pallete see: http://identity.caltech.edu/web/colors
  */
@@ -27,7 +27,7 @@ body {
 header {
      position: relative;
      display: block;
-     color: white;
+     color: black;
      background-color: white;
      z-index: 2;
      height: 105px;
@@ -82,8 +82,7 @@ nav {
      font-size: 0.78em;
      vertical-align: middle;
      color: black;
-     /* background-color: #AAA99F; /* #76777B;*/
-     background-color: black;
+     background-color: #76776B;
      text-align: left;
 }
 
@@ -213,6 +212,12 @@ aside ul > ul {
      font-size: 0.72em;
 }
 
+/*
+ * darkgrey: #616265
+ * lightgrey: #C8C8C8
+ * slategrey: #AAA99F
+ * grey: #76777B
+ */
 footer {
      position: fixed;
      bottom: 0;
@@ -221,7 +226,7 @@ footer {
      height: 2em;
      color: white;
      /* background-color: #616265; */
-     background-color: black; */
+     background-color: #333333; 
 
      font-size: 80%;
      text-align: left;
