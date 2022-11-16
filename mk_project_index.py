@@ -8,6 +8,8 @@ import logging as log
 
 log.basicConfig(encoding='utf-8', level=log.INFO)
 
+request_delay = 10
+
 version = 'v0.0.0'
 
 def usage(app_name):
@@ -92,9 +94,9 @@ def mk_project_index(org_name, url_prefix, out_name):
                 else:
                     log.debug(f'Skipping {repo_name}')
             page_no += 1
-            log.debug(f'Waiting next page ({page_no}) in 5 seconds')
-            # Wait 5 seconds before next request, rate limit is one a second
-            time.sleep(5)
+            log.debug(f'Waiting next page ({page_no}) in {request_delay} seconds')
+            # Wait `request_delay` seconds before next request, rate limit is one a second
+            time.sleep(request_delay)
             continue_requests = True
             log.debug('Continuing to next page request now')
         else:
