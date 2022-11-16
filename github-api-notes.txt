@@ -1,0 +1,42 @@
+
+List public repos
+: https://docs.github.com/en/rest/repos/repos#list-public-repositories
+
+Example, list the repositories for Caltech Library
+
+```
+curl https://api.github.com/orgs/caltechlibrary/repos
+```
+
+Generate GitHub access token
+: https://docs.github.com/en/rest/quickstart?tool=curl
+
+The following excerpt shows a session demonstrating this option.
+
+> curl -X GET -u rsdoiel https://api.github.com/user/rsdoiel
+
+Enter host password for user 'rsdoiel':
+
+This option soon becomes tiresome, especially if you have a password
+with high entropy. To mitigate the burden one could create environment
+variables and use them instead.
+
+For example, if you create the following environment variables
+
+export GITHUB_USER=dvberkel
+export GITHUB_PASSWORD=abcd1234
+
+A request could be made with the command
+
+curl -X GET -u $GITHUB_USER:$GITHUB_PASSWORD https://api.github.com/user
+
+
+
+GitHub Pages
+: https://docs.github.com/en/rest/pages
+
+Example list pages for datatools
+
+```
+curl  https://api.github.com/repos/caltechlibrary/datatools/pages
+```
