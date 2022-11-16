@@ -1,14 +1,17 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 import sys
 import os
 import requests
 import time
+import logging as log
+
+log.basicConfig(encoding='utf-8', level=log.INFO)
 
 version = 'v0.0.0'
 
 def usage(app_name):
-    return f'''% {app_name}(1) user manual
+    page = f'''% {app_name}(1) user manual
 % R. S. Doiel
 % 2022-11-16
 
@@ -42,16 +45,18 @@ you're trying to build the index for.
 
 Generate a markdown index page for "caltechlibrary" organization.
 
-```
+~~~
     {app_name} caltechlibrary
-```
+~~~
 
 # REFERENCE LINKS
 
 - [GitHub Public Repositories](https://docs.github.com/en/rest/repos/repos#list-public-repositories)
 - [GitHub Pages API](https://docs.github.com/en/rest/pages)
 
-'''
+'''  
+    return page
+
 
 def mk_project_index(org_name, url_prefix, out_name):
     app_name = os.path.basename(sys.argv[0])
@@ -61,31 +66,39 @@ def mk_project_index(org_name, url_prefix, out_name):
         return  'missing url prefix'
     if out_name == '':
         return 'missing output filename'
+    log.info(f'Checking {org_name} using url prefix {url_prefix}, output to {out_name}')
     page_no = 1
     projects = []
-    ok = True
+    continue_requests = True
     u = f'https://api.github.com/orgs/{org_name}/repos'
     headers = { 'Content-Type': 'application/json', 'User-Agent': 'requests' }
-    while ok:
+    while continue_requests:
+        continue_requests = False
         params = { 'type': 'public', 'sort': 'full_name', 'page': page_no }
+        log.info(f'Request {u} {params}')
         resp = requests.get(u, params = params, headers = headers)
         if resp.status_code == requests.codes.ok:
             try:
                 data = resp.json()
             except err:
-                return '', err
-            if ("has_pages" in data) and data["has_pages"]:
+                log.error(f'Request {u} {params} -> {err}')
+                return err
+            #log.debug(f'{data}')
+            for repo in data:
                 repo_name = repo['name']
-                print(f'DEBUG inspecting data for {repo_name}', file =sys.stderr)
-                if not repo_name.startswith(url_prefix.lstrip('https://')):
-                    print(f'DEBUG {repo_name} has pages', file=sys.stderr)
+                if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
+                    log.info(f'Including {repo_name}')
                     projects.append(repo_name)
+                else:
+                    log.debug(f'Skipping {repo_name}')
             page_no += 1
+            log.debug(f'Waiting next page ({page_no}) in 5 seconds')
             # Wait 5 seconds before next request, rate limit is one a second
             time.sleep(5)
+            continue_requests = True
+            log.debug('Continuing to next page request now')
         else:
-            print(f'{resp.status_code} -> reason {resp.reason}')
-            ok = False
+            log.warning(f'{resp.status_code} -> reason {resp.reason}')
 
     if len(projects) > 0:
         projects.sort()
