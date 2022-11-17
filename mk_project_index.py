@@ -8,7 +8,7 @@ import logging as log
 
 log.basicConfig(encoding='utf-8', level=log.INFO)
 
-request_delay = 10
+request_delay = 15
 
 version = 'v0.0.0'
 
@@ -75,7 +75,6 @@ def mk_project_index(org_name, url_prefix, out_name):
     u = f'https://api.github.com/orgs/{org_name}/repos'
     headers = { 'Content-Type': 'application/json', 'User-Agent': 'requests' }
     while continue_requests:
-        continue_requests = False
         params = { 'type': 'public', 'sort': 'full_name', 'page': page_no }
         log.info(f'Request {u} {params}')
         resp = requests.get(u, params = params, headers = headers)
@@ -85,20 +84,23 @@ def mk_project_index(org_name, url_prefix, out_name):
             except err:
                 log.error(f'Request {u} {params} -> {err}')
                 return err
-            #log.debug(f'{data}')
-            for repo in data:
-                repo_name = repo['name']
-                if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
-                    log.info(f'Including {repo_name}')
-                    projects.append(repo_name)
-                else:
-                    log.debug(f'Skipping {repo_name}')
-            page_no += 1
-            log.debug(f'Waiting next page ({page_no}) in {request_delay} seconds')
-            # Wait `request_delay` seconds before next request, rate limit is one a second
-            time.sleep(request_delay)
-            continue_requests = True
-            log.debug('Continuing to next page request now')
+            # NOTE: if we have a zero length array return then we done paging through results.
+            if len(data) > 0:
+                for repo in data:
+                    repo_name = repo['name']
+                    if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
+                        log.info(f'Including {repo_name}')
+                        projects.append(repo_name)
+                    else:
+                        log.debug(f'Skipping {repo_name}')
+                page_no += 1
+                log.info(f'Waiting {request_delay} seconds before requesting next page {page_no} of results')
+                # Wait `request_delay` seconds before next request, rate limit is one a second
+                time.sleep(request_delay)
+                log.debug('Continuing to next page request now')
+            else:
+                continue_requests = False 
+
         else:
             log.warning(f'{resp.status_code} -> reason {resp.reason}')
 
