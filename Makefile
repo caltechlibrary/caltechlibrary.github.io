@@ -6,6 +6,7 @@
 BRANCH = $(shell git branch | grep -E "\* " | cut -d\   -f 2)
 
 build: *.md page.tmpl
+	./mk_project_index.py caltechlibrary project_index.md
 	./mk_website.py
 
 clean:

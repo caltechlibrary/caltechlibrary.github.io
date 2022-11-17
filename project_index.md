@@ -1,6 +1,6 @@
 
-Projects
-========
+Project Documentation Index
+===========================
 
 
 - [2017-04-26-caltech](./2017-04-26-caltech/)
