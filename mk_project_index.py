@@ -107,8 +107,8 @@ def mk_project_index(org_name, url_prefix, out_name):
     if len(projects) > 0:
         projects.sort()
         page = ['''
-Projects
-========
+Project Documentation Index
+===========================
 
 ''']
         for repo_name in projects:
