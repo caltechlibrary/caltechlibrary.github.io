@@ -91,5 +91,6 @@ Project Documentation Index
 - [spreadsheet-humanities-lesson](./spreadsheet-humanities-lesson/)
 - [students-in-the-1960s](./students-in-the-1960s/)
 - [unified-search-box](./unified-search-box/)
+- [waystation](./waystation/)
 - [workshop-template](./workshop-template/)
 - [ws](./ws/)
