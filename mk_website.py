@@ -58,7 +58,8 @@ def frontmatter(input_filename):
         if err != '':
             print(f"{' '.join(cmd[0:3])} error: {err}")
         out = proc.stdout.read().strip().decode('utf-8')
-        if (out.startswith("{") and out.endswith("}")) or (out.startswith("[") and out.endswith("]")):
+        if (out.startswith("{") and out.endswith("}")) or 
+(out.startswith("[") and out.endswith("]")):
             try:
                 result = json.loads(out.encode('utf-8'))
             except Exception as e:
@@ -66,7 +67,8 @@ def frontmatter(input_filename):
                 sys.exit(1)
             return result
         elif out != "":
-            print(f"WARNING: Front matter isn't JSON for {input_filename}, {out}")
+            print(f"WARNING: Front matter isn't JSON for {input_filename}, 
+{out}")
     return {}
 
 #
@@ -152,3 +154,4 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv)
+

@@ -14,14 +14,18 @@ and a little Go.
 + [AMES](https://github.com/caltechlibrary/ames), Automated Metadata Service
 + [CaltechDATA API](https://github.com/caltechlibrary/caltechdata_api), Python library for using the CaltechDATA API
 + [Handprint](https://github.com/caltechlibrary/handprint), Apply different text recognition services to images of handwritten documents
-+ [Py Dataset](https://github.com/caltechlibrary/py_dataset), A Python library for working with dataset collections
-
++ [DIBS](https://github.com/caltechlibrary/DIBS), an implementation of a basic controlled digital lending (CDL) system using IIIF to make scanned books available for time-limited viewing.
 
 ## Golang
 
 + [dataset](https://caltechlibrary.github.io/dataset), dataset is a command line tool, Go package and C-shared library for working with JSON objects as collections
 + [datatools](https://caltechlibrary.github.io/datatools), a set of command line tools for working with various data formats
-+ [mkpage](https://github.com/caltechlibrary/mkpage), a Pandoc front end for building documentation and websites
-+ [namaste](https://caltechlibrary.github.io/namaste) an "Name as text" implementation in Go
-+ [cli](https://caltechlibrary.github.io/cli) provides two tools [cligenerate](https://caltechlibrary.github.io/cli/docs/cligenerate.html) and [pkgassets](https://caltechlibrary.github.io/cli/docs/pkgassets.html) for building better command line user interfaces
+- [irdmtools](https://caltechlibrary.github.io/irdmtools), a set of command line tools and web services for working with our repository systems[1]
+
+## Pandoc
+
+- [Codemeta Pandoc examples](https://caltechlibrary.github.io/codemeta-pandoc-examples)
+
+
+[1]: Caltech Library currently uses both EPrints and Invenio RDM repository systems
 
