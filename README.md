@@ -7,6 +7,10 @@ The majority of these projects are hosted at [GitHub](https://github.com/caltech
 
 <!-- ## Articles and Musings -->
 
+## Articles
+
+- [Codemeta and Pandoc Examples](codemeta-pandoc-examples)
+
 ## Projects, Tools and Languages
 
 + [Web tools and command-line](web-and-cli-tools.html)
