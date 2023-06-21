@@ -6,7 +6,7 @@ This sandbox contains experimental projects. It reflects some of the work of the
 
 ## Examples and Presentations
 
-- [Newt, an experiment in scaling small](https://caltechlibrary.github.io/newt/presentation)
+- [Newt, assemble web applications with Pandoc, Postgres and PostgREST](https://caltechlibrary.github.io/newt/presentation), July 2023
 - [Codemeta and Pandoc Examples](codemeta-pandoc-examples)
 - [Command Line for Librarians](https://caltechlibrary.github.io/command-line-for-librarians/) at [MMWCon 2016](https://mmwcon.org/sessions/21)
 - [Building software at the edges of heterogeneous repositories](https://caltechlibrary.github.io/or2018-building-at-the-edges/) at [Open Repositories 2018](http://www.or2018.net/)
