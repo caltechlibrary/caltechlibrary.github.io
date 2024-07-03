@@ -1,9 +1,7 @@
 
 # Languages and Tooling
 
-Below are some of the projects we'd like to highlight. We develop
-software in a variety of languages mostly Python, JavaScript,
-and a little Go.
+Below are some of the projects we'd like to highlight. We develop software in a variety of languages mostly Python, JavaScript/TypeScript, and a little Go.
 
 ## TypeScript
 

@@ -17,7 +17,7 @@ This sandbox contains experimental projects. It reflects some of the work of the
 
 - [Web tools and command-line](web-and-cli-tools.md)
 - [Harvesters and Systems integration](harvesters-and-system-integration.md)
-- [JavaScript and Go projects](languages-and-tooling.md)
+- [JavaScript/TypeScript and Go projects](languages-and-tooling.md)
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
 - [Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 - [Installable with curl](installers.md "Some of our command line software can be installed using curl")
