@@ -20,6 +20,6 @@ This sandbox contains experimental projects. It reflects some of the work of the
 - [JavaScript/TypeScript and Go projects](languages-and-tooling.md)
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
 - [Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
-- [Installable with curl](installers.md "Some of our command line software can be installed using curl")
+- [Easy installs for Linux, macOS and Windows](installers.md "Easy install instructions for Linux, macOS and Windows for our Go based tools")
 
 
