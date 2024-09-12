@@ -1,10 +1,18 @@
 
 # Installers
 
-The following software can be installed for Linux and macOS via curl in your terminal or shell. E.g.
+Our Golang software can be installed on Linux and macOS using curl and on Windows using Powershell, irm and iex. 
+
+Here's an example of installing datatools on Linux or macOS.
 
 ~~~shell
 curl https://caltechlibrary.github.io/datatools/installer.sh | sh
+~~~
+
+Here's an example for installing on Windows.
+
+~~~pwsh
+irm https://caltechlibrary.github.io/datatools/installer.ps1 | iex
 ~~~
 
 If you have problems with the installer you should report the issue to the respective issure tracker for the repositories.
