@@ -1,15 +1,16 @@
 
 # Installers
 
-Our Golang software can be installed on Linux and macOS using curl and on Windows using Powershell, irm and iex. 
+Most of our Golang software can be installed easily on Linux, macOS and Windows from the command line. For macOS and Linux you open a "terminal" and use the curl command. For Windows you open a Powershell and use it's commands to perform a similar role. Here's an example of the commands for [datatools](https://github.com/caltechlibrary/datatools).
 
-Here's an example of installing datatools on Linux or macOS.
+Installing datatools on Linux or macOS using first open the Terminal application so you can execute comand line programs. Then use curl to install datatools.
 
 ~~~shell
 curl https://caltechlibrary.github.io/datatools/installer.sh | sh
 ~~~
 
-Here's an example for installing on Windows.
+On Windows you open Powershell either directly or via Window's Terminal application. Then use the Powershell commands `irm` and `iex` to retrieve
+and execute the Powershell install script.
 
 ~~~pwsh
 irm https://caltechlibrary.github.io/datatools/installer.ps1 | iex
@@ -17,7 +18,7 @@ irm https://caltechlibrary.github.io/datatools/installer.ps1 | iex
 
 If you have problems with the installer you should report the issue to the respective issure tracker for the repositories.
 
-Repository                                                         Linux and macOS using curl
+Repository                                                         Install for Linux and macOS using curl
 ----------------------------------------------------------------   -------------------------------------------------------------------
 [datatools](https://github.com/caltechlibrary/datatools/issues)    `curl https://caltechlibrary.github.io/datatools/installer.sh | sh`
 [dataset](https://github.com/caltechlibrary/dataset/issues)        `curl https://caltechlibrary.github.io/dataset/installer.sh | sh`
@@ -26,7 +27,7 @@ Repository                                                         Linux and mac
 [newt](https://github.com/caltechlibrary/newt/issues)              `curl https://caltechlibrary.github.io/newt/installer.sh | sh`
 
 
-Repository                                                         Windows using Powershell, irm and iex
+Repository                                                         Install for Windows using Powershell, irm and iex
 ----------------------------------------------------------------   -------------------------------------------------------------------
 [datatools](https://github.com/caltechlibrary/datatools/issues)    `irm https://caltechlibrary.github.io/datatools/installer.ps1 | iex` 
 [dataset](https://github.com/caltechlibrary/dataset/issues)        `irm https://caltechlibrary.github.io/dataset/installer.ps1 | iex`   
