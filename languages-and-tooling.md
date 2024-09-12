@@ -6,7 +6,7 @@ Below are some of the projects we'd like to highlight. We develop software in a 
 ## TypeScript
 
 - [ts_dataset](https://caltechlibrary.github.io/ts_dataset), a TypeScript module for working with datasetd via Deno
-- [cold](https://caltechlibrary.github.io/cold) and [cold_admin](https://caltechlibrary.github.io/cold_admin), Controlled Object Lists and Datum.
+- [cold](https://github.com/caltechlibrary/cold) and [cold_admin](https://github.com/caltechlibrary/cold_admin), Controlled Object Lists and Datum.
 
 ## JavaScript
 
