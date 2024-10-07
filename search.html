@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Caltech Library's Digital Library Development Sandbox</title>
+    <link rel="stylesheet" href="https://caltechlibrary.github.io/css/site.css">
+</head>
+<body>
+<header>
+<a href="http://library.caltech.edu"><img src="assets/liblogo.gif" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+  <li><a href="/">DLD Sandox</a></li>
+  <li><a href="https://library.caltech.edu/library/home">Caltech Library</a></li>
+  <li><a href="https://library.caltech.edu/archives/home">Caltech Archives</a></li>
+  <li><a href="https://feeds.library.caltech.edu">Library Feeds</a></li>
+  <li><a href="https://github.com/caltechlibrary/">DLD @ GitHub</a></li>
+</ul>
+</nav>
+
+<section>
+<h1 id="search">Search</h1>
+<p>This is an experimental search of select Caltech Library
+Projects.</p>
+<p><link href="/pagefind/pagefind-ui.css" rel="stylesheet"></p>
+<script src="/pagefind/pagefind-ui.js"></script>
+<p>
+<div id="search">
+
+</div>
+<p>
+<script>
+new PagefindUI({
+    element: "#search",
+    mergeIndex: [{
+        bundlePath: "https://caltechlibrary.github.io/pagefind",
+        bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
+        bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
+        bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
+        bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind"
+    }]
+})
+</script>
+</section>
+
+<footer>
+<span><h1><A href="http://caltech.edu">Caltech</a></h1></span>
+<span>&copy; 2024 <a href="https://www.library.caltech.edu/copyright">Caltech library</a></span>
+<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address> 
+<span>Phone: <a href="tel:+1-626-395-3405">(626)395-3405</a></span>
+<span><a href="mailto:library@caltech.edu">Email Us</a></span>
+<a class="cl-hide" href="sitemap.xml">Site Map</a>
+</footer>
+</body>
+</html>

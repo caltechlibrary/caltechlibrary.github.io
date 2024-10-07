@@ -22,4 +22,7 @@ This sandbox contains experimental projects. It reflects some of the work of the
 - [Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 - [Easy installs for Linux, macOS and Windows](installers.md "Easy install instructions for Linux, macOS and Windows for our Go based tools")
 
+## Finding things
+
+- [Search Selected Projects](search.md)
 
