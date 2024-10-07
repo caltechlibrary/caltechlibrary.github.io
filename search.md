@@ -1,7 +1,6 @@
 
 # Search
 
-This is an experimental search of select Caltech Library Projects.
 
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 
@@ -25,3 +24,5 @@ new PagefindUI({
     }]
 })
 </script>
+
+This is an experimental search of select Caltech Library GitHub Projects sites.
