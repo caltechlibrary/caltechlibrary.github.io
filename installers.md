@@ -25,7 +25,7 @@ Repository                                                         Install for L
 [irdmtools](https://github.com/caltechlibrary/irdmtools/issues)    `curl https://caltechlibrary.github.io/irdmtools/installer.sh | sh`
 [mkpage](https://github.com/caltechlibrary/mkpage/issues)          `curl https://caltechlibrary.github.io/mkpage/installer.sh | sh`
 [newt](https://github.com/caltechlibrary/newt/issues)              `curl https://caltechlibrary.github.io/newt/installer.sh | sh`
-
+[cold](https://github.com/caltechlibrary/cold/issues)              `curl htpps://caltechlibrary.github.io/cold/installer.sh | sh`
 
 Repository                                                         Install for Windows using Powershell, irm and iex
 ----------------------------------------------------------------   -------------------------------------------------------------------
@@ -34,4 +34,5 @@ Repository                                                         Install for W
 [irdmtools](https://github.com/caltechlibrary/irdmtools/issues)    `irm https://caltechlibrary.github.io/irdmtools/installer.ps1 | iex`  
 [mkpage](https://github.com/caltechlibrary/mkpage/issues)          `irm https://caltechlibrary.github.io/mkpage/installer.ps1 | iex`   
 [newt](https://github.com/caltechlibrary/newt/issues)              `irm https://caltechlibrary.github.io/newt/installer.ps1 | iex`
+[cold](https://github.com/caltechlibrary/cold/issues)              `irm https://caltechlibrary.github.io/cold/installer.ps1 | iex`
 

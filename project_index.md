@@ -38,7 +38,7 @@ Project Documentation Index
 - [cli](./cli/)
 - [cloud-init-examples](./cloud-init-examples/)
 - [codemeta-pandoc-examples](./codemeta-pandoc-examples/)
-- [cold_admin](./cold_admin/)
+- [cold](./cold/)
 - [command-line-for-librarians](./command-line-for-librarians/)
 - [commencement-1965](./commencement-1965/)
 - [commencement-1986](./commencement-1986/)
