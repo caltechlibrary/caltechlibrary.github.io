@@ -73,7 +73,8 @@ def mk_project_index(org_name, url_prefix, out_name):
     page_no = 1
     projects = []
     continue_requests = True
-    stale_year = datetime.now().year - 4
+    current_year = datetime.now().year
+    stale_year = current_year - 4
     u = f'https://api.github.com/orgs/{org_name}/repos'
     headers = { 'Content-Type': 'application/json', 'User-Agent': 'requests', 'X-GitHub-Api-Version': '2022-11-28', 'Accept': 'application/vnd.github+json' }
     while continue_requests:
@@ -91,7 +92,7 @@ def mk_project_index(org_name, url_prefix, out_name):
                 for repo in data:
                     repo_name = repo['name']
                     if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
-                        if repo['pushed_at'] is not None and int(repo["pushed_at"][0:4]) <= stale_year:
+                        if repo['pushed_at'] is not None and int(repo["pushed_at"][0:4]) < stale_year:
                             log.debug(f'Skipping {repo_name}, project last active {repo["pushed_at"][0:4]}')
                         else:
                             log.info(f'Including {repo_name}')
@@ -111,9 +112,9 @@ def mk_project_index(org_name, url_prefix, out_name):
 
     if len(projects) > 0:
         projects.sort()
-        page = ['''
-GitHub Project Index
-====================
+        page = [f'''
+GitHub Projects {stale_year} through {current_year}
+===================================================
 
 ''']
         for repo_name in projects:
