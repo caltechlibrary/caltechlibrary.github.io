@@ -20,7 +20,7 @@ new PagefindUI({
         bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
         bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
         bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind"
+        bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind",
         bundlePath: "https://caltechlibrary.github.io/cold/pagefind"
     }]
 })
