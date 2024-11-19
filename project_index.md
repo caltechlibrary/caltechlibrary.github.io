@@ -1,6 +1,6 @@
 
-Project Documentation Index
-===========================
+GitHub Project Index
+====================
 
 
 - [2017-04-26-caltech](./2017-04-26-caltech/)
@@ -39,6 +39,7 @@ Project Documentation Index
 - [cloud-init-examples](./cloud-init-examples/)
 - [codemeta-pandoc-examples](./codemeta-pandoc-examples/)
 - [cold](./cold/)
+- [cold_admin](./cold_admin/)
 - [command-line-for-librarians](./command-line-for-librarians/)
 - [commencement-1965](./commencement-1965/)
 - [commencement-1986](./commencement-1986/)
@@ -106,7 +107,6 @@ Project Documentation Index
 - [spreadsheet-humanities-lesson](./spreadsheet-humanities-lesson/)
 - [students-in-the-1960s](./students-in-the-1960s/)
 - [template](./template/)
-- [template-test](./template-test/)
 - [ts_dataset](./ts_dataset/)
 - [unified-search-box](./unified-search-box/)
 - [waystation](./waystation/)

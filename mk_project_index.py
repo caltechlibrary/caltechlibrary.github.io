@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -107,8 +107,8 @@ def mk_project_index(org_name, url_prefix, out_name):
     if len(projects) > 0:
         projects.sort()
         page = ['''
-Project Documentation Index
-===========================
+GitHub Project Index
+====================
 
 ''']
         for repo_name in projects:
