@@ -96,7 +96,8 @@ def mk_project_index(org_name, url_prefix, out_name):
                             log.debug(f'Skipping {repo_name}, project last active {repo["pushed_at"][0:4]}')
                         else:
                             log.info(f'Including {repo_name}')
-                            projects.append(repo_name)
+                            description = repo['description'] if not None else ""
+                            projects.append({"name": repo_name, "description": description})
                     else:
                         log.debug(f'Skipping {repo_name}')
                 page_no += 1
@@ -109,16 +110,18 @@ def mk_project_index(org_name, url_prefix, out_name):
 
         else:
             log.warning(f'{resp.status_code} -> reason {resp.reason}')
+            sys.exit(1)
+            
 
     if len(projects) > 0:
-        projects.sort()
+        projects.sort(key=lambda x: x["name"])
         page = [f'''
 GitHub Projects {stale_year} through {current_year}
-===================================================
+===================================
 
 ''']
-        for repo_name in projects:
-            page.append(f'- [{repo_name}](./{repo_name}/)')
+        for repo in projects:
+            page.append(f'- [{repo["name"]}](./{repo["name"]}/) {repo["description"]}')
         with open(out_name, 'w') as f:
             f.write('\n'.join(page))
         return None
