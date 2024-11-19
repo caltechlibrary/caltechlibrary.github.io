@@ -18,6 +18,7 @@ new PagefindUI({
     mergeIndex: [{
         bundlePath: "https://caltechlibrary.github.io/pagefind",
         bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
+        bundlePath: "https://caltechlibrary.github.io/ts_dataset/pagefind",
         bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
         bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
         bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind",
