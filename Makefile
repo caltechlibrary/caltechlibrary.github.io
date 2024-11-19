@@ -28,7 +28,7 @@ website: .FORCE
 # We're not using publish.bash here because this website doesn't
 # require publication via gh-pages branch.
 publish: save
-	git commit -am "Publishing website"
+	-git commit -am "Publishing website"
 	git push origin main
 
 .FORCE:
