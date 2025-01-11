@@ -7,6 +7,7 @@ Below are some of the projects we'd like to highlight. We develop software in a 
 
 - [ts_dataset](https://caltechlibrary.github.io/ts_dataset), a TypeScript module for working with datasetd via Deno
 - [cold](https://github.com/caltechlibrary/cold), Controlled Object Lists and Datum.
+- [CMTools](https://github.com/caltechlibrary/CMTools), CodeMeta Tools for leveraging CodeMeta data in build processes
 
 ## JavaScript
 
