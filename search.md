@@ -15,17 +15,45 @@
 <script>
 new PagefindUI({
     element: "#search",
-    mergeIndex: [{
-        bundlePath: "https://caltechlibrary.github.io/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/ts_dataset/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/cold/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/CMTools/pagefind",
-        bundlePath: "https://caltechlibrary.github.io/metadatatools/pagefind"
-    }]
+    highlightParam: "highlight",
+    mergeIndex: [
+        {
+            bundlePath: "https://caltechlibrary.github.io/pagefind",
+            baseUrl: "/"
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
+            baseUrl: "/datatools/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/ts_dataset/pagefind",
+            baseUrl: "/ts_dataset/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
+            baseUrl: "/dataset/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
+            baseUrl: "/newt/",
+        },
+        { 
+            bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind",
+            baseUrl: "/irdmtools/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/cold/pagefind",
+            baseUrl: "/cold/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/CMTools/pagefind",
+            baseUrl: "/CMTools/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/metadatatools/pagefind",
+            baseUrl: "/metadatatools/",
+        }
+    ]
 })
 </script>
 
