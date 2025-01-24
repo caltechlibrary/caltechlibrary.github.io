@@ -9,4 +9,4 @@
 - [caltechdata_plot](https://github.com/caltechlibrary/caltechdata_plot),
 display a plot of data hosted in the CaltechDATA repository. Demo at [plots.caltechlibrary.org](plots.caltechlibrary.org) 
 - [irdmtools](https://caltechlibrary.github.io/irdmtools), a toolkit for institutional repositories and data management (e.g. Invenio RDM)
-
+- [metadatatools](https://caltechlibrary.github.io/metadatatools), a toolkit for working with common metadata

@@ -12,7 +12,6 @@ This sandbox contains experimental projects. It reflects some of the work of the
 - [Building software at the edges of heterogeneous repositories](https://caltechlibrary.github.io/or2018-building-at-the-edges/) at [Open Repositories 2018](http://www.or2018.net/)
 - [Experiments with PostgREST](https://caltechlibrary.github.io/newt/presentation), [SoCal Code4Lib Meetup](https://www.meetup.com/code4lib-socal/events/293314880/), 2023-07-14
 
-
 ## Projects, Tools and Languages
 
 - [Web tools and command-line](web-and-cli-tools.md)
