@@ -52,6 +52,10 @@ new PagefindUI({
         {
             bundlePath: "https://caltechlibrary.github.io/metadatatools/pagefind",
             baseUrl: "/metadatatools/",
+        },
+        {
+            bundlePath: "https://caltechlibrary.github.io/logagent/pagefind",
+            baseURL: "/logagent/",
         }
     ]
 })
