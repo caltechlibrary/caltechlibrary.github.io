@@ -6,6 +6,7 @@ This sandbox contains experimental projects. It reflects some of the work of the
 
 ## Examples and Presentations
 
+-  [COLD, curating objects with SQLite3, Deno and Dataset](https://caltechlibrary.github.io/cold/presentations/presentation1.html), SoCal Code4Lib Meetup at Caltech, 2024-11-15
 - A Multipass [OpenSearch Machine](https://caltechlibrary.github.io/opensearch-machine), 2024-03-13
 - [Codemeta and Pandoc Examples](codemeta-pandoc-examples)
 - [Command Line for Librarians](https://caltechlibrary.github.io/command-line-for-librarians/) at [MMWCon 2016](https://mmwcon.org/sessions/21)
