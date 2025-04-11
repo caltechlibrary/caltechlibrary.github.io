@@ -27,4 +27,4 @@ This sandbox contains experimental projects. It reflects some of the work of the
 ## Finding things
 
 - [Search Selected Projects](search.md)
-
+- [RSS](rss.xml)
