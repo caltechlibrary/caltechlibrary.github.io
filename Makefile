@@ -5,7 +5,7 @@
 
 BRANCH = $(shell git branch | grep -E "\* " | cut -d\   -f 2)
 
-build: website 
+build: project_index website
 
 project_index: .FORCE
 	./mk_project_index.py caltechlibrary project_index.md

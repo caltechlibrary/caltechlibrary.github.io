@@ -21,12 +21,13 @@ $(HTML_PAGES): $(MD_PAGES) .FORCE
 	@if [ $@ = "README.html" ]; then mv README.html index.html; fi
 
 rss.xml: .FORCE
-	  pttk rss --atom-link="https://caltechlibrary.github.io/rss.xml" \
-                      -base-url="http://caltechlibrary.github.io" \
-                      -channel-title="Caltech Library, Digital Library Development" \
-                      -channel-description="A sandbox of development" \
-                      -channel-link="https://caltechlibrary.github.io" \
-            posts >rss.xml
+	pttk rss --atom-link="https://caltechlibrary.github.io/rss.xml" \
+		-base-url="http://caltechlibrary.github.io" \
+		-channel-title="Digital Library Development Sandbox" \
+		-channel-description="Caltech Library's sandbox for software development" \
+		-channel-link="https://caltechlibrary.github.io" \
+		posts >rss.xml
+	git add rss.xml
 
 pagefind: .FORCE
 	pagefind --verbose --exclude-selectors="nav,header,footer" --site .

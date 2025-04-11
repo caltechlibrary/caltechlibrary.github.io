@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <title>Caltech Library, Digital Library Development</title>
+        <title>Digital Library Development Sandbox</title>
         <link>http://caltechlibrary.github.io</link>
-        <description>A sandbox of development</description>
+        <description>Caltech Library&#39;s sandbox for software development</description>
         <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
         <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate>
         <generator>pttk rss 0.0.19</generator>
