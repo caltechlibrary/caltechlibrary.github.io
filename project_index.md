@@ -1,80 +1,84 @@
 
-GitHub Projects 2020 through 2024
-==================================
+GitHub Projects 2021 through 2025
+===================================
 
 
-- [2020-03-09-Python-Workshop](./2020-03-09-Python-Workshop/)
-- [2020-05-11-swc-online](./2020-05-11-swc-online/)
-- [2020-cpa-shell-git](./2020-cpa-shell-git/)
-- [OH-demo](./OH-demo/)
-- [OVRO-demo](./OVRO-demo/)
-- [R-Carpentry](./R-Carpentry/)
-- [RDMworkbook](./RDMworkbook/)
-- [admin-shell-scripts](./admin-shell-scripts/)
-- [air-sampling](./air-sampling/)
-- [april-fools-the-caltech-way](./april-fools-the-caltech-way/)
-- [archimedes-1](./archimedes-1/)
-- [archimedes-2](./archimedes-2/)
-- [archimedes-3](./archimedes-3/)
-- [archimedes-4](./archimedes-4/)
-- [baler](./baler/)
-- [bibtex](./bibtex/)
-- [boffo](./boffo/)
-- [cell-atlas](./cell-atlas/)
-- [centennial-rose-parade-float](./centennial-rose-parade-float/)
-- [cl-js](./cl-js/)
-- [cli](./cli/)
-- [cloud-init-examples](./cloud-init-examples/)
-- [codemeta-pandoc-examples](./codemeta-pandoc-examples/)
-- [cold](./cold/)
-- [commencement-1965](./commencement-1965/)
-- [commencement-1986](./commencement-1986/)
-- [crossrefapi](./crossrefapi/)
-- [dataciteapi](./dataciteapi/)
-- [dataset](./dataset/)
-- [datatools](./datatools/)
-- [dibs](./dibs/)
-- [ditch-day](./ditch-day/)
-- [documenting-earthquakes](./documenting-earthquakes/)
-- [ead2dc](./ead2dc/)
-- [einstein-1](./einstein-1/)
-- [einstein-2](./einstein-2/)
-- [einstein-3](./einstein-3/)
-- [einstein-4](./einstein-4/)
-- [eprinttools](./eprinttools/)
-- [first-nobel-road-to-stockholm](./first-nobel-road-to-stockholm/)
-- [foliage](./foliage/)
-- [geospatial-python](./geospatial-python/)
-- [git-workshop-workflows](./git-workshop-workflows/)
-- [glaser-1](./glaser-1/)
-- [glaser-2](./glaser-2/)
-- [glaser-3](./glaser-3/)
-- [handprint](./handprint/)
-- [iga](./iga/)
-- [irdm-queue-portal](./irdm-queue-portal/)
-- [irdmtools](./irdmtools/)
-- [libguine](./libguine/)
-- [mkpage](./mkpage/)
-- [models](./models/)
-- [mt-wilson-100](./mt-wilson-100/)
-- [namaste](./namaste/)
-- [newt](./newt/)
-- [nlp-intro](./nlp-intro/)
-- [nobel-physicists-a-long-history](./nobel-physicists-a-long-history/)
-- [opensearch-machine](./opensearch-machine/)
-- [orcidtools](./orcidtools/)
-- [ovro-130-foot-radio-telescope](./ovro-130-foot-radio-telescope/)
-- [pairtree](./pairtree/)
-- [pandoc_client](./pandoc_client/)
-- [popstar](./popstar/)
-- [py_dataset](./py_dataset/)
-- [rc](./rc/)
-- [rss2](./rss2/)
-- [shell-extras](./shell-extras/)
-- [simplified](./simplified/)
-- [something-about-harry](./something-about-harry/)
-- [students-in-the-1960s](./students-in-the-1960s/)
-- [template](./template/)
-- [ts_dataset](./ts_dataset/)
-- [waystation](./waystation/)
-- [wsfn](./wsfn/)
+- [CL-web-components](./CL-web-components/) This is a collection of web components used in Caltech Library web applications.
+- [CMTools](./CMTools/) Project build tools leveraging CodeMeta JSON file.
+- [OH-demo](./OH-demo/) Initial exploration of Oral Histories in markdown
+- [OVRO-demo](./OVRO-demo/) None
+- [R-Carpentry](./R-Carpentry/) Repository for Carpentry Lessons based on R
+- [RDMworkbook](./RDMworkbook/) bookdown files for "The Research Data Management Workbook"
+- [a_to_z_ul](./a_to_z_ul/) This is an experimental web compent to wrap simple UL lists in an A to Z style index. Migrated to CL-web-components
+- [admin-shell-scripts](./admin-shell-scripts/) A collection of administrative shell scripts for working with Ubuntu Server machines.
+- [air-sampling](./air-sampling/) None
+- [april-fools-the-caltech-way](./april-fools-the-caltech-way/) None
+- [archimedes-1](./archimedes-1/) Archimedes: Life, Legend, Sources
+- [archimedes-2](./archimedes-2/) Early English Editions of Greek Mathematics
+- [archimedes-3](./archimedes-3/) The Recovery of Greek Mathematics in Italy
+- [archimedes-4](./archimedes-4/) Diophantus of Alexandria and Pierre de Fermat
+- [baler](./baler/) Bad link reporter for GitHub repositories
+- [boffo](./boffo/) Boffo is an add-on for Google Sheets written by the Caltech Library. It lets you select item barcodes in a spreadsheet and retrieve information about the item records from a FOLIO server.
+- [caltechdata_api](./caltechdata_api/) Python library for using the CaltechDATA API
+- [cell-atlas](./cell-atlas/) Cell atlas
+- [centennial-rose-parade-float](./centennial-rose-parade-float/) None
+- [cl-js](./cl-js/) CL-js is a JavaScript library for integration with feeds and other library supplied services. It provides functionality through a global CL object.
+- [cli](./cli/) Building better command line interfaces for Caltech Library
+- [cloud-init-examples](./cloud-init-examples/) This repository includes an example of cloud-init YAML files for use with multipass VMs.
+- [codemeta-pandoc-examples](./codemeta-pandoc-examples/) This repository describes how to generate a CITATION.cff, about.md and installer.sh from a codemeta.json file using Pandoc.
+- [cold](./cold/) Controlled Object Lists and Datum
+- [commencement-1965](./commencement-1965/) None
+- [commencement-1986](./commencement-1986/) None
+- [crossrefapi](./crossrefapi/) This is a Go package fork working politely with the CrossRef API.
+- [csvtextarea](./csvtextarea/) A Web Component for working with tabular data, migrated to CL-web-components.
+- [dataciteapi](./dataciteapi/) A Golang package and command line utility for working with the public DataCite API
+- [dataset](./dataset/) dataset is a command line tool, Go package, shared library and Python package for working with JSON objects as collections
+- [datatools](./datatools/) A set of tools for working with JSON, CSV and Excel workbooks
+- [dibs](./dibs/) DIBS is an implementation of a basic controlled digital lending (CDL) system using IIIF to make scanned books available for time-limited viewing.
+- [ditch-day](./ditch-day/) None
+- [documenting-earthquakes](./documenting-earthquakes/) In honor of the centennial of the 1906 San Francisco earthquake, the Caltech Archives created a virtual exhibit in six parts of materials from its own collections. Recent major donations by Professor George W. Housner have substantially augmented the Archives’ holdings in the history of earthquakes and the early science of seismology.
+- [dotpath](./dotpath/) A Go, Python and TypeScript modules for working with map, dicts and objects accessing them using a dot path notation.
+- [ead2dc](./ead2dc/) Converts ArchivesSpace EAD Finding Aid XML to an OAI-PMH Static Repository with DC metadata.
+- [einstein-1](./einstein-1/) None
+- [einstein-2](./einstein-2/) None
+- [einstein-3](./einstein-3/) None
+- [einstein-4](./einstein-4/) None
+- [eprinttools](./eprinttools/) EPrintTools is a Go package, command line utilities and a service for working with EPrints 3.3.x EPrint XML and REST API
+- [first-nobel-road-to-stockholm](./first-nobel-road-to-stockholm/) None
+- [foliage](./foliage/) Foliage is the FOLIo chAnGe Editor, a tool to do bulk changes in FOLIO using the network API.
+- [geospatial-python](./geospatial-python/) Introduction to Geospatial Raster and Vector Data with Python
+- [git-workshop-workflows](./git-workshop-workflows/) Branches, conflicts, and pull requests.
+- [glaser-1](./glaser-1/) Donald Glaser: Education at Caltech
+- [glaser-2](./glaser-2/) Donald Glaser: From Physics to Biology and Neuroscience
+- [glaser-3](./glaser-3/) Donald Glaser: Caltech Contemporaries
+- [handprint](./handprint/) Apply different text recognition services to images of handwritten documents.
+- [iga](./iga/) IGA is the InvenioRDM GitHub Archiver, a standalone program as well as a GitHub Action that lets you automatically archive GitHub software releases in an InvenioRDM repository.
+- [irdm-queue-portal](./irdm-queue-portal/) A basic view of content currently in an InvenioRDM community queue
+- [irdmtools](./irdmtools/) A Go and Python package for working with InvenioRDM repositories.
+- [libguine](./libguine/) Caltech Library customizations for LibGuides CMS
+- [logagent](./logagent/) A simple program to scan a log file for text tags and emit actions
+- [metadatatools](./metadatatools/) Inspired by the Python IdUtils package metadatatools provides similar functionality in TypeScript.
+- [mkpage](./mkpage/) MkPage Project includes tools for rendering static websites including a Pandoc preprocessor
+- [models](./models/) This is a Go package used to describe data models aligned with the HTML5 data types.
+- [mt-wilson-100](./mt-wilson-100/) None
+- [namaste](./namaste/) Go package and command line implementation of "NAMe AS TExt" metadata embedding for directories.
+- [newt](./newt/) Newt a microservice for integrating Postgres+PostgREST and Pandoc
+- [nlp-intro](./nlp-intro/) None
+- [nobel-physicists-a-long-history](./nobel-physicists-a-long-history/) None
+- [opensearch-machine](./opensearch-machine/) This is a repo for testing and learning Opensearch running under Multipass.
+- [ovro-130-foot-radio-telescope](./ovro-130-foot-radio-telescope/) None
+- [pairtree](./pairtree/) A simple encoder/decoder for converting object identifiers into a Pair Tree Path (path)
+- [pandoc_client](./pandoc_client/) This repository holds an experimental Go package that functions as a client to pandoc-server.
+- [popstar](./popstar/) Phone-Oriented Processing SofTware for ARchives
+- [py_dataset](./py_dataset/) Python package of dataset (https://github.com/caltechlibrary/dataset) for working with JSON objects as collections on disc
+- [shell-extras](./shell-extras/) Extra material for Software Carpentry shell lesson.
+- [simplified](./simplified/) An intermediate metadata model as Go struct for migrating content from EPrints 3.3. to Invenio-RDM 11 
+- [something-about-harry](./something-about-harry/) None
+- [students-in-the-1960s](./students-in-the-1960s/) None
+- [template](./template/) Template repository for software projects by the Caltech Library
+- [ts_dataset](./ts_dataset/) This is a TypeScript module for interacting with datasetd targetting Deno
+- [waystation](./waystation/) Automatically archive your repository's GitHub Pages in the Wayback Machine.
+- [ws](./ws/) DEPRECIATED (see wsfn): A nimble webserver for  prototyping.
+- [wsfn](./wsfn/) Go package for standardize web service functionality across our library's go projects
+
+
