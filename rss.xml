@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <title>Caltech Library, Digital Library Development</title>
+        <link>http://caltechlibrary.github.io</link>
+        <description>A sandbox of development</description>
+        <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate>
+        <generator>pttk rss 0.0.19</generator>
+        <item>
+            <title>Language models and &#34;fielded&#34; search</title>
+            <link>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</link>
+            <description>This an interesting use of an LLM, it means that the old &#34;advanced search&#34; UI or fielded search UI can be made to feel like a single box search, &lt;https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ &gt;. From Simon Willison&#39;s Weblog,&#xA;&#xA;&gt; &#34;Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.&#34;&#xA;&#xA; ...</description>
+            <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+            <guid>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</guid>
+        </item>
+        <item>
+            <title>Google Chrome and DNS problems</title>
+            <link>http://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</link>
+            <description>Quick notes on a &#34;DNS&#34; problem specific to Google Chrome&#xA;and it got solved.&#xA;</description>
+            <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+            <guid>http://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</guid>
+        </item>
+        <item>
+            <title>Building Web Components using Large Language Models</title>
+            <link>http://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</link>
+            <description>A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.&#xA;Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.&#xA;</description>
+            <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
+            <guid>http://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</guid>
+        </item>
+    </channel>
+</rss>
