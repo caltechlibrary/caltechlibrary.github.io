@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Caltech Library's Digital Library Development Sandbox</title>
+    <link rel="stylesheet" href="https://caltechlibrary.github.io/css/site.css">
+</head>
+<body>
+<header>
+<a href="http://library.caltech.edu"><img src="assets/liblogo.gif" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+  <li><a href="/">DLD Sandox</a></li>
+  <li><a href="https://library.caltech.edu/library/home">Caltech Library</a></li>
+  <li><a href="https://library.caltech.edu/archives/home">Caltech Archives</a></li>
+  <li><a href="https://feeds.library.caltech.edu">Library Feeds</a></li>
+  <li><a href="https://github.com/caltechlibrary/">DLD @ GitHub</a></li>
+</ul>
+</nav>
+
+<section>
+<h1 id="google-chrome-and-dns-problems">Google Chrome and DNS
+problems</h1>
+<p>Chrome can be problematic. It is not as reliable as it used to be.
+Recently we’ve run into issues where you can’t reach Caltech Library web
+resources even through they are up and available via other browsers like
+Safari. There are a couple things you can try before resorting to a
+clean reinstall of Google Chrome.</p>
+<ol type="1">
+<li>Clear you browser caches, this is accomplished from the “settings”
+page. Google seems to change its contents an layout regularly. You’ll
+have to open the “settings” and visual inspect the elements to see how
+to empty your caches.</li>
+<li>Chrome’s less obvious chrome://net-internals settings page. This
+page contains additional caches you can try to clear</li>
+<li>If that doesn’t work remove Chrome completely then try a fresh
+install (the solution that ultimately worked)</li>
+</ol>
+<h2 id="removing-google-chrome-on-macos-completely">Removing Google
+Chrome on macOS completely</h2>
+<p>Basic idea.</p>
+<ol type="1">
+<li>Quit Chrome if running, you can check the “Force Quit” list to make
+sure it’s not running</li>
+<li>Locate the Chrome related directories and remove them.</li>
+</ol>
+<p>Below is a description of using your mouse and finder to do the work.
+The first part is easy the latter part more challenging as macOS really
+doens’t like making this easy (shame on them).</p>
+<h3 id="finder-approach">Finder approach</h3>
+<p>Start up the Terminal App. Changing into the “Library” directory (aka
+folder) open the folder in finder using the open command, open .. This
+will let you see what is inside the Library folder (often hidden in the
+regular finder view of folders).</p>
+<pre class="shell"><code>cd Library
+open .</code></pre>
+<p>Remove the main application. You can use finder to find “Google
+Chrome” and drag it to the trash.</p>
+<ul>
+<li>“/Applications/Google Chrome.app”</li>
+</ul>
+<p>You need to find and remove the following “Google” folders. Normally
+the “Library” folder isn’t listed in your finder window. What I do is
+start up “Terminal” then change directory into the library folder and
+use the “open .” command. cd Library open .</p>
+<p>Now we should be able to find these three folders and drag them to
+the trash.</p>
+<ul>
+<li>“$HOME/Library/Google”</li>
+<li>“$HOME/Library/Application Support/Google”</li>
+<li>“$HOME/Library/Caches/Google/”</li>
+</ul>
+<p>The next back of folders are trickier. They may more may not exist.
+The first two can be found using the finder and dragged to the trash.
+The lasts two you have to search for. The “*” is a wild card. I find it
+easier to locate them using the terminal and the old fashioned Unix
+“find” command.</p>
+<ul>
+<li>“$HOME/Library/Caches/chrome_crashpad_handler”</li>
+<li>“$HOME/Library/HTTPStorages/chrome_crashpad_handler”</li>
+<li>“$HOME/Library/Application Support/Code/CachedData/*/chrome”</li>
+<li>“$HOME/Library/HTTPStorages/com.google.*”</li>
+</ul>
+<p>Once these folders are all in the trash you can empty the trash (make
+take a little while).</p>
+<h3 id="using-the-shell-commands">Using the shell commands</h3>
+<p>While this is more typing (which you can minimize by cutting and
+pasting) I found it less frustrating. These commands are all executed
+from your Terminal window. You can cut and paste the lines one by one or
+you can save them in a plain text file, e.g. “remove_chrome.bash” and
+run them with the command “sh remove_chrome.bash”.</p>
+<p>If you run the script is can a while (30 to 120 seconds).</p>
+<pre class="shell"><code>#!/bin/bash
+
+sudo rm -r /Applications/Google\\ Chrome.app/
+sudo rm -fR &quot;$HOME/Library/Google&quot;
+sudo rm -fR &quot;$HOME/Library/Application Support/Google&quot;
+sudo rm -fR &quot;$HOME/Library/Caches/Google/&quot;
+
+sudo rm -fR &quot;$HOME/Library/Caches/chrome_crashpad_handler&quot;
+sudo rm -fR &quot;$HOME/Library/HTTPStorages/chrome_crashpad_handler&quot;
+sudo rm -fR &quot;$HOME/Library/Application Support/Code/CachedData/*/chrome&quot;
+sudo rm -fR &quot;$HOME/Library/HTTPStorages/com.google.*&quot;</code></pre>
+<p>You can check to make sure everything is gone with the script.</p>
+<pre class="shell"><code>sudo ls /Applications/Google\\ Chrome.app/
+sudo ls &quot;$HOME/Library/Google&quot;
+sudo ls &quot;$HOME/Library/Application Support/Google&quot;
+sudo ls &quot;$HOME/Library/Caches/Google/&quot;
+
+sudo ls &quot;$HOME/Library/Caches/chrome_crashpad_handler&quot;
+sudo ls &quot;$HOME/Library/HTTPStorages/chrome_crashpad_handler&quot; 
+sudo ls &quot;$HOME/Library/Application Support/Code/CachedData/*/chrome&quot;
+sudo ls &quot;$HOME/Library/HTTPStorages/com.google.*&quot;</code></pre>
+</section>
+
+<footer>
+<span><h1><A href="http://caltech.edu">Caltech</a></h1></span>
+<span>&copy; 2024 <a href="https://www.library.caltech.edu/copyright">Caltech library</a></span>
+<address>1200 E California Blvd, Mail Code 1-32, Pasadena, CA 91125-3200</address> 
+<span>Phone: <a href="tel:+1-626-395-3405">(626)395-3405</a></span>
+<span><a href="mailto:library@caltech.edu">Email Us</a></span>
+<a class="cl-hide" href="sitemap.xml">Site Map</a>
+</footer>
+</body>
+</html>

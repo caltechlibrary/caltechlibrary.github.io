@@ -88,7 +88,7 @@ def mk_project_index(org_name, url_prefix, out_name):
                 log.error(f'Request {u} {params} -> {err}')
                 return err
             # NOTE: if we have a zero length array return then we done paging through results.
-            if len(data) > 0:
+            if data != None and len(data) > 0:
                 for repo in data:
                     repo_name = repo['name']
                     if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
@@ -97,7 +97,10 @@ def mk_project_index(org_name, url_prefix, out_name):
                         else:
                             log.info(f'Including {repo_name}')
                             description = repo['description'] if not None else ""
-                            projects.append({"name": repo_name, "description": description})
+                            if (description == None) or (description == ""):
+                                log.debug(f'Skipping {repo_name}, description is incomplete')
+                            else:
+                                projects.append({"name": repo_name, "description": description})
                     else:
                         log.debug(f'Skipping {repo_name}')
                 page_no += 1
