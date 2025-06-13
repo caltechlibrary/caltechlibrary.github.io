@@ -57,6 +57,7 @@ GitHub Projects 2021 through 2025
 - [py_dataset](./py_dataset/) Python package of dataset (https://github.com/caltechlibrary/dataset) for working with JSON objects as collections on disc
 - [shell-extras](./shell-extras/) Extra material for Software Carpentry shell lesson.
 - [simplified](./simplified/) An intermediate metadata model as Go struct for migrating content from EPrints 3.3. to Invenio-RDM 11 
+- [t2t3_dataset_web_apps](./t2t3_dataset_web_apps/) A T2T3 presentation and workshop for building web applications with Dataset and CL Web Components
 - [template](./template/) Template repository for software projects by the Caltech Library
 - [ts_dataset](./ts_dataset/) This is a TypeScript module for interacting with datasetd targetting Deno
 - [waystation](./waystation/) Automatically archive your repository's GitHub Pages in the Wayback Machine.
