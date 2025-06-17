@@ -1,0 +1,28 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/caltechlibrary/caltechlibrary.github.io",
+  "dateCreated": "2015-10-08",
+  "dateModified": "2025-06-17",
+  "datePublished": "2025-06-17",
+  "description": "This is the DLD Labs website. It is a website for presenting some of the work from Caltech Library's Digital Library Development group. It includes links to projects and experiments.",
+  "funder": [
+    {
+      "name": "Caltech Library",
+      "ror": "https://ror.org/05dxps055"
+    }
+  ],
+  "name": "caltechlibrary.github.io",
+  "softwareRequirements": [
+    "Pandoc >= 3.1"
+  ],
+  "softwareSuggestions": [
+    "GNU Make",
+    "PowerShell",
+    "CMTools"
+  ],
+  "developmentStatus": "wip",
+  "issueTracker": "https://github.com/caltechlibrary/caltechlibrary.github.io/issues",
+  "copyrightYear": 2025,
+  "copyrightHolder": "California Institute of Technology"
+}
