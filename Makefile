@@ -5,7 +5,7 @@
 
 BRANCH = $(shell git branch | grep -E "\* " | cut -d\   -f 2)
 
-build: project_index website
+build: website
 
 project_index: .FORCE
 	./mk_project_index.py caltechlibrary project_index.md
@@ -27,7 +27,7 @@ website: .FORCE
 
 # We're not using publish.bash here because this website doesn't
 # require publication via gh-pages branch.
-publish: save
+publish: project_index save
 	-git commit -am "Publishing website"
 	git push origin main
 

@@ -20,11 +20,11 @@ This site contains software and experimental projects developed by the Caltech L
 
 ## Projects, Tools and Languages
 
-- [Web tools and command-line](web-and-cli-tools.md)
-- [Harvesters and Systems integration](harvesters-and-system-integration.md)
-- [JavaScript/TypeScript and Go projects](languages-and-tooling.md)
-- [Virtual Machines and Containers](virtual-machines-and-containers.md)
 - [Easy installs for Linux, macOS and Windows](installers.md "Easy install instructions for Linux, macOS and Windows for our Go based tools")
+- [Harvesters and Systems integration](harvesters-and-system-integration.md)
+- [Looking for Metadata and Web Resources](web-and-cli-tools.md)
+- [Tooling for Languages](languages-and-tooling.md "projects organized around programming language or language support") 
+- [Virtual Machines and Containers](virtual-machines-and-containers.md)
 
 ## Finding things
 
