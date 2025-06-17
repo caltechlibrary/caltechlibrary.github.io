@@ -3,6 +3,7 @@ GitHub Projects 2021 through 2025
 ===================================
 
 
+- [CL-Pandoc-filters](./CL-Pandoc-filters/) This is a collection of Pandoc filters uses by Caltech Library's Digital Library Development Groups 
 - [CL-web-components](./CL-web-components/) This is a collection of web components used in Caltech Library web applications.
 - [CMTools](./CMTools/) Project build tools leveraging CodeMeta JSON file.
 - [OH-demo](./OH-demo/) Initial exploration of Oral Histories in markdown

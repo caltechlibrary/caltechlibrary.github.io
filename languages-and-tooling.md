@@ -23,6 +23,10 @@ Below are some of the projects we'd like to highlight. We develop software in a 
 - [DIBS](https://github.com/caltechlibrary/DIBS), an implementation of a basic controlled digital lending (CDL) system using IIIF to make scanned books available for time-limited viewing.
 - [dotpath](https://caltechlibrary.github.io/dotpath), a dot notion module for Go, Python and TypeScript
 
+## Lua
+
+- [CL-Pandoc-filters](https://github.com/caltechlibrary/CL-Pandoc-filters), a collection of Pandoc filters in Lua
+
 ## Golang
 
 - [dataset](https://caltechlibrary.github.io/dataset), dataset is a command line tool, Go package and C-shared library for working with JSON objects as collections
