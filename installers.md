@@ -36,5 +36,5 @@ Repository                                                         Install for W
 [mkpage](https://github.com/caltechlibrary/mkpage/issues)          `irm https://caltechlibrary.github.io/mkpage/installer.ps1 | iex`   
 [newt](https://github.com/caltechlibrary/newt/issues)              `irm https://caltechlibrary.github.io/newt/installer.ps1 | iex`
 [cold](https://github.com/caltechlibrary/cold/issues)              `irm https://caltechlibrary.github.io/cold/installer.ps1 | iex`
-[CMTools](https://github.com/caltechlibrary/CMTools/issues)           `irm https://caltechlibrary.github.io/CMTools/installer.ps1 | iex`
+[CMTools](https://github.com/caltechlibrary/CMTools/issues)        `irm https://caltechlibrary.github.io/CMTools/installer.ps1 | iex`
 
