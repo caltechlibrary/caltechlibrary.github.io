@@ -9,7 +9,6 @@ GitHub Projects 2021 through 2025
 - [OH-demo](./OH-demo/) Initial exploration of Oral Histories in markdown
 - [R-Carpentry](./R-Carpentry/) Repository for Carpentry Lessons based on R
 - [RDMworkbook](./RDMworkbook/) bookdown files for "The Research Data Management Workbook"
-- [a_to_z_ul](./a_to_z_ul/) This is an experimental web compent to wrap simple UL lists in an A to Z style index. Migrated to CL-web-components
 - [admin-shell-scripts](./admin-shell-scripts/) A collection of administrative shell scripts for working with Ubuntu Server machines.
 - [archimedes-1](./archimedes-1/) Archimedes: Life, Legend, Sources
 - [archimedes-2](./archimedes-2/) Early English Editions of Greek Mathematics
@@ -20,12 +19,9 @@ GitHub Projects 2021 through 2025
 - [caltechdata_api](./caltechdata_api/) Python library for using the CaltechDATA API
 - [cell-atlas](./cell-atlas/) Cell atlas
 - [cl-js](./cl-js/) CL-js is a JavaScript library for integration with feeds and other library supplied services. It provides functionality through a global CL object.
-- [cli](./cli/) Building better command line interfaces for Caltech Library
 - [cloud-init-examples](./cloud-init-examples/) This repository includes an example of cloud-init YAML files for use with multipass VMs.
-- [codemeta-pandoc-examples](./codemeta-pandoc-examples/) This repository describes how to generate a CITATION.cff, about.md and installer.sh from a codemeta.json file using Pandoc.
 - [cold](./cold/) Controlled Object Lists and Datum
 - [crossrefapi](./crossrefapi/) This is a Go package fork working politely with the CrossRef API.
-- [csvtextarea](./csvtextarea/) A Web Component for working with tabular data, migrated to CL-web-components.
 - [dataciteapi](./dataciteapi/) A Golang package and command line utility for working with the public DataCite API
 - [dataset](./dataset/) dataset is a command line tool, Go package, shared library and Python package for working with JSON objects as collections
 - [datatools](./datatools/) A set of tools for working with JSON, CSV and Excel workbooks
@@ -47,7 +43,6 @@ GitHub Projects 2021 through 2025
 - [libguine](./libguine/) Caltech Library customizations for LibGuides CMS
 - [logagent](./logagent/) A simple program to scan a log file for text tags and emit actions
 - [metadatatools](./metadatatools/) Inspired by the Python IdUtils package metadatatools provides similar functionality in TypeScript.
-- [mkpage](./mkpage/) MkPage Project includes tools for rendering static websites including a Pandoc preprocessor
 - [models](./models/) This is a Go package used to describe data models aligned with the HTML5 data types.
 - [namaste](./namaste/) Go package and command line implementation of "NAMe AS TExt" metadata embedding for directories.
 - [newt](./newt/) Newt a microservice for integrating Postgres+PostgREST and Pandoc
@@ -62,5 +57,4 @@ GitHub Projects 2021 through 2025
 - [template](./template/) Template repository for software projects by the Caltech Library
 - [ts_dataset](./ts_dataset/) This is a TypeScript module for interacting with datasetd targetting Deno
 - [waystation](./waystation/) Automatically archive your repository's GitHub Pages in the Wayback Machine.
-- [ws](./ws/) DEPRECIATED (see wsfn): A nimble webserver for  prototyping.
 - [wsfn](./wsfn/) Go package for standardize web service functionality across our library's go projects

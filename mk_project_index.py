@@ -18,7 +18,7 @@ def usage(app_name):
 % R. S. Doiel
 % 2022-11-16
 
-# NAME
+# NAME  
 
 {app_name}
 
@@ -88,21 +88,37 @@ def mk_project_index(org_name, url_prefix, out_name):
                 log.error(f'Request {u} {params} -> {err}')
                 return err
             # NOTE: if we have a zero length array return then we done paging through results.
-            if data != None and len(data) > 0:
+            # if data != None and len(data) > 0:
+            #     for repo in data:
+            #         repo_name = repo['name']
+            #         if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
+            #             if repo['pushed_at'] is not None and int(repo["pushed_at"][0:4]) < stale_year:
+            #                 log.debug(f'Skipping {repo_name}, project last active {repo["pushed_at"][0:4]}')
+            #             else:
+            #                 log.info(f'Including {repo_name}')
+            #                 description = repo['description'] if not None else ""
+            #                 if (description == None) or (description == ""):
+            #                     log.debug(f'Skipping {repo_name}, description is incomplete')
+            #                 else:
+            #                     projects.append({"name": repo_name, "description": description})
+            #         else:
+            #             log.debug(f'Skipping {repo_name}')
+            if data is not None and len(data) > 0:
                 for repo in data:
                     repo_name = repo['name']
-                    if not url_prefix.startswith(f'https://{repo_name}') and ("has_pages" in repo) and repo["has_pages"]:
+                    if not url_prefix.startswith(f'https://{repo_name}') and repo.get("has_pages", False):
                         if repo['pushed_at'] is not None and int(repo["pushed_at"][0:4]) < stale_year:
                             log.debug(f'Skipping {repo_name}, project last active {repo["pushed_at"][0:4]}')
+                        elif repo.get('archived', False):  # Skip if the repository is archived
+                            log.debug(f'Skipping {repo_name}, repository is archived')
                         else:
                             log.info(f'Including {repo_name}')
-                            description = repo['description'] if not None else ""
-                            if (description == None) or (description == ""):
+                            description = repo['description']
+                            if not description:  # Check if description is None or empty
                                 log.debug(f'Skipping {repo_name}, description is incomplete')
                             else:
                                 projects.append({"name": repo_name, "description": description})
-                    else:
-                        log.debug(f'Skipping {repo_name}')
+
                 page_no += 1
                 log.info(f'Waiting {request_delay} seconds before requesting next page {page_no} of results')
                 # Wait `request_delay` seconds before next request, rate limit is one a second
