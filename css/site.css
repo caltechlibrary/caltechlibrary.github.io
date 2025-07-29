@@ -2,13 +2,13 @@
  * site.css - stylesheet for the Caltech Library's Digital Library Development Group's sandbox.
  *
  * CSS Variables:
- * --primary-color: #FF6E1E; (orange)
+ * --focused-color: #FF6E1E; (orange)
  *
  * Secondary palette:
  *
  * --nav-background-color: #AAA99F; (slategrey)
- * --search-result-odd-background-color: #C8C8C8; (lightgrey)
  * --nav-text-color: #76776B; (grey)
+ * --search-result-odd-background-color: #C8C8C8; (lightgrey)
  * --footer-background-color: #616265; (darkgrey)
  *
  * Header properties:
@@ -19,10 +19,13 @@
  */
 
 :root {
-    --primary-color: #FF6E1E; /* orange */
-    --nav-background-color: #AAA99F; /* slategrey */
+    --focused-color: #FF6E1E; /* orange */
+    --body-text-color: #000; /* black */
+    --body-background-color: #FFF; /* white */
+    --body-link-text-color: #666; /* #0f286c; */
+    --nav-background-color: #333; /* #AAA99F ; /* slate grey */
+    --nav-text-color: #FFF; /* white */
     --search-result-odd-background-color: #C8C8C8; /* lightgrey */
-    --nav-text-color: #76776B; /* grey */
     --footer-background-color: #616265; /* darkgrey */
     --header-background-color: #FFFFFF; /* white */
     --header-text-color: #000000; /* black */
@@ -70,22 +73,22 @@ header h1 {
     font-size: 3em;
     font-weight: normal;
     vertical-align: 0.78em;
-    color: var(--primary-color);
+    color: var(--focused-color);
 }
 
 header a, header a:link, header a:visited, header a:active, header a:hover, header a:focus {
-    color: var(--primary-color);
+    color: var(--focused-color);
     background-color: inherit;
 }
 
 a, a:link, a:visited {
-    color: var(--nav-text-color);
+    color: var(--body-link-text-color);
     background-color: inherit;
     text-decoration: none;
 }
 
 a:active, a:hover, a:focus {
-    color: var(--primary-color);
+    color: var(--focused-color);
     font-weight: bolder;
 }
 
@@ -96,9 +99,8 @@ nav {
     margin: 0;
     padding: 0;
     font-size: 0.78em;
-    vertical-align: middle;
-    color: black;
-    background-color: var(--nav-text-color);
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
     text-align: left;
 }
 
@@ -106,17 +108,19 @@ nav div {
     display: inline-block;
     margin-left: 10em;
     margin-right: 0;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
 }
 
 nav a, nav a:link, nav a:visited, nav a:active {
-    color: white;
-    background-color: inherit;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
     text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
-    color: var(--primary-color);
-    background-color: inherit;
+    color: var(--focused-color);
+    background-color: var(--nav-background-color);
     text-decoration: none;
 }
 
@@ -141,11 +145,15 @@ nav ul {
     list-style-type: none;
     text-align: left;
     text-decoration: none;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
 }
 
 nav ul li {
     display: inline;
     padding: 1em;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
 }
 
 section {
@@ -187,7 +195,7 @@ section a, section a:link, section a:visited {
 }
 
 section a:active, section a:hover, section a:focus {
-    color: var(--primary-color);
+    color: var(--focused-color);
 }
 
 aside {
@@ -255,7 +263,7 @@ footer a, footer a:link, footer a:visited, footer a:active, footer a:focus, foot
     padding: 0;
     display: inline;
     margin: 0;
-    color: var(--primary-color);
+    color: var(--focused-color);
     text-decoration: none;
 }
 
