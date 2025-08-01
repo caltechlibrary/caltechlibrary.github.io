@@ -1,7 +1,7 @@
 ---
 title: Google Chrome and DNS problems
 pubDate: 2025-04-01
-author: R. S. Doiel
+author: rsdoiel@caltech.edu (R. S. Doiel)
 abstract: |
   Quick notes on a "DNS" problem specific to Google Chrome
   and it got solved.

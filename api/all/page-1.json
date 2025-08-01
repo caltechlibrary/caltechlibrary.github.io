@@ -1,0 +1,69 @@
+{
+  "page": 1,
+  "total_pages": 1,
+  "has_more": false,
+  "next_page": null,
+  "values": [
+    {
+      "content": "\n# Setting up RDM 13 on macOS\n\nThis is a summary of my experience bringing up a vanilla Developer Invenio RDM 13 experience on macOS 15.6 running on a M1 Mac Mini. I use Mac Ports for supporting development.  I use uv to manage Python.\n\nThe instructions I was following are found at <https://inveniordm.docs.cern.ch/install/>. I am doing a \"developer\" setup.\n\nIf you run into problems I highly recommend making sure you have a \"clean\" system before proceeding. This is especially true if you've had more than one version of Python on your machine (regardless of how), installed RDM in the past or have had older versions of Docker Desktop before. RDM is complicated and brittle even run in containers. Having a clean system is essential to a positive RDM experience.\n\n## Make sure you have a clean system\n\n- removed Docker Desktop and all related files\n- removed all Mac Ports pythons\n- removed all pythons via uv\n- removed uv\n- remove ImageMagick and it's dependencies via Mac Ports, make sure your PATH and LD_LIBRARY_PATH are clean\n- make sure any stale environment (e.g. .bashrc, .profile, etc) are removed\n- rebooted system\n- Confirm there is no Docker, non-system Python, ImageMagick\n- Confirm your environment is clean (do you have references to removed things in your PATH or LD_LIBRARY_PATH?)\n\n## Preparing your machine\n\nOnce I had a clean system here's the steps I took.\n\n1. Install of [uv](https://docs.astral.sh/uv/getting-started/installation/)\n2. Install python3.12 as default using uv, `uv python install 3.12 --default`\n3. Install Docker Desktop\n4. Install ImageMagick7 via Mac Ports, `sudo port install ImageMagick7`\n5. Install cairo via Mac Ports, `sudo port install cairo`\n6. Make sure that Mac Ports `libcairo.2.dylib` is symbolically linked to `/usr/local/lib`\n7. Install openssl via Mac Ports, `sudo port install openssl`\n\n## Installing RDM 13\n\nYou should now be prepared to follow the instructions at <https://inveniordm.docs.cern.ch/install/#quick-start>.\n\nWhen you follow the Quick Install pick the `uv` example under **Install the CLI tool** heading.\n\n- Make a directory to hold your install\n- Run the setup sequence from Quick Start\n\nWhat follows are the commands (with comments) that I ran to bring RDM 13 up on my machine after I cleaned it up and prepared\n\n~~~\nmkdir rdm_test                  # this is my test directory\ncd rdm_test\nuv tool install invenio-cli\ninvenio-cli check-requirements  # If this doesn't pass you probably have a dirty system still\ninvenio-cli init rdm            # Accept all the defaults for testing\ncd my-site\ninvenio-cli check-requirements --development  # If this doesn't pass ...\n# Install Python and Javascript packages, you'll see warns about depreciated packages and Node stuff (that's normal)\ninvenio-cli install\n# Set up containerized database, cache, OpenSearch, etc. You'll see warnings about depreciated stuff\ninvenio-cli services setup\n# Serve the application locally through a development server. This will result in a bunch of logged output\n# and continue for a while. Be patient. There will be warning sprinkled in there too.\ninvenio-cli run\n~~~\n\nIn another terminal windows point your browser at <https://127.0.0.1:5000/>, click through the warnings about the self signed cert.\n\n~~~\nopen https://127.0.0.1:5000/\n~~~\n\nYou should now have a running vanilla RDM 13 instance up. To bring it down do that following.\n\n~~~\n# To stop the application server:\n# in terminal running invenio-cli run\n^C [CTRL+C]\n# ---\n# To stop the service containers:\ninvenio-cli services stop\n# ---\n# To destroy the service containers\n# (this will lose ALL data):\ninvenio-cli services destroy\n~~~\n",
+      "data": {
+        "abstract": "This is a summary of the steps I took to successfully setup RDM 13 on my M1 Mac Mini running macOS 15.6. I use Mac Ports for dependencies.\n",
+        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "dateCreated": "2025-08-01",
+        "dateModified": "2025-08-01",
+        "datePublished": "2025-08-01",
+        "keywords": [
+          "Invenio",
+          "RDM"
+        ],
+        "title": "Setting up RDM 13 on macOS M1 Mac Mini"
+      },
+      "url": "posts/2025/08/01/Setting_up_RDM_13_on_macOS.json"
+    },
+    {
+      "content": "\n# Building Web Components using Large Language Models\n\nby R. S. Doiel, 2025-03-13\n\nI started playing around with Mitral Chat to create web components for some library applications.  It’s a non-trivial process, not sure it is faster than me just write them from scratch but I am so far happy with the results which you can see <https://github.com/caltechlibrary/CL-web-components>.  There are two, one is called “a_to_z_ul.js” which lets you wrap a simple UL list and have it be an “A to Z” list. The second is call “csvtextarea.js” which is a component that wraps a TEXTAREA input element that contains CSV data and renders a table where you can edit the cells.  The wrapping of existing components was not the LLM’s suggestion, that was my idea but the generated JavaScript is from the LLM based on my prompts.\n\nOne of the challenges I ran into was the lack of reproducibility even for the same prompts. The second was I had to use a paid subscription to Mistral as the free one available from DuckDuckGo wasn’t enough. I compared a few other LLM as I learned to use the chat interface and Mistral price for results was the best for my tests.\n\nAfter getting a feel for using Mistral I tried running the original prompts against Mistral using Ollama. The results are different. It is cleared the “paid” platforms of open sourced models have significant enhancements in the models.\n\nI worry about the energy consumed in running the models let along refining them.\n\nWhile I like the results I got for this specific test I am on the fence about the general usefulness for libraries, archives and museums.\n",
+      "data": {
+        "abstract": "A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.\nTwo web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.\n",
+        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "keywords": [
+          "web components",
+          "browsers",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "LLM"
+        ],
+        "pubDate": "2025-03-13",
+        "title": "Building Web Components using Large Language Models"
+      },
+      "url": "posts/2025/03/13/Building_Web_Components_using_LLM.json"
+    },
+    {
+      "content": "\n# Language models and \"fielded\" search\n\nBy R. S. Doiel, 2025-04-10\n\nThis an interesting use of an LLM, it means that the old \"advanced search\" UI or fielded search UI can be made to feel like a single box search, <https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ >. From Simon Willison's Weblog,\n\n> \"Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.\"\n\nSo does this mean the huge Solar/OpenSearch indexes aren't needed?  Probably not but it does mean that we can build much more effective search and retrieval systems before requiring a full text search engine. Running an Ollama instance with an appropriate frugal model is almost trivial.\n",
+      "data": {
+        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "keywords": [
+          "LLM",
+          "search"
+        ],
+        "pubDate": "2025-04-10",
+        "title": "Language models and \"fielded\" search"
+      },
+      "url": "posts/2025/04/11/language_models_and_fielded_search.json"
+    },
+    {
+      "content": "\n# Google Chrome and DNS problems\n\nChrome can be problematic. It is not as reliable as it used to be.  Recently we've run into issues where you can't reach Caltech Library web resources even through they are up and available via other browsers like Safari. There are a couple things you can try before resorting to a clean reinstall of Google Chrome.\n\n1. Clear you browser caches, this is accomplished from the \"settings\" page. Google seems to change its contents an layout regularly. You'll have to open the \"settings\" and visual inspect the elements to see how to empty your caches.\n2. Chrome's less obvious chrome://net-internals settings page. This page contains additional caches you can try to clear\n3. If that doesn't work remove Chrome completely then try a fresh install (the solution that ultimately worked)\n\n## Removing Google Chrome on macOS completely\n\nBasic idea.\n\n1. Quit Chrome if running, you can check the \"Force Quit\" list to make sure it's not running\n2. Locate the Chrome related directories and remove them.\n\nBelow is a description of using your mouse and finder to do the work. The first part is easy the latter part more challenging as macOS really doens't like making this easy (shame on them).\n\n### Finder approach\n\nStart up the Terminal App. Changing into the \"Library\" directory (aka folder) open the folder in finder using the open command, open .. This will let you see what is inside the Library folder (often hidden in the regular finder view of folders).\n\n~~~shell\ncd Library\nopen .\n~~~\n\nRemove the main application. You can use finder to find \"Google Chrome\" and drag it to the trash.\n\n- \"/Applications/Google Chrome.app\"\n\nYou need to find and remove the following \"Google\" folders. Normally the \"Library\" folder isn't listed in your finder window. What I do is start up \"Terminal\" then change directory into the library folder and use the \"open .\" command.\ncd Library\nopen .\n\nNow we should be able to find these three folders and drag them to the trash.\n\n- \"$HOME/Library/Google\"\n- \"$HOME/Library/Application Support/Google\"\n- \"$HOME/Library/Caches/Google/\"\n\nThe next back of folders are trickier. They may more may not exist. The first two can be found using the finder and dragged to the trash. The lasts two you have to search for. The \"*\" is a wild card. I find it easier to locate them\nusing the terminal and the old fashioned Unix \"find\" command.\n\n- \"$HOME/Library/Caches/chrome_crashpad_handler\"\n- \"$HOME/Library/HTTPStorages/chrome_crashpad_handler\"\n- \"$HOME/Library/Application Support/Code/CachedData/*/chrome\"\n- \"$HOME/Library/HTTPStorages/com.google.*\"\n\nOnce these folders are all in the trash you can empty the trash (make take a little while). \n\n### Using the shell commands\n\nWhile this is more typing (which you can minimize by cutting and pasting) I found it less frustrating. These commands are all executed from your Terminal window. You can cut and paste the lines one by one or you can save them in a plain text file, e.g. \"remove_chrome.bash\" and run them with the command \"sh remove_chrome.bash\".\n\nIf you run the script is can a while (30 to 120 seconds).\n\n~~~shell\n#!/bin/bash\n\nsudo rm -r /Applications/Google\\\\ Chrome.app/\nsudo rm -fR \"$HOME/Library/Google\"\nsudo rm -fR \"$HOME/Library/Application Support/Google\"\nsudo rm -fR \"$HOME/Library/Caches/Google/\"\n\nsudo rm -fR \"$HOME/Library/Caches/chrome_crashpad_handler\"\nsudo rm -fR \"$HOME/Library/HTTPStorages/chrome_crashpad_handler\"\nsudo rm -fR \"$HOME/Library/Application Support/Code/CachedData/*/chrome\"\nsudo rm -fR \"$HOME/Library/HTTPStorages/com.google.*\"\n~~~\n\nYou can check to make sure everything is gone with the script.\n\n~~~shell\nsudo ls /Applications/Google\\\\ Chrome.app/\nsudo ls \"$HOME/Library/Google\"\nsudo ls \"$HOME/Library/Application Support/Google\"\nsudo ls \"$HOME/Library/Caches/Google/\"\n\nsudo ls \"$HOME/Library/Caches/chrome_crashpad_handler\"\nsudo ls \"$HOME/Library/HTTPStorages/chrome_crashpad_handler\" \nsudo ls \"$HOME/Library/Application Support/Code/CachedData/*/chrome\"\nsudo ls \"$HOME/Library/HTTPStorages/com.google.*\"\n~~~\n",
+      "data": {
+        "abstract": "Quick notes on a \"DNS\" problem specific to Google Chrome\nand it got solved.\n",
+        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "keywords": [
+          "DNS",
+          "Chrome"
+        ],
+        "pubDate": "2025-04-01",
+        "title": "Google Chrome and DNS problems"
+      },
+      "url": "posts/2025/04/01/Google_Chrome_DNS_problems.json"
+    }
+  ]
+}

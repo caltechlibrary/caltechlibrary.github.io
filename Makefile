@@ -23,12 +23,15 @@ refresh: .FORCE
 	git pull origin $(BRANCH)
 
 website: .FORCE
+	flatlake
+	flt posts rss api/all/page-1.json >rss.xml
+	flt posts markdown api/all/page-1.json >blog.md
 	make -f website.mak
 
-# We're not using publish.bash here because this website doesn't
-# require publication via gh-pages branch.
+# NOTE: I'm not using publish.bash here because this website doesn't
+# require publication via gh-pages branch. Publish in this case
+# Just makes sure the project index is updated (takes a while before a push)
 publish: project_index save
-	-git commit -am "Publishing website"
 	git push origin main
 
 .FORCE:

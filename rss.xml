@@ -11,7 +11,7 @@
         <item>
             <title>Language models and &#34;fielded&#34; search</title>
             <link>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</link>
-            <description>This an interesting use of an LLM, it means that the old &#34;advanced search&#34; UI or fielded search UI can be made to feel like a single box search, &lt;https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ &gt;. From Simon Willison&#39;s Weblog,&#xA;&#xA;&gt; &#34;Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.&#34;&#xA;&#xA; ...</description>
+            <description>This an interesting use of an LLM, it means that the old &#34;advanced search&#34; UI or fielded search UI can be made to feel like a single box search, &lt;https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ &gt;. From Simon Willison&#39;s Weblog,&#xA;&#xA;&gt; &#34;Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.&#34;&#xA;&#xA;So does this mean the huge Solar/OpenSearch indexes aren&#39;t needed?  Probably not but it does mean that we can build much more effective search and retrieval systems before requiring a full text search engine. Running an Ollama instance with an appropriate frugal model is almost trivial. ...</description>
             <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
             <guid>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</guid>
         </item>

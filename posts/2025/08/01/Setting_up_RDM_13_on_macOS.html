@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Caltech Library's DLD Labs</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="alternate" type="application/rss+xml" title="Caltech Library, Digital Library Development posts" href="/rss.xml">
+    <script type="module" src="https://caltechlibrary.github.io/CL-web-components/src/footer-global.js"></script>
+</head>
+<body>
+<header>
+<a href="http://library.caltech.edu"><img src="assets/liblogo.gif" alt="Caltech Library logo"></a>
+</header>
+<nav>
+<ul>
+  <li><a href="/">DLD Labs</a></li>
+  <li><a href="https://library.caltech.edu/library/home">Caltech Library</a></li>
+  <li><a href="https://library.caltech.edu/archives/home">Caltech Archives</a></li>
+  <li><a href="https://feeds.library.caltech.edu">Library Feeds</a></li>
+  <li><a href="https://github.com/caltechlibrary/">DLD @ GitHub</a></li>
+</ul>
+</nav>
+
+<section>
+<h1 id="setting-up-rdm-13-on-macos">Setting up RDM 13 on macOS</h1>
+<p>This is a summary of my experience bringing up a vanilla Developer
+Invenio RDM 13 experience on macOS 15.6 running on a M1 Mac Mini. I use
+Mac Ports for supporting development. I use uv to manage Python.</p>
+<p>The instructions I was following are found at <a
+href="https://inveniordm.docs.cern.ch/install/"
+class="uri">https://inveniordm.docs.cern.ch/install/</a>. I am doing a
+“developer” setup.</p>
+<p>If you run into problems I highly recommend making sure you have a
+“clean” system before proceeding. This is especially true if you’ve had
+more than one version of Python on your machine (regardless of how),
+installed RDM in the past or have had older versions of Docker Desktop
+before. RDM is complicated and brittle even run in containers. Having a
+clean system is essential to a positive RDM experience.</p>
+<h2 id="make-sure-you-have-a-clean-system">Make sure you have a clean
+system</h2>
+<ul>
+<li>removed Docker Desktop and all related files</li>
+<li>removed all Mac Ports pythons</li>
+<li>removed all pythons via uv</li>
+<li>removed uv</li>
+<li>remove ImageMagick and it’s dependencies via Mac Ports, make sure
+your PATH and LD_LIBRARY_PATH are clean</li>
+<li>make sure any stale environment (e.g. .bashrc, .profile, etc) are
+removed</li>
+<li>rebooted system</li>
+<li>Confirm there is no Docker, non-system Python, ImageMagick</li>
+<li>Confirm your environment is clean (do you have references to removed
+things in your PATH or LD_LIBRARY_PATH?)</li>
+</ul>
+<h2 id="preparing-your-machine">Preparing your machine</h2>
+<p>Once I had a clean system here’s the steps I took.</p>
+<ol type="1">
+<li>Install of <a
+href="https://docs.astral.sh/uv/getting-started/installation/">uv</a></li>
+<li>Install python3.12 as default using uv,
+<code>uv python install 3.12 --default</code></li>
+<li>Install Docker Desktop</li>
+<li>Install ImageMagick7 via Mac Ports,
+<code>sudo port install ImageMagick7</code></li>
+<li>Install cairo via Mac Ports,
+<code>sudo port install cairo</code></li>
+<li>Make sure that Mac Ports <code>libcairo.2.dylib</code> is
+symbolically linked to <code>/usr/local/lib</code></li>
+<li>Install openssl via Mac Ports,
+<code>sudo port install openssl</code></li>
+</ol>
+<h2 id="installing-rdm-13">Installing RDM 13</h2>
+<p>You should now be prepared to follow the instructions at <a
+href="https://inveniordm.docs.cern.ch/install/#quick-start"
+class="uri">https://inveniordm.docs.cern.ch/install/#quick-start</a>.</p>
+<p>When you follow the Quick Install pick the <code>uv</code> example
+under <strong>Install the CLI tool</strong> heading.</p>
+<ul>
+<li>Make a directory to hold your install</li>
+<li>Run the setup sequence from Quick Start</li>
+</ul>
+<p>What follows are the commands (with comments) that I ran to bring RDM
+13 up on my machine after I cleaned it up and prepared</p>
+<pre><code>mkdir rdm_test                  # this is my test directory
+cd rdm_test
+uv tool install invenio-cli
+invenio-cli check-requirements  # If this doesn&#39;t pass you probably have a dirty system still
+invenio-cli init rdm            # Accept all the defaults for testing
+cd my-site
+invenio-cli check-requirements --development  # If this doesn&#39;t pass ...
+# Install Python and Javascript packages, you&#39;ll see warns about depreciated packages and Node stuff (that&#39;s normal)
+invenio-cli install
+# Set up containerized database, cache, OpenSearch, etc. You&#39;ll see warnings about depreciated stuff
+invenio-cli services setup
+# Serve the application locally through a development server. This will result in a bunch of logged output
+# and continue for a while. Be patient. There will be warning sprinkled in there too.
+invenio-cli run</code></pre>
+<p>In another terminal windows point your browser at <a
+href="https://127.0.0.1:5000/" class="uri">https://127.0.0.1:5000/</a>,
+click through the warnings about the self signed cert.</p>
+<pre><code>open https://127.0.0.1:5000/</code></pre>
+<p>You should now have a running vanilla RDM 13 instance up. To bring it
+down do that following.</p>
+<pre><code># To stop the application server:
+# in terminal running invenio-cli run
+^C [CTRL+C]
+# ---
+# To stop the service containers:
+invenio-cli services stop
+# ---
+# To destroy the service containers
+# (this will lose ALL data):
+invenio-cli services destroy</code></pre>
+</section>
+
+<footer-global></footer-global>
+</body>
+</html>

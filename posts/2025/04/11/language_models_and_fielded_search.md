@@ -1,6 +1,6 @@
 ---
 title: Language models and "fielded" search
-author: R. S. Doiel
+author: rsdoiel@caltech.edu (R. S. Doiel)
 pubDate: 2025-04-10
 keywords:
  - LLM

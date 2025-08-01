@@ -1,0 +1,7 @@
+channels:
+  - name: posts
+    title: "Caltech Library, DLD development blog"
+    description: "These are posts are selected posts from DLD group members at Caltech Library"
+    link: "https://caltechlibrary.github.io/rss.xml"
+    language: "en-us"
+    managingEditor: "rsdoiel@caltech.edu (R. S. Doiel)"
