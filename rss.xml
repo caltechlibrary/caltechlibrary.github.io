@@ -1,33 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <title>Digital Library Development Sandbox</title>
-        <link>http://caltechlibrary.github.io</link>
-        <description>Caltech Library&#39;s sandbox for software development</description>
-        <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate>
-        <generator>pttk rss 0.0.19</generator>
+        <title><![CDATA[Caltech Library, DLD development blog]]></title>
+        <description><![CDATA[These are posts are selected posts from DLD group members at Caltech Library]]></description>
+        <link>https://caltechlibrary.github.io/rss.xml</link>
+        <language>en-us</language>
+        
+        <managingEditor>rsdoiel@caltech.edu (R. S. Doiel)</managingEditor>
+        
+        <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml" />
+        
         <item>
-            <title>Language models and &#34;fielded&#34; search</title>
-            <link>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</link>
-            <description>This an interesting use of an LLM, it means that the old &#34;advanced search&#34; UI or fielded search UI can be made to feel like a single box search, &lt;https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ &gt;. From Simon Willison&#39;s Weblog,&#xA;&#xA;&gt; &#34;Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.&#34;&#xA;&#xA;So does this mean the huge Solar/OpenSearch indexes aren&#39;t needed?  Probably not but it does mean that we can build much more effective search and retrieval systems before requiring a full text search engine. Running an Ollama instance with an appropriate frugal model is almost trivial. ...</description>
-            <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-            <guid>http://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</guid>
+            <title><![CDATA[Setting up RDM 13 on macOS M1 Mac Mini]]></title>
+            <description><![CDATA[This is a summary of the steps I took to successfully setup RDM 13 on my M1 Mac Mini running macOS 15.6. I use Mac Ports for dependencies.
+]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/08/01/Setting_up_RDM_13_on_macOS.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/08/01/Setting_up_RDM_13_on_macOS.html</guid>
+            <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>Invenio</category><category>RDM</category>
         </item>
+    
         <item>
-            <title>Google Chrome and DNS problems</title>
-            <link>http://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</link>
-            <description>Quick notes on a &#34;DNS&#34; problem specific to Google Chrome&#xA;and it got solved.&#xA;</description>
-            <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-            <guid>http://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</guid>
+            <title><![CDATA[Building Web Components using Large Language Models]]></title>
+            <description><![CDATA[A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.
+Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
+]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</guid>
+            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>web components</category><category>browsers</category><category>HTML</category><category>CSS</category><category>JavaScript</category><category>LLM</category>
         </item>
+    
         <item>
-            <title>Building Web Components using Large Language Models</title>
-            <link>http://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</link>
-            <description>A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.&#xA;Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.&#xA;</description>
-            <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>
-            <guid>http://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</guid>
+            <title><![CDATA[Language models and "fielded" search]]></title>
+            <description><![CDATA[]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</guid>
+            <pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>LLM</category><category>search</category>
         </item>
+    
+        <item>
+            <title><![CDATA[Google Chrome and DNS problems]]></title>
+            <description><![CDATA[Quick notes on a &quot;DNS&quot; problem specific to Google Chrome
+and it got solved.
+]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html</guid>
+            <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>DNS</category><category>Chrome</category>
+        </item>
+    
     </channel>
 </rss>
