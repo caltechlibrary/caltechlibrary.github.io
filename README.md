@@ -32,6 +32,3 @@ Subscribe: [RSS](rss.xml)
 - [Tooling for Languages](languages-and-tooling.md "projects organized around programming language or language support") 
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
 
-## Finding things
-
-- [Search Selected Projects](search.md)
