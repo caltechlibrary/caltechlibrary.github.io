@@ -22,18 +22,6 @@
         </item>
     
         <item>
-            <title><![CDATA[Building Web Components using Large Language Models]]></title>
-            <description><![CDATA[A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.
-Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
-]]></description>
-            <link>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</link>
-            <guid>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</guid>
-            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
-            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
-            <category>web components</category><category>browsers</category><category>HTML</category><category>CSS</category><category>JavaScript</category><category>LLM</category>
-        </item>
-    
-        <item>
             <title><![CDATA[Language models and "fielded" search]]></title>
             <description><![CDATA[]]></description>
             <link>https://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html</link>
@@ -53,6 +41,18 @@ and it got solved.
             <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
             <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
             <category>DNS</category><category>Chrome</category>
+        </item>
+    
+        <item>
+            <title><![CDATA[Building Web Components using Large Language Models]]></title>
+            <description><![CDATA[A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.
+Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
+]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html</guid>
+            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>web components</category><category>browsers</category><category>HTML</category><category>CSS</category><category>JavaScript</category><category>LLM</category>
         </item>
     
     </channel>

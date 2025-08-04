@@ -1,10 +1,13 @@
 ---
 title: Building Web Components using Large Language Models
-pubDate: 2025-03-13
+datePublished: 2025-03-13
 author: rsdoiel@caltech.edu (R. S. Doiel)
-abstract: |
-  A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.
-  Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
+abstract: >
+  A brief overview of an experiment resulting in
+  <https://github.com/caltechlibrary/CL-web-components>.
+
+  Two web components were developed that use a progressive enhancement approach,
+  CSVTextarea and A_to_ZUL.
 keywords:
   - web components
   - browsers
@@ -12,6 +15,8 @@ keywords:
   - CSS
   - JavaScript
   - LLM
+dateCreated: 2025-03-13
+dateModified: 2025-08-04
 ---
 
 # Building Web Components using Large Language Models

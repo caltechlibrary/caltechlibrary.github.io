@@ -3,6 +3,9 @@
   "data": {
     "abstract": "A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.\nTwo web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.\n",
     "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+    "dateCreated": "2025-03-13",
+    "dateModified": "2025-08-04",
+    "datePublished": "2025-03-13",
     "keywords": [
       "web components",
       "browsers",
@@ -11,7 +14,6 @@
       "JavaScript",
       "LLM"
     ],
-    "pubDate": "2025-03-13",
     "title": "Building Web Components using Large Language Models"
   }
 }

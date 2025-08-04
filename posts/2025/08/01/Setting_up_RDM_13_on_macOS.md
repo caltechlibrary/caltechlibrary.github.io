@@ -1,15 +1,15 @@
 ---
-dateCreated: '2025-08-01'
+dateCreated: 2025-08-01
 title: Setting up RDM 13 on macOS M1 Mac Mini
 author: rsdoiel@caltech.edu (R. S. Doiel)
 abstract: >
   This is a summary of the steps I took to successfully setup RDM 13 on my M1
   Mac Mini running macOS 15.6. I use Mac Ports for dependencies.
-datePublished: '2025-08-01'
+datePublished: 2025-08-01
 keywords:
   - Invenio
   - RDM
-dateModified: '2025-08-01'
+dateModified: 2025-08-01
 ---
 
 # Setting up RDM 13 on macOS

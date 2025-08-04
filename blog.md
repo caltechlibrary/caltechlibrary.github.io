@@ -31,20 +31,6 @@ These are posts are selected posts from DLD group members at Caltech Library
 
 
 
-## [Building Web Components using Large Language Models](https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html)
-
-**Description:** A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.
-Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
-
-
-
-**Author:** rsdoiel@caltech.edu (R. S. Doiel)
-2025-03-13
-**Categories:** web components, browsers, HTML, CSS, JavaScript, LLM
----
-
-
-
 ## [Language models and "fielded" search](https://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html)
 
 **Author:** rsdoiel@caltech.edu (R. S. Doiel)
@@ -64,5 +50,19 @@ and it got solved.
 **Author:** rsdoiel@caltech.edu (R. S. Doiel)
 2025-04-01
 **Categories:** DNS, Chrome
+---
+
+
+
+## [Building Web Components using Large Language Models](https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html)
+
+**Description:** A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.
+Two web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.
+
+
+
+**Author:** rsdoiel@caltech.edu (R. S. Doiel)
+2025-03-13
+**Categories:** web components, browsers, HTML, CSS, JavaScript, LLM
 ---
 

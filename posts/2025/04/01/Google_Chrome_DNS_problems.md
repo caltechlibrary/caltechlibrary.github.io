@@ -1,6 +1,5 @@
 ---
 title: Google Chrome and DNS problems
-pubDate: 2025-04-01
 author: rsdoiel@caltech.edu (R. S. Doiel)
 abstract: |
   Quick notes on a "DNS" problem specific to Google Chrome
@@ -8,6 +7,9 @@ abstract: |
 keywords:
   - DNS
   - Chrome
+dateCreated: 2025-04-01
+datePublished: 2025-04-01
+dateModified: 2025-08-04
 ---
 
 # Google Chrome and DNS problems

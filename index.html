@@ -22,6 +22,7 @@
 </nav>
 
 <section>
+<script type="module" src="modules/ul-flatlake-posts.js"></script>
 <h1 id="welcome-to-the-dld-labs">Welcome to the DLD Labs</h1>
 <p>This site contains software and experimental projects developed by
 the Caltech Library’s Digital Library Development Group. The majority of
@@ -29,25 +30,15 @@ these projects are hosted at <a
 href="https://github.com/caltechlibrary%22">GitHub</a> and available
 under <a href="https://en.wikipedia.org/wiki/Open_source">Open
 Source</a> licenses.</p>
-<ul>
-<li><a href="project_index.html"
+<p><a href="project_index.html"
 title="List all GitHub repositories with &#39;pages&#39; enabled">Project
-Documentation Index</a></li>
-</ul>
-<h2 id="examples-presentations-and-selected-posts">Examples,
-Presentations and selected posts</h2>
+Documentation Index</a></p>
+<h2 id="blog">Blog</h2>
+<p><ul-flatlake-posts href-api="api/posts/all/page-1.json" href-css="css/ul-flatlake-posts.css" max-items="3"></ul-flatlake-posts></p>
+<p>View all <a href="blog.html">Posts</a></p>
+<p>Subscribe: <a href="rss.xml">RSS</a></p>
+<h2 id="presentations-and-examples">Presentations and Examples</h2>
 <ul>
-<li>Selected <a href="blog.html">Posts</a>
-<ul>
-<li><a
-href="posts/2025/03/13/Building_Web_Components_using_LLM.html">Building
-Web Components using Large Language Models</a></li>
-<li><a
-href="posts/2025/04/11/language_models_and_fielded_search.html">Language
-models and fielded search</a></li>
-<li><a href="posts/2025/04/01/Google_Chrome_DNS_problems.html">Google
-Chrome DNS problems</a></li>
-</ul></li>
 <li><a
 href="https://caltechlibrary.github.io/t2t3_dataset_web_apps/presentation1.html">A
 recipe for applications: Dataset &amp; Web Components</a>, virtual,
@@ -87,7 +78,6 @@ Containers</a></li>
 <h2 id="finding-things">Finding things</h2>
 <ul>
 <li><a href="search.html">Search Selected Projects</a></li>
-<li><a href="rss.xml">RSS</a></li>
 </ul>
 </section>
 

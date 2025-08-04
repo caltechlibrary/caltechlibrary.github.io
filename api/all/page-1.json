@@ -21,32 +21,14 @@
       "url": "posts/2025/08/01/Setting_up_RDM_13_on_macOS.json"
     },
     {
-      "content": "\n# Building Web Components using Large Language Models\n\nby R. S. Doiel, 2025-03-13\n\nI started playing around with Mitral Chat to create web components for some library applications.  It’s a non-trivial process, not sure it is faster than me just write them from scratch but I am so far happy with the results which you can see <https://github.com/caltechlibrary/CL-web-components>.  There are two, one is called “a_to_z_ul.js” which lets you wrap a simple UL list and have it be an “A to Z” list. The second is call “csvtextarea.js” which is a component that wraps a TEXTAREA input element that contains CSV data and renders a table where you can edit the cells.  The wrapping of existing components was not the LLM’s suggestion, that was my idea but the generated JavaScript is from the LLM based on my prompts.\n\nOne of the challenges I ran into was the lack of reproducibility even for the same prompts. The second was I had to use a paid subscription to Mistral as the free one available from DuckDuckGo wasn’t enough. I compared a few other LLM as I learned to use the chat interface and Mistral price for results was the best for my tests.\n\nAfter getting a feel for using Mistral I tried running the original prompts against Mistral using Ollama. The results are different. It is cleared the “paid” platforms of open sourced models have significant enhancements in the models.\n\nI worry about the energy consumed in running the models let along refining them.\n\nWhile I like the results I got for this specific test I am on the fence about the general usefulness for libraries, archives and museums.\n",
-      "data": {
-        "abstract": "A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.\nTwo web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.\n",
-        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
-        "keywords": [
-          "web components",
-          "browsers",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "LLM"
-        ],
-        "pubDate": "2025-03-13",
-        "title": "Building Web Components using Large Language Models"
-      },
-      "url": "posts/2025/03/13/Building_Web_Components_using_LLM.json"
-    },
-    {
       "content": "\n# Language models and \"fielded\" search\n\nBy R. S. Doiel, 2025-04-10\n\nThis an interesting use of an LLM, it means that the old \"advanced search\" UI or fielded search UI can be made to feel like a single box search, <https://simonwillison.net/2025/Apr/9/an-llm-query-understanding-service/ >. From Simon Willison's Weblog,\n\n> \"Many times, even a small open source LLM will be able to turn a search query into reasonable structure at relatively low cost.\"\n\nSo does this mean the huge Solar/OpenSearch indexes aren't needed?  Probably not but it does mean that we can build much more effective search and retrieval systems before requiring a full text search engine. Running an Ollama instance with an appropriate frugal model is almost trivial.\n",
       "data": {
         "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "datePublished": "2025-04-10",
         "keywords": [
           "LLM",
           "search"
         ],
-        "pubDate": "2025-04-10",
         "title": "Language models and \"fielded\" search"
       },
       "url": "posts/2025/04/11/language_models_and_fielded_search.json"
@@ -56,14 +38,36 @@
       "data": {
         "abstract": "Quick notes on a \"DNS\" problem specific to Google Chrome\nand it got solved.\n",
         "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "dateCreated": "2025-04-01",
+        "dateModified": "2025-08-04",
+        "datePublished": "2025-04-01",
         "keywords": [
           "DNS",
           "Chrome"
         ],
-        "pubDate": "2025-04-01",
         "title": "Google Chrome and DNS problems"
       },
       "url": "posts/2025/04/01/Google_Chrome_DNS_problems.json"
+    },
+    {
+      "content": "\n# Building Web Components using Large Language Models\n\nby R. S. Doiel, 2025-03-13\n\nI started playing around with Mitral Chat to create web components for some library applications.  It’s a non-trivial process, not sure it is faster than me just write them from scratch but I am so far happy with the results which you can see <https://github.com/caltechlibrary/CL-web-components>.  There are two, one is called “a_to_z_ul.js” which lets you wrap a simple UL list and have it be an “A to Z” list. The second is call “csvtextarea.js” which is a component that wraps a TEXTAREA input element that contains CSV data and renders a table where you can edit the cells.  The wrapping of existing components was not the LLM’s suggestion, that was my idea but the generated JavaScript is from the LLM based on my prompts.\n\nOne of the challenges I ran into was the lack of reproducibility even for the same prompts. The second was I had to use a paid subscription to Mistral as the free one available from DuckDuckGo wasn’t enough. I compared a few other LLM as I learned to use the chat interface and Mistral price for results was the best for my tests.\n\nAfter getting a feel for using Mistral I tried running the original prompts against Mistral using Ollama. The results are different. It is cleared the “paid” platforms of open sourced models have significant enhancements in the models.\n\nI worry about the energy consumed in running the models let along refining them.\n\nWhile I like the results I got for this specific test I am on the fence about the general usefulness for libraries, archives and museums.\n",
+      "data": {
+        "abstract": "A brief overview of an experiment resulting in <https://github.com/caltechlibrary/CL-web-components>.\nTwo web components were developed that use a progressive enhancement approach, CSVTextarea and A_to_ZUL.\n",
+        "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+        "dateCreated": "2025-03-13",
+        "dateModified": "2025-08-04",
+        "datePublished": "2025-03-13",
+        "keywords": [
+          "web components",
+          "browsers",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "LLM"
+        ],
+        "title": "Building Web Components using Large Language Models"
+      },
+      "url": "posts/2025/03/13/Building_Web_Components_using_LLM.json"
     }
   ]
 }

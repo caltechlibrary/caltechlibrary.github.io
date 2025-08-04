@@ -1,16 +1,22 @@
+<script type="module" src="modules/ul-flatlake-posts.js"></script>
 
 # Welcome to the DLD Labs
 
 This site contains software and experimental projects developed by the Caltech Library's Digital Library Development Group.  The majority of these projects are hosted at [GitHub](https://github.com/caltechlibrary") and available under [Open Source](https://en.wikipedia.org/wiki/Open_source) licenses.
 
-- [Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
+[Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 
-## Examples, Presentations and selected posts
 
-- Selected [Posts](blog.md)
-    - [Building Web Components using Large Language Models](posts/2025/03/13/Building_Web_Components_using_LLM.md)
-    - [Language models and fielded search](posts/2025/04/11/language_models_and_fielded_search.md)
-    - [Google Chrome DNS problems](posts/2025/04/01/Google_Chrome_DNS_problems.md)
+## Blog
+
+<ul-flatlake-posts href-api="api/posts/all/page-1.json" href-css="css/ul-flatlake-posts.css" max-items="3"></ul-flatlake-posts>
+
+View all [Posts](blog.md) 
+
+Subscribe: [RSS](rss.xml)
+
+## Presentations and Examples
+
 - [A recipe for applications: Dataset & Web Components](https://caltechlibrary.github.io/t2t3_dataset_web_apps/presentation1.html), virtual, 2025-06-12
 - [COLD, curating objects with SQLite3, Deno and Dataset](https://caltechlibrary.github.io/cold/presentations/presentation1.html),
  SoCal Code4Lib Meetup at Caltech, 2024-11-15
@@ -29,4 +35,3 @@ This site contains software and experimental projects developed by the Caltech L
 ## Finding things
 
 - [Search Selected Projects](search.md)
-- [RSS](rss.xml)

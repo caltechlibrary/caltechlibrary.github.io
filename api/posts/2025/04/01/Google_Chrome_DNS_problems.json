@@ -3,11 +3,13 @@
   "data": {
     "abstract": "Quick notes on a \"DNS\" problem specific to Google Chrome\nand it got solved.\n",
     "author": "rsdoiel@caltech.edu (R. S. Doiel)",
+    "dateCreated": "2025-04-01",
+    "dateModified": "2025-08-04",
+    "datePublished": "2025-04-01",
     "keywords": [
       "DNS",
       "Chrome"
     ],
-    "pubDate": "2025-04-01",
     "title": "Google Chrome and DNS problems"
   }
 }
