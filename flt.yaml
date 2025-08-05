@@ -1,4 +1,5 @@
 blog: posts
+base_url: "https://caltechlibrary.github.io"
 channels:
   - name: posts
     title: "Caltech Library, DLD development blog"
