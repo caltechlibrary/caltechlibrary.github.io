@@ -5,7 +5,7 @@
     <title>Caltech Library's DLD Labs</title>
     <link rel="stylesheet" href="/css/site.css">
     <link rel="alternate" type="application/rss+xml" title="Caltech Library, Digital Library Development posts" href="/rss.xml">
-    <script type="module" src="https://caltechlibrary.github.io/CL-web-components/src/footer-global.js"></script>
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/cl-web-components.js"></script>
 </head>
 <body>
 <header>
@@ -34,20 +34,20 @@ up RDM 13 on macOS M1 Mac Mini</a></h2>
 <p><strong>Description:</strong> This is a summary of the steps I took
 to successfully setup RDM 13 on my M1 Mac Mini running macOS 15.6. I use
 Mac Ports for dependencies.</p>
-<p><strong>Author:</strong> rsdoiel@caltech.edu (R. S. Doiel) 2025-08-01
-<strong>Categories:</strong> Invenio, RDM —</p>
+<p><strong>Author:</strong> R. S. Doiel 2025-08-01
+<strong>Categories:</strong> Invenio, RDM</p>
 <h2 id="language-models-and-fielded-search"><a
 href="https://caltechlibrary.github.io/posts/2025/04/11/language_models_and_fielded_search.html">Language
 models and “fielded” search</a></h2>
 <p><strong>Author:</strong> rsdoiel@caltech.edu (R. S. Doiel) 2025-04-10
-<strong>Categories:</strong> LLM, search —</p>
+<strong>Categories:</strong> LLM, search</p>
 <h2 id="google-chrome-and-dns-problems"><a
 href="https://caltechlibrary.github.io/posts/2025/04/01/Google_Chrome_DNS_problems.html">Google
 Chrome and DNS problems</a></h2>
 <p><strong>Description:</strong> Quick notes on a “DNS” problem specific
 to Google Chrome and it got solved.</p>
 <p><strong>Author:</strong> rsdoiel@caltech.edu (R. S. Doiel) 2025-04-01
-<strong>Categories:</strong> DNS, Chrome —</p>
+<strong>Categories:</strong> DNS, Chrome</p>
 <h2 id="building-web-components-using-large-language-models"><a
 href="https://caltechlibrary.github.io/posts/2025/03/13/Building_Web_Components_using_LLM.html">Building
 Web Components using Large Language Models</a></h2>
@@ -59,9 +59,31 @@ web components were developed that use a progressive enhancement
 approach, CSVTextarea and A_to_ZUL.</p>
 <p><strong>Author:</strong> rsdoiel@caltech.edu (R. S. Doiel) 2025-03-13
 <strong>Categories:</strong> web components, browsers, HTML, CSS,
-JavaScript, LLM —</p>
+JavaScript, LLM</p>
 </section>
 
 <footer-global></footer-global>
+<!-- START: PrettyFi from https://github.com/google/code-prettify -->
+<script>
+/* We want to add the class "prettyprint" to all the pre elements */
+var pre_list = document.querySelectorAll("pre");
+
+pre_list.forEach(function(elem) {
+    elem.classList.add("prettyprint");
+    elem.classList.add("linenums");/**/
+    elem.classList.add("json"); /**/
+});
+</script>
+<style>
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: #555;
+    list-style-type: decimal;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/css/prettify.css">
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_
+prettify.js"></script>
+<!--  END: PrettyFi from https://github.com/google/code-prettify -->
 </body>
 </html>

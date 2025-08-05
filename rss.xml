@@ -17,10 +17,10 @@
             <link>https://caltechlibrary.github.io/posts/2025/08/01/Setting_up_RDM_13_on_macOS.html</link>
             <guid>https://caltechlibrary.github.io/posts/2025/08/01/Setting_up_RDM_13_on_macOS.html</guid>
             <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
-            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <author>R. S. Doiel</author>
             <category>Invenio</category><category>RDM</category>
         </item>
-    
+      
         <item>
             <title><![CDATA[Language models and "fielded" search]]></title>
             <description><![CDATA[]]></description>
@@ -30,7 +30,7 @@
             <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
             <category>LLM</category><category>search</category>
         </item>
-    
+      
         <item>
             <title><![CDATA[Google Chrome and DNS problems]]></title>
             <description><![CDATA[Quick notes on a &quot;DNS&quot; problem specific to Google Chrome
@@ -42,7 +42,7 @@ and it got solved.
             <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
             <category>DNS</category><category>Chrome</category>
         </item>
-    
+      
         <item>
             <title><![CDATA[Building Web Components using Large Language Models]]></title>
             <description><![CDATA[A brief overview of an experiment resulting in &lt;https://github.com/caltechlibrary/CL-web-components&gt;.
@@ -54,6 +54,6 @@ Two web components were developed that use a progressive enhancement approach, C
             <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
             <category>web components</category><category>browsers</category><category>HTML</category><category>CSS</category><category>JavaScript</category><category>LLM</category>
         </item>
-    
+      
     </channel>
 </rss>

@@ -5,7 +5,7 @@
     <title>Caltech Library's DLD Labs</title>
     <link rel="stylesheet" href="/css/site.css">
     <link rel="alternate" type="application/rss+xml" title="Caltech Library, Digital Library Development posts" href="/rss.xml">
-    <script type="module" src="https://caltechlibrary.github.io/CL-web-components/src/footer-global.js"></script>
+    <script type="module" src="https://media.library.caltech.edu/cl-webcomponents/cl-web-components.js"></script>
 </head>
 <body>
 <header>
@@ -25,6 +25,7 @@
 
 <section>
 <h1 id="setting-up-rdm-13-on-macos">Setting up RDM 13 on macOS</h1>
+<p>UPDATE: Added notes about install NodeJS via nvm, 2025-08-05 RSD</p>
 <p>This is a summary of my experience bringing up a vanilla Developer
 Invenio RDM 13 experience on macOS 15.6 running on a M1 Mac Mini. I use
 Mac Ports for supporting development. I use uv to manage Python.</p>
@@ -57,6 +58,10 @@ things in your PATH or LD_LIBRARY_PATH?)</li>
 <h2 id="preparing-your-machine">Preparing your machine</h2>
 <p>Once I had a clean system here’s the steps I took.</p>
 <ol type="1">
+<li>Install NodeJS via <code>nvm</code>, see <a
+href="https://nodejs.org/en/download"
+class="uri">https://nodejs.org/en/download</a>, select macOS and using
+“nvm” with “npm”</li>
 <li>Install of <a
 href="https://docs.astral.sh/uv/getting-started/installation/">uv</a></li>
 <li>Install python3.12 as default using uv,
@@ -71,6 +76,36 @@ symbolically linked to <code>/usr/local/lib</code></li>
 <li>Install openssl via Mac Ports,
 <code>sudo port install openssl</code></li>
 </ol>
+<h3 id="nodejs-for-a-system-written-in-python">NodeJS for a system
+written in Python?</h3>
+<p>Currently the Invenio Project uses NodeJS for managing React
+components. You’ll want to have NodeJS available. I recommend installing
+NodeJS via “nvm” (Node version manager). It’ll save you some grief and
+let you use NodeJS for other projects which might need more recent
+versions.</p>
+<p>Here’s what I do in a macOS Terminal window.</p>
+<pre class="shell"><code>open https://nodejs.org/en/download</code></pre>
+<p>Then in the web browser I make sure the download page is referencing
+macOS, nvm and npm. I think this is the default but I’ve visited the
+site so many times over the years it could be I have a cookie set to
+show that choice.</p>
+<p>The window will show a shell script/session you can run. At the time
+of writing this it look like this for me.</p>
+<pre class="shell"><code># Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. &quot;$HOME/.nvm/nvm.sh&quot;
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print &quot;v22.18.0&quot;.
+nvm current # Should print &quot;v22.18.0&quot;.
+
+# Verify npm version:
+npm -v # Should print &quot;10.9.3&quot;.</code></pre>
 <h2 id="installing-rdm-13">Installing RDM 13</h2>
 <p>You should now be prepared to follow the instructions at <a
 href="https://inveniordm.docs.cern.ch/install/#quick-start"
@@ -90,7 +125,7 @@ invenio-cli check-requirements  # If this doesn&#39;t pass you probably have a d
 invenio-cli init rdm            # Accept all the defaults for testing
 cd my-site
 invenio-cli check-requirements --development  # If this doesn&#39;t pass ...
-# Install Python and Javascript packages, you&#39;ll see warns about depreciated packages and Node stuff (that&#39;s normal)
+# Install Python and JavaScript packages, you&#39;ll see warns about depreciated packages and Node stuff (that&#39;s normal)
 invenio-cli install
 # Set up containerized database, cache, OpenSearch, etc. You&#39;ll see warnings about depreciated stuff
 invenio-cli services setup
@@ -116,5 +151,27 @@ invenio-cli services destroy</code></pre>
 </section>
 
 <footer-global></footer-global>
+<!-- START: PrettyFi from https://github.com/google/code-prettify -->
+<script>
+/* We want to add the class "prettyprint" to all the pre elements */
+var pre_list = document.querySelectorAll("pre");
+
+pre_list.forEach(function(elem) {
+    elem.classList.add("prettyprint");
+    elem.classList.add("linenums");/**/
+    elem.classList.add("json"); /**/
+});
+</script>
+<style>
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: #555;
+    list-style-type: decimal;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/css/prettify.css">
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_
+prettify.js"></script>
+<!--  END: PrettyFi from https://github.com/google/code-prettify -->
 </body>
 </html>

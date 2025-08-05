@@ -1,3 +1,4 @@
+blog: posts
 channels:
   - name: posts
     title: "Caltech Library, DLD development blog"

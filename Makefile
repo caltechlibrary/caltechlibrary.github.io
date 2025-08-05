@@ -24,8 +24,8 @@ refresh: .FORCE
 
 website: .FORCE
 	flatlake
-	flt posts rss api/all/page-1.json >rss.xml
-	flt posts markdown api/all/page-1.json >blog.md
+	flt rss posts api/all/page-1.json >rss.xml
+	flt markdown posts api/all/page-1.json >blog.md
 	make -f website.mak
 
 # NOTE: I'm not using publish.bash here because this website doesn't

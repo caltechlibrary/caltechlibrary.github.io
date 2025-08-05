@@ -1,18 +1,20 @@
 ---
-dateCreated: 2025-08-01
+dateCreated: '2025-08-01'
 title: Setting up RDM 13 on macOS M1 Mac Mini
-author: rsdoiel@caltech.edu (R. S. Doiel)
+author: R. S. Doiel
 abstract: >
   This is a summary of the steps I took to successfully setup RDM 13 on my M1
   Mac Mini running macOS 15.6. I use Mac Ports for dependencies.
-datePublished: 2025-08-01
+datePublished: '2025-08-01'
 keywords:
   - Invenio
   - RDM
-dateModified: 2025-08-01
+dateModified: '2025-08-05'
 ---
 
 # Setting up RDM 13 on macOS
+
+UPDATE: Added notes about install NodeJS via nvm, 2025-08-05 RSD
 
 This is a summary of my experience bringing up a vanilla Developer Invenio RDM 13 experience on macOS 15.6 running on a M1 Mac Mini. I use Mac Ports for supporting development.  I use uv to manage Python.
 
@@ -36,13 +38,46 @@ If you run into problems I highly recommend making sure you have a "clean" syste
 
 Once I had a clean system here's the steps I took.
 
-1. Install of [uv](https://docs.astral.sh/uv/getting-started/installation/)
-2. Install python3.12 as default using uv, `uv python install 3.12 --default`
-3. Install Docker Desktop
-4. Install ImageMagick7 via Mac Ports, `sudo port install ImageMagick7`
-5. Install cairo via Mac Ports, `sudo port install cairo`
-6. Make sure that Mac Ports `libcairo.2.dylib` is symbolically linked to `/usr/local/lib`
-7. Install openssl via Mac Ports, `sudo port install openssl`
+1. Install NodeJS via `nvm`, see <https://nodejs.org/en/download>, select macOS and using "nvm" with "npm"
+2. Install of [uv](https://docs.astral.sh/uv/getting-started/installation/)
+3. Install python3.12 as default using uv, `uv python install 3.12 --default`
+4. Install Docker Desktop
+5. Install ImageMagick7 via Mac Ports, `sudo port install ImageMagick7`
+6. Install cairo via Mac Ports, `sudo port install cairo`
+7. Make sure that Mac Ports `libcairo.2.dylib` is symbolically linked to `/usr/local/lib`
+8. Install openssl via Mac Ports, `sudo port install openssl`
+
+### NodeJS for a system written in Python?
+
+Currently the Invenio Project uses NodeJS for managing React components. You'll want to have NodeJS available. I recommend installing NodeJS via "nvm" (Node version manager). It'll save you some grief and let you use NodeJS for other projects which might need more recent versions.
+
+Here's what I do in a macOS Terminal window.
+
+~~~shell
+open https://nodejs.org/en/download
+~~~
+
+Then in the web browser I make sure the download page is referencing macOS, nvm and npm. I think this is the default but I've visited the site so many times over the years it could be I have a cookie set to show that choice. 
+
+The window will show a shell script/session you can run. At the time of writing this it look like this for me.
+
+~~~shell
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.18.0".
+nvm current # Should print "v22.18.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.3".
+~~~
 
 ## Installing RDM 13
 
@@ -63,7 +98,7 @@ invenio-cli check-requirements  # If this doesn't pass you probably have a dirty
 invenio-cli init rdm            # Accept all the defaults for testing
 cd my-site
 invenio-cli check-requirements --development  # If this doesn't pass ...
-# Install Python and Javascript packages, you'll see warns about depreciated packages and Node stuff (that's normal)
+# Install Python and JavaScript packages, you'll see warns about depreciated packages and Node stuff (that's normal)
 invenio-cli install
 # Set up containerized database, cache, OpenSearch, etc. You'll see warnings about depreciated stuff
 invenio-cli services setup

@@ -24,10 +24,10 @@ These are posts are selected posts from DLD group members at Caltech Library
 
 
 
-**Author:** rsdoiel@caltech.edu (R. S. Doiel)
+**Author:** R. S. Doiel
 2025-08-01
 **Categories:** Invenio, RDM
----
+
 
 
 
@@ -36,7 +36,7 @@ These are posts are selected posts from DLD group members at Caltech Library
 **Author:** rsdoiel@caltech.edu (R. S. Doiel)
 2025-04-10
 **Categories:** LLM, search
----
+
 
 
 
@@ -50,7 +50,7 @@ and it got solved.
 **Author:** rsdoiel@caltech.edu (R. S. Doiel)
 2025-04-01
 **Categories:** DNS, Chrome
----
+
 
 
 
@@ -64,5 +64,5 @@ Two web components were developed that use a progressive enhancement approach, C
 **Author:** rsdoiel@caltech.edu (R. S. Doiel)
 2025-03-13
 **Categories:** web components, browsers, HTML, CSS, JavaScript, LLM
----
+
 
