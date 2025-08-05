@@ -23,7 +23,7 @@ function getQueryParam(name) {
 const searchQuery = getQueryParam('q');
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({
+    const searchUI = new PagefindUI({
         element: "#search",
         highlightParam: "highlight",
         mergeIndex: [
@@ -42,10 +42,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             {
                 bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
                 baseUrl: "/dataset/",
-            },
-            {
-                bundlePath: "https://caltechlibrary.github.io/newt/pagefind",
-                baseUrl: "/newt/",
             },
             { 
                 bundlePath: "https://caltechlibrary.github.io/irdmtools/pagefind",
