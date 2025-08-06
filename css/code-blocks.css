@@ -29,7 +29,7 @@ pre {
   position: relative;
 }
 
-code {
+pre > code {
   display: block;
   font-family: var(--code-font-family);
   line-height: 1.5;
@@ -46,7 +46,7 @@ code {
   font-size: 14px;
   position: absolute;
   right: 10px;
-  bottom: 10px; /* Position the button at the bottom */
+  top: 10px; /* Position the button at the top */
 }
 
 .copy-button:hover {
