@@ -28,7 +28,7 @@ Subscribe: [RSS](rss.xml)
 
 - [Easy installs for Linux, macOS and Windows](installers.md "Easy install instructions for Linux, macOS and Windows for our Go based tools")
 - [Harvesters and Systems integration](harvesters-and-system-integration.md)
-- [Looking for Metadata and Web Resources](web-and-cli-tools.md)
+- [Working with Metadata and Web Resources](web-and-cli-tools.md)
 - [Tooling for Languages](languages-and-tooling.md "projects organized around programming language or language support") 
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
 

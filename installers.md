@@ -23,8 +23,6 @@ Repository                                                         Install for L
 [datatools](https://github.com/caltechlibrary/datatools/issues)    `curl https://caltechlibrary.github.io/datatools/installer.sh | sh`
 [dataset](https://github.com/caltechlibrary/dataset/issues)        `curl https://caltechlibrary.github.io/dataset/installer.sh | sh`
 [irdmtools](https://github.com/caltechlibrary/irdmtools/issues)    `curl https://caltechlibrary.github.io/irdmtools/installer.sh | sh`
-[mkpage](https://github.com/caltechlibrary/mkpage/issues)          `curl https://caltechlibrary.github.io/mkpage/installer.sh | sh`
-[newt](https://github.com/caltechlibrary/newt/issues)              `curl https://caltechlibrary.github.io/newt/installer.sh | sh`
 [cold](https://github.com/caltechlibrary/cold/issues)              `curl htpps://caltechlibrary.github.io/cold/installer.sh | sh`
 [CMTools](https://github.com/caltechlibrary/CMTools/issues)         `curl htpps://caltechlibrary.github.io/CMTools/installer.sh | sh`
 
@@ -33,8 +31,6 @@ Repository                                                         Install for W
 [datatools](https://github.com/caltechlibrary/datatools/issues)    `irm https://caltechlibrary.github.io/datatools/installer.ps1 | iex` 
 [dataset](https://github.com/caltechlibrary/dataset/issues)        `irm https://caltechlibrary.github.io/dataset/installer.ps1 | iex`   
 [irdmtools](https://github.com/caltechlibrary/irdmtools/issues)    `irm https://caltechlibrary.github.io/irdmtools/installer.ps1 | iex`  
-[mkpage](https://github.com/caltechlibrary/mkpage/issues)          `irm https://caltechlibrary.github.io/mkpage/installer.ps1 | iex`   
-[newt](https://github.com/caltechlibrary/newt/issues)              `irm https://caltechlibrary.github.io/newt/installer.ps1 | iex`
 [cold](https://github.com/caltechlibrary/cold/issues)              `irm https://caltechlibrary.github.io/cold/installer.ps1 | iex`
 [CMTools](https://github.com/caltechlibrary/CMTools/issues)        `irm https://caltechlibrary.github.io/CMTools/installer.ps1 | iex`
 
