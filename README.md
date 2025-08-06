@@ -4,7 +4,6 @@
 
 This site contains software and experimental projects developed by the Caltech Library's Digital Library Development Group.  The majority of these projects are hosted at [GitHub](https://github.com/caltechlibrary") and available under [Open Source](https://en.wikipedia.org/wiki/Open_source) licenses.
 
-[Project Documentation Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 
 
 ## Blog
@@ -31,4 +30,6 @@ Subscribe: [RSS](rss.xml)
 - [Working with Metadata and Web Resources](web-and-cli-tools.md)
 - [Tooling for Languages](languages-and-tooling.md "projects organized around programming language or language support") 
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
+
+[Project Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 
