@@ -24,6 +24,14 @@ Example:
 '''
     return help_text
 
+def is_website_available(url):
+    try:
+        response = requests.get(url, timeout=10)
+        return response.status_code == 200
+    except requests.RequestException as e:
+        log.debug(f"Website check failed for {url}: {e}")
+        return False
+
 def mk_project_index(org_name, url_prefix, out_name):
     if not org_name or not url_prefix or not out_name:
         return 'Organization name, URL prefix, and output filename are required.'
@@ -58,20 +66,31 @@ def mk_project_index(org_name, url_prefix, out_name):
             if data:
                 for repo in data:
                     repo_name = repo['name']
-                    if (not url_prefix.startswith(f'https://{repo_name}') and
-                        repo.get("has_pages", False) and
-                        not repo.get('archived', False)):
 
-                        if repo['pushed_at'] and int(repo['pushed_at'][:4]) >= stale_year:
-                            description = repo.get('description', '')
-                            if description:
-                                projects.append({"name": repo_name, "description": description})
-                            else:
-                                log.debug(f'Skipping {repo_name}, description is incomplete')
-                        else:
-                            log.debug(f'Skipping {repo_name}, last active {repo["pushed_at"][:4]}')
+                    # Check if the repository is archived or does not have pages
+                    if repo.get('archived', False):
+                        log.debug(f'Skipping {repo_name}, repository is archived')
+                        continue
+
+                    if not repo.get('has_pages', False):
+                        log.debug(f'Skipping {repo_name}, repository does not have GitHub Pages enabled')
+                        continue
+
+                    if repo['pushed_at'] and int(repo['pushed_at'][:4]) < stale_year:
+                        log.debug(f'Skipping {repo_name}, last active {repo["pushed_at"][:4]}')
+                        continue
+
+                    description = repo.get('description', '')
+                    if not description:
+                        log.debug(f'Skipping {repo_name}, description is incomplete')
+                        continue
+
+                    # Check if the website is available
+                    website_url = f"{url_prefix}{repo_name}/"
+                    if is_website_available(website_url):
+                        projects.append({"name": repo_name, "description": description})
                     else:
-                        log.debug(f'Skipping {repo_name}, does not meet criteria')
+                        log.debug(f'Skipping {repo_name}, website is not available')
 
                 page_no += 1
                 log.info(f'Waiting {request_delay} seconds before next request...')
@@ -89,7 +108,7 @@ def mk_project_index(org_name, url_prefix, out_name):
 
 ''')
             for repo in projects:
-                file.write(f'- [{repo["name"]}](./{repo["name"]}/) - {repo["description"]}\n')
+                file.write(f'- [{repo["name"]}]({url_prefix}{repo["name"]}/) - {repo["description"]}\n')
     else:
         return 'No repositories found'
 

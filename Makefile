@@ -7,9 +7,6 @@ BRANCH = $(shell git branch | grep -E "\* " | cut -d\   -f 2)
 
 build: website
 
-project_index: .FORCE
-	uv run mk_project_index.py caltechlibrary project_index.md
-
 clean: .FORCE
 	rm -f *.html
 
@@ -31,7 +28,9 @@ website: .FORCE
 # NOTE: I'm not using publish.bash here because this website doesn't
 # require publication via gh-pages branch. Publish in this case
 # Just makes sure the project index is updated (takes a while before a push)
-publish: project_index save
-	git push origin main
+#project_index.md: project_index save
+
+project_index: .FORCE
+	uv run mk_project_index.py caltechlibrary project_index.md
 
 .FORCE:
