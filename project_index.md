@@ -3,7 +3,7 @@ GitHub Projects 2021 through 2025
 ===================================
 
 
-- [CL-Pandoc-filters](./CL-Pandoc-filters/) This is a collection of Pandoc filters uses by Caltech Library's Digital Library Development Groups 
+- [CL-Pandoc-filters](./CL-Pandoc-filters/) This is a collection of Pandoc filters used by Caltech Library's Digital Library Development Groups 
 - [CL-web-components](./CL-web-components/) This is a collection of web components used in Caltech Library web applications.
 - [CMTools](./CMTools/) Project build tools leveraging CodeMeta JSON file.
 - [OH-demo](./OH-demo/) Initial exploration of Oral Histories in markdown
@@ -27,9 +27,10 @@ GitHub Projects 2021 through 2025
 - [datatools](./datatools/) A set of tools for working with JSON, CSV and Excel workbooks
 - [dibs](./dibs/) DIBS is an implementation of a basic controlled digital lending (CDL) system using IIIF to make scanned books available for time-limited viewing.
 - [documenting-earthquakes](./documenting-earthquakes/) In honor of the centennial of the 1906 San Francisco earthquake, the Caltech Archives created a virtual exhibit in six parts of materials from its own collections. Recent major donations by Professor George W. Housner have substantially augmented the Archives’ holdings in the history of earthquakes and the early science of seismology.
-- [dotpath](./dotpath/) A Go, Python and TypeScript modules for working with map, dicts and objects accessing them using a dot path notation.
+- [doitools](./doitools/) A Go package for working with DOI
 - [ead2dc](./ead2dc/) Converts ArchivesSpace EAD Finding Aid XML to an OAI-PMH Static Repository with DC metadata.
 - [eprinttools](./eprinttools/) EPrintTools is a Go package, command line utilities and a service for working with EPrints 3.3.x EPrint XML and REST API
+- [flatlakeTools](./flatlakeTools/) flatlakeTools is a prototype for making use of the content generate by CloudCannon's FlatLake
 - [foliage](./foliage/) Foliage is the FOLIo chAnGe Editor, a tool to do bulk changes in FOLIO using the network API.
 - [geospatial-python](./geospatial-python/) Introduction to Geospatial Raster and Vector Data with Python
 - [git-workshop-workflows](./git-workshop-workflows/) Branches, conflicts, and pull requests.
@@ -44,11 +45,9 @@ GitHub Projects 2021 through 2025
 - [logagent](./logagent/) A simple program to scan a log file for text tags and emit actions
 - [metadatatools](./metadatatools/) Inspired by the Python IdUtils package metadatatools provides similar functionality in TypeScript.
 - [models](./models/) This is a Go package used to describe data models aligned with the HTML5 data types.
-- [namaste](./namaste/) Go package and command line implementation of "NAMe AS TExt" metadata embedding for directories.
 - [newt](./newt/) Newt a microservice for integrating Postgres+PostgREST and Pandoc
 - [opensearch-machine](./opensearch-machine/) This is a repo for testing and learning Opensearch running under Multipass.
 - [pairtree](./pairtree/) A simple encoder/decoder for converting object identifiers into a Pair Tree Path (path)
-- [pandoc_client](./pandoc_client/) This repository holds an experimental Go package that functions as a client to pandoc-server.
 - [popstar](./popstar/) Phone-Oriented Processing SofTware for ARchives
 - [py_dataset](./py_dataset/) Python package of dataset (https://github.com/caltechlibrary/dataset) for working with JSON objects as collections on disc
 - [shell-extras](./shell-extras/) Extra material for Software Carpentry shell lesson.
