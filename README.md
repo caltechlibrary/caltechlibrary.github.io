@@ -30,6 +30,5 @@ Subscribe: [RSS](rss.xml)
 - [Working with Metadata and Web Resources](web-and-cli-tools.md)
 - [Tooling for Languages](languages-and-tooling.md "projects organized around programming language or language support") 
 - [Virtual Machines and Containers](virtual-machines-and-containers.md)
-
-[Project Index](project_index.md "List all GitHub repositories with 'pages' enabled")
+- [Project Index](project_index.md "List all GitHub repositories with 'pages' enabled")
 
