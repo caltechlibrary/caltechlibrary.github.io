@@ -178,6 +178,12 @@ section h2 {
     font-style: italic;
 }
 
+section h2 a, section a:link, section a:visited {
+    font-weight: bold;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
 section h3 {
     font-size: 1em;
     text-transform: uppercase;
