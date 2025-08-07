@@ -178,7 +178,7 @@ section h2 {
     font-style: italic;
 }
 
-section h2 a, section a:link, section a:visited {
+section h2 a, section h2 a:link, section h2 a:visited {
     font-weight: bold;
     color: darkblue;
     text-transform: uppercase;
