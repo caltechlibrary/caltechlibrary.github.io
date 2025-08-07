@@ -12,8 +12,6 @@ This site contains software and experimental projects developed by the Caltech L
 
 View all [Posts](blog.md) 
 
-Subscribe: [RSS](rss.xml)
-
 ## Presentations and Examples
 
 - [A recipe for applications: Dataset & Web Components](https://caltechlibrary.github.io/t2t3_dataset_web_apps/presentation1.html), virtual, 2025-06-12
