@@ -1,18 +1,17 @@
 
 # Search
 
-
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-
-<script src="/pagefind/pagefind-ui.js"></script>
-
 <p>
 
 <div id="search"></div>
 
 <p>
 
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
 <script>
+// Import PageFindUI
+
 // Function to extract query parameters from the URL
 function getQueryParam(name) {
   const urlParams = new URLSearchParams(window.location.search);
@@ -22,6 +21,7 @@ function getQueryParam(name) {
 // Extract the query parameter
 const searchQuery = getQueryParam('q');
 
+// When the page is fully loaded setup the PageFindUI object
 window.addEventListener('DOMContentLoaded', (event) => {
     const searchUI = new PagefindUI({
         element: "#search",
@@ -34,10 +34,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             {
                 bundlePath: "https://caltechlibrary.github.io/datatools/pagefind",
                 baseUrl: "/datatools/",
-            },
-            {
-                bundlePath: "https://caltechlibrary.github.io/ts_dataset/pagefind",
-                baseUrl: "/ts_dataset/",
             },
             {
                 bundlePath: "https://caltechlibrary.github.io/dataset/pagefind",
@@ -60,12 +56,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 baseUrl: "/metadatatools/",
             },
             {
-                bundlePath: "https://caltechlibrary.github.io/logagent/pagefind",
-                baseURL: "/logagent/",
+                bundlePath: "https://caltechlibrary.github.io/CL-web-components/pagefind",
+                baseURL: "/CL-web-components/",
             },
             {
-                bundlePath: "https://caltechlibrary.github.io/CL-web-components/pagefind",
-                baseURL: "/Cl-web-components/",
+                bundlePath: "https://caltechlibrary.github.io/CL-Pandoc-filters/pagefind",
+                baseURL: "/CL-Pandoc-filters/",
             }
         ]
     });
