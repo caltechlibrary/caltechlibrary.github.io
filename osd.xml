@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>DLD Labs</ShortName>
+  <ShortName>DLDLabs</ShortName>
   <Description>Search the Digital Library Development Labs at Caltech Library</Description>
   <Url type="text/html" method="get" template="https://caltechlibrary.github.io/search.html?q={searchTerms}"/>
+  <InputEncoding>UTF-8</InputEncoding>
   <Image height="16" width="16">https://caltechlibrary.github.io/favicon.ico</Image>
   <Query role="example" searchTerms="dataset web application"/>
 </OpenSearchDescription>
