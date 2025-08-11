@@ -18,6 +18,19 @@ These are posts are selected posts from DLD group members at Caltech Library
 
 
 
+## [Opensearch Description Documents](https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html)
+
+**Description:** This post explains the Opensearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the Opensearch Description Docuemnt in Firefox, Safari and Chrome. 
+
+
+
+**Author:** rsdoiel@caltech.edu (R. S. Doiel)
+2025-08-11
+**Categories:** site search, opensearch description document, pagefind, web browser
+
+
+
+
 ## [Setting up RDM 13 on macOS M1 Mac Mini](https://caltechlibrary.github.io/posts/2025/08/01/Setting_up_RDM_13_on_macOS.html)
 
 **Description:** This is a summary of the steps I took to successfully setup RDM 13 on my M1 Mac Mini running macOS 15.6. I use Mac Ports for dependencies.

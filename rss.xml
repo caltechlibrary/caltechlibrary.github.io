@@ -11,6 +11,17 @@
         <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title><![CDATA[Opensearch Description Documents]]></title>
+            <description><![CDATA[This post explains the Opensearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the Opensearch Description Docuemnt in Firefox, Safari and Chrome. 
+]]></description>
+            <link>https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html</link>
+            <guid>https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html</guid>
+            <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
+            <author>rsdoiel@caltech.edu (R. S. Doiel)</author>
+            <category>site search</category><category>opensearch description document</category><category>pagefind</category><category>web browser</category>
+        </item>
+      
+        <item>
             <title><![CDATA[Setting up RDM 13 on macOS M1 Mac Mini]]></title>
             <description><![CDATA[This is a summary of the steps I took to successfully setup RDM 13 on my M1 Mac Mini running macOS 15.6. I use Mac Ports for dependencies.
 ]]></description>
