@@ -29,7 +29,7 @@
 </nav>
 
 <section>
-<h1 id="opensearch-description-documents-what-why-and-how">Opensearch
+<h1 id="opensearch-description-documents-what-why-and-how">OpenSearch
 Description Documents: What, Why and How</h1>
 <p>By R. S. Doiel, 2025-08-11</p>
 <p>With the steady declining most commercial search engines over the
@@ -37,7 +37,7 @@ last decade my interest in site specific search has been grown. When the
 web was young search meant site search. Overtime search as a service
 arrived where it is considered an integral part of the web. The trouble
 now is that commercial search isn’t about finding the thing you are
-looking forward it is about selling attention and survalience. While
+looking forward it is about selling attention and surveillance. While
 systems like Google Scholar still exist the question that nags at me is
 for how long? What are out options today?</p>
 <p>Site search didn’t disappear. It lives in content management systems
@@ -45,19 +45,19 @@ like Drupal and WordPress. It lives in library systems like
 ArchivesSpace and Invenio RDM. It isn’t the new hotness but it works
 pretty good. As libraries and archives continue the trend of taking
 advantage of static web site implementations site search can live there
-too. This begs the question, how can we make it more convient than
+too. This begs the question, how can we make it more convenient than
 maintaining a bookmark list and always going directly to the site to
 retrieve results?</p>
 <p>We’re in luck! An old solution to exposing site search in the web
 browser remains supported today. <a
 href="https://en.wikipedia.org/wiki/OpenSearch_(specification)"
-title="this is about the Opensearch Description document to not the Amazon sponsored Open Source project">Opensearch
+title="this is about the OpenSearch Description document to not the Amazon sponsored Open Source project">OpenSearch
 Description Documents</a> is a specification that dates back to 2005. It
-is not a coinsidence that the Omnibox arrives by 2008. The humble URL
+is not a coincidence that the Omnibox arrives by 2008. The humble URL
 box is the thing we use to navigate the web. It’s the on ramp. It’s also
-where search starts for most people. The specification for Opensearch
+where search starts for most people. The specification for OpenSearch
 Description Documents is a specification to make that possible.</p>
-<p>It is important not to confuse <strong>Opensearch Description
+<p>It is important not to confuse <strong>OpenSearch Description
 Document</strong> with OpenSearch the fork by Amazon of ElasticSearch.
 It is a simple XML document that can be used by Firefox, Safari and
 Chrome to include your site search as a search engine (NOTE: Safari and
@@ -67,9 +67,9 @@ take the effort with Safari and Chrome is that you don’t need to
 navigate to the website to take advantage of site search. Anytime you
 are in the URL box (Omnibox) it’s right there ready to be used.</p>
 <p>There are three parts to the dance of making your URL Box (Omnibox)
-gain first class status along side comercial search.</p>
+gain first class status along side commercial search.</p>
 <ol type="1">
-<li>You need an Opensearch Description Document (XML file) on your
+<li>You need an OpenSearch Description Document (XML file) on your
 site</li>
 <li>You need to include a link to it in the head element of your search
 web page (or other HTML pages)</li>
@@ -77,8 +77,8 @@ web page (or other HTML pages)</li>
 URL and return results</li>
 </ol>
 <h2 id="what-does-the-opensearch-description-document-look-like">What
-does the Opensearch Description Document Look Like?</h2>
-<p>The Opensearch Description Document is a short XML document with a
+does the OpenSearch Description Document Look Like?</h2>
+<p>The OpenSearch Description Document is a short XML document with a
 few required fields. Here’s a short version.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">&lt;?xml</span><span class="ot"> version=</span><span class="st">&quot;1.0&quot;</span><span class="ot"> encoding=</span><span class="st">&quot;UTF-8&quot;</span><span class="fu">?&gt;</span></span>
@@ -91,7 +91,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">OpenSearchDescription</span>&gt;</span></code></pre></div>
 <p>The outer XML element is the <strong>OpenSearchDescription</strong>.
 Inside it you include a <strong>ShortName</strong>,
-<strong>Deescription</strong>, <strong>Url</strong>,
+<strong>Description</strong>, <strong>Url</strong>,
 <strong>InputEncoding</strong> and <strong>Image</strong> elements. The
 last two are optional but I think are helpful. In the DLD Labs website
 I’ve called this document “osd.xml” but you can name it whatever you
@@ -130,21 +130,21 @@ when you URL Box/Omnibox is set to search your site.
 </dl>
 <h2
 id="how-do-i-link-your-opensearch-description-document-to-your-web-page">How
-do I link your Opensearch Description Document to your web page?</h2>
-<p>If you have an <strong>Opensearch Description Document</strong>
+do I link your OpenSearch Description Document to your web page?</h2>
+<p>If you have an <strong>OpenSearch Description Document</strong>
 available you need to point to it from a web page. All you need is a
 simple link element in the head of the HTML page. Here’s the link used
 on the DLD Labs site.</p>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> rel</span><span class="op">=</span><span class="st">&quot;search&quot;</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;application/opensearchdescription+xml&quot;</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;https://caltechlibrary.github.io/osd.xml&quot;</span><span class="ot"> title</span><span class="op">=</span><span class="st">&quot;Search DLD Labs&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>In the link we use the “rel”, “type”, “href” and “title” attributes
-to connect the page with the Opensearch Description Document (abbr.
-OSD). Once the OSD docuemnt is linked it can be discovered by the web
+to connect the page with the OpenSearch Description Document (abbr.
+OSD). Once the OSD document is linked it can be discovered by the web
 browser. In this case it tells the browser the OSD document can be found
 at “https://caltechlibrary.github.io/osd.xml”.</p>
 <h3 id="trouble-shooting-osd">Trouble shooting OSD</h3>
-<p>An important think to remember of the Opensearch Description Document
-is that it is XML. XML, unlink HTML, isn’t forgiving. If you have a
+<p>An important think to remember of the OpenSearch Description Document
+is that it is XML. XML, unlike HTML, isn’t forgiving. If you have a
 mismatched quote or a type in an element name it’s not going to
 work.</p>
 <p>The Mozilla Developer Network maintains excellent documentation on
@@ -154,13 +154,13 @@ class="uri">https://developer.mozilla.org/en-US/docs/Web/XML/Guides/OpenSearch</
 <h2 id="adding-your-site-search-to-your-web-browser">Adding your site
 search to your web browser</h2>
 <h3 id="firefox">Firefox</h3>
-<p>Firefox works seemlessly with OSD documents. You land on a webpage
-where it is linked in. If you clear the URL Box and pulldown the list of
-available search engines, newly discovered on appear at the top.</p>
+<p>Firefox works seamlessly with OSD documents. You land on a web page
+where it is linked in. If you clear the URL Box and pull down the list
+of available search engines, newly discovered on appear at the top.</p>
 <figure>
 <img src="FireFox_URL_Box.png"
-alt="Picture of the pulldown for search choices" />
-<figcaption aria-hidden="true">Picture of the pulldown for search
+alt="Picture of the pull down for search choices" />
+<figcaption aria-hidden="true">Picture of the pull down for search
 choices</figcaption>
 </figure>
 <p>The image on the left with the downward caret is the menu that
@@ -177,20 +177,20 @@ manually.</p>
 <p>Safari has locked down this feature but still supports it. Apple just
 makes it hard to find and change it.</p>
 <ol type="1">
-<li>Open the URL of the page that links to the Opensearch Decription
+<li>Open the URL of the page that links to the OpenSearch Description
 Document</li>
 <li>Go to the Safari menu, click on settings</li>
 <li>Click on Search</li>
 <li>Make sure “Enable Quick Website Search” is checked</li>
 </ol>
-<p>If this is enabled you can now type in the hostname of the website, a
-space followed by your search terms. Bingo you’re now search the
+<p>If this is enabled you can now type in the host-name of the website,
+a space followed by your search terms. Bingo you’re now search the
 website.</p>
 <h3 id="chrome">Chrome</h3>
 <p>Chrome requires the most steps to enable your site search. This is
 not surprising given the parent company.</p>
 <ol type="1">
-<li>Open the URL of the page that links to the Opensearch Description
+<li>Open the URL of the page that links to the OpenSearch Description
 Document</li>
 <li>Click on Chrome’s menu and open the settings</li>
 <li>Click on Search Engine</li>
@@ -208,18 +208,18 @@ site from Chrome’s Omnibox.</p>
 <h2 id="integrating-site-search-for-static-websites">Integrating site
 search for static websites</h2>
 <p>If you have Solr, ElasticSearch, Drupal, WordPress, ArchivesSpace,
-InvenioRDM or EPrints search is running on your server someplace. What
+Invenio RDM or EPrints search is running on your server someplace. What
 about your static website? Do you have to run a separate search service?
 No unless your site has multiple hundreds of thousands of pages to
 search.</p>
 <p>With the rise in popularity of static websites since 2010s browser
 side search has become an option. Around 2011 <a
 href="https://github.com/olivernn">Oliver Nightingale</a> pioneered
-browser side search with <a href="https://lunrjs.com">Lunrjs</a>. More
+browser side search with <a href="https://lunrjs.com">LunrJS</a>. More
 recently <a href="https://cloudcannon.com/">CloudCannon</a>, created an
 Open Source tool called <a href="https://pagefind.app">PageFind</a>.
-This takes the LunrJS approach and adds rockets. Lunrjs could support up
-to about 10,000 pages before it really bogged down. Pagefind goes way
+This takes the LunrJS approach and adds rockets. LunrJS could support up
+to about 10,000 pages before it really bogged down. PageFind goes way
 beyond that. PageFind can even integrated search indexes across multiple
 website! Here’s an example of the MDN website’s search implemented with
 PageFind, <a href="https://mdn.pagefind.app/"
@@ -236,7 +236,7 @@ href="https://caltechlibrary.github.io/search.html?q=dataset%20web%20components"
 class="uri">https://caltechlibrary.github.io/search.html?q=dataset%20web%20components</a>.
 This has two benefits</p>
 <ol type="1">
-<li>You can use it as a pattern as a template in the Opensearch
+<li>You can use it as a pattern as a template in the OpenSearch
 Description Document in the <strong>Url</strong> element.</li>
 <li>You can bookmark search results</li>
 </ol>
@@ -294,7 +294,7 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-
 <span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
 <p>If you wanted to integrate you’re own PageFind search that supports
 query URL you could use this code but replace the “bundlePath” with the
-URL to your website’s pagefind indexes. You can see the expanded version
+URL to your website’s PageFind indexes. You can see the expanded version
 of our implementation at <a
 href="https://caltechlibrary.github.io/modules/search.js"
 class="uri">https://caltechlibrary.github.io/modules/search.js</a>. In
@@ -304,17 +304,17 @@ some of our projects.</p>
 browser side search</h2>
 <p>When the search engine runs on the server you’re at the mercy of the
 people who control the server. Searches are a treasure trove for the
-survailance economy. With PageFind the search runs in your browser. It
+surveillance economy. With PageFind the search runs in your browser. It
 only leaves your browser to select the next partial index needed. This
 significantly reduces the exposed data. You might be able to infer a set
 of search terms but you’re not going to see the specific search string
 typed in.</p>
 <h3 id="what-is-page-find-doing-differently">What is Page Find doing
 differently?</h3>
-<p>Pagefind, the command line program, is run after you stage your
-website but before you plublish it. It crawls the HTML pages on disk and
+<p>PageFind, the command line program, is run after you stage your
+website but before you publish it. It crawls the HTML pages on disk and
 extracts the content you identified to be in included in your search
-indexes. PageFind, unlike Lunrjs, does not encode the index as JSON.
+indexes. PageFind, unlike LunrJS, does not encode the index as JSON.
 Instead is includes the indexes as a sequence of WASM (Web Assembly)
 files. This allows for dense indexes. Another step that sets PageFind
 apart is the indexes generated are partitioned. You don’t download all
@@ -325,20 +325,19 @@ retrieves. Clever stuff.</p>
 <p>When we add support for using a query URL PageFind only sends the
 query on page load. This does mean you’re going to wait for the indexes
 to be retrieved based on the completed query string. That delay is
-noticable but I think a reasonable trade off.</p>
+noticeable but I think a reasonable trade off.</p>
 <h2 id="why-is-the-opensearch-description-document-important">Why is the
-opensearch description document important?</h2>
+OpenSearch description document important?</h2>
 <p>As researchers, archivist, librarians and users of the research
 materials skipping the ad-tech of Google et el means smoother workflows
 when looking things up on line. It also means websites that are focused
 on our specific research interests can be used as a primary search
 resource if they include the description of their site search. While
-being able to type in the URL Box might seem like mearly a convience
-it’s the small user interface improvement that when understood can
-smooth out flow of retrieving research resources online. This is true
-regardless of with or not the site is a “dynamic” website
-(e.g. WordPress, RDM, ArchivesSpace) or a static one (e.g. “cell
-atlas”).</p>
+being able to type in the URL Box might seem like a convenience it’s the
+small user interface improvement that when understood can smooth out
+flow of retrieving research resources online. This is true regardless of
+with or not the site is a “dynamic” website (e.g. WordPress, RDM,
+ArchivesSpace) or a static one (e.g. “cell atlas”).</p>
 </section>
 
 <footer-global rss="/rss.xml"></footer-global>

@@ -11,8 +11,8 @@
         <atom:link href="https://caltechlibrary.github.io/rss.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title><![CDATA[Opensearch Description Documents]]></title>
-            <description><![CDATA[This post explains the Opensearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the Opensearch Description Docuemnt in Firefox, Safari and Chrome. 
+            <title><![CDATA[OpenSearch Description Documents]]></title>
+            <description><![CDATA[This post explains the OpenSearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the OpenSearch Description Document in Firefox, Safari and Chrome. 
 ]]></description>
             <link>https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html</link>
             <guid>https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html</guid>

@@ -18,9 +18,9 @@ These are posts are selected posts from DLD group members at Caltech Library
 
 
 
-## [Opensearch Description Documents](https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html)
+## [OpenSearch Description Documents](https://caltechlibrary.github.io/posts/2025/08/11/Opensearch_Description_Document.html)
 
-**Description:** This post explains the Opensearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the Opensearch Description Docuemnt in Firefox, Safari and Chrome. 
+**Description:** This post explains the OpenSearch Description Document and how to integrate it for a website using PageFind. It touches on how to use site search defined by the OpenSearch Description Document in Firefox, Safari and Chrome. 
 
 
 
