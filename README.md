@@ -14,6 +14,7 @@ View all [Posts](blog.md)
 
 ## Presentations and Examples
 
+- [Getting started with Go](presentations/getting_started_with_go.html), virtual, 2025-09-26
 - [A recipe for applications: Dataset & Web Components](https://caltechlibrary.github.io/t2t3_dataset_web_apps/presentation1.html), virtual, 2025-06-12
 - [COLD, curating objects with SQLite3, Deno and Dataset](https://caltechlibrary.github.io/cold/presentations/presentation1.html),
  SoCal Code4Lib Meetup at Caltech, 2024-11-15

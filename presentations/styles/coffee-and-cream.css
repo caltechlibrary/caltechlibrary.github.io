@@ -1,0 +1,111 @@
+:root {
+    --background-color: #f5f5dc; /* cream */
+    --text-color: #4b3621; /* espresso */
+    --bullet-color: #008000; /* green */
+    --link-color: #8B0000; /* dark red, resembling a ripe coffee bean */
+    --bullet-type-level-1: "☕"; /* Coffee cup emoji for level 1 */
+    --bullet-type-level-2: "🌿"; /* Herb leaf emoji for level 2 */
+    --bullet-type-level-3: "🌱"; /* Seedling emoji for level 3 */
+}
+
+/* Set the background color and text color */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* Center the slide div itself */
+div.slide {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Style for the title slide */
+div.slide.title-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style for h1 title and h2 subtitle on the title slide */
+div.slide.title-slide h1,
+div.slide.title-slide h2 {
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+/* Style for h1 title on the title slide */
+div.slide.title-slide h1 {
+    font-size: 2.5em;
+}
+
+/* Style for h2 subtitle on the title slide */
+div.slide.title-slide h2 {
+    font-size: 1.75em;
+}
+
+/* Add more top margin to the first heading on non-title slides */
+div.slide:not(.title-slide) h1:first-child {
+    margin-top: 2em;
+}
+
+/* Style for the outer UL list to align with the title */
+div.slide ul {
+    margin-left: 10%;
+    padding-left: 0;
+}
+
+/* Style for first-level bullet points */
+ul li {
+    color: var(--bullet-color);
+    list-style-type: none;
+    position: relative;
+    padding-left: 2em;
+}
+
+/* Add custom bullet points for level 1 */
+ul li:before {
+    content: var(--bullet-type-level-1);
+    color: var(--bullet-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Style for second-level bullet points */
+ul ul li {
+    padding-left: 2em;
+}
+
+/* Add custom bullet points for level 2 */
+ul ul li:before {
+    content: var(--bullet-type-level-2);
+    color: var(--bullet-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Style for third-level bullet points */
+ul ul ul li {
+    padding-left: 2em;
+}
+
+/* Add custom bullet points for level 3 */
+ul ul ul li:before {
+    content: var(--bullet-type-level-3);
+    color: var(--bullet-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Style for links */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="R. S. Doiel, rsdoiel@caltech.edu" />
+  <meta name="date" content="2025-09-26" />
+  <meta name="keywords" content="Go" />
+  <title>Getting started with Go</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="./styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="styles/sea-and-shore.css" />
+  <script src="./scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Getting started with Go</h1>
+  <p class="author">
+R. S. Doiel, <a href="mailto:rsdoiel@caltech.edu"
+class="email">rsdoiel@caltech.edu</a>
+  </p>
+  <p class="institute">
+<p>Caltech Library, Digital Library Development</p>
+  </p>
+  <p class="date">2025-09-26</p>
+</div>
+<div class="slide" id="TOC">
+
+</div>
+<div id="welcome-to-getting-started-with-go"
+class="slide section level1">
+<h1>Welcome to “Getting started with Go”</h1>
+<p>Welcome everyone,</p>
+<p>This presentation is based on a blog post I wrote <a
+href="https://rsdoiel.github.io/blog/2025/09/22/getting_started_with_go.html">Getting
+started with Go</a></p>
+</div>
+<div id="what-well-learn" class="slide section level1">
+<h1>What we’ll learn</h1>
+<ul>
+<li>How to install the Go tool chain</li>
+<li>How to use the Go command</li>
+<li>Compile and run three programs
+<ul>
+<li>hello world</li>
+<li>a simple web server</li>
+<li>create a Markdown server</li>
+</ul></li>
+</ul>
+</div>
+<div id="what-youll-need-know" class="slide section level1">
+<h1>What you’ll need know</h1>
+<ul>
+<li>A computer with a Terminal program</li>
+<li>Your favorite text editor</li>
+<li>Basic knowledge of your operating system (you need to beable to
+install Go)</li>
+</ul>
+</div>
+<div id="installing-go-compiler-and-tool-chain"
+class="slide section level1">
+<h1>Installing Go compiler and tool chain</h1>
+<p>Go to the URL, the Go for your computer and operating system.</p>
+<p><a href="https://go.dev/dl/" class="uri">https://go.dev/dl/</a></p>
+<p>Follow the instructions to install it.</p>
+</div>
+<div id="begin-with-hello-world" class="slide section level1">
+<h1>Begin with Hello World</h1>
+<ul>
+<li>open a Terminal session</li>
+<li>create a directory called “helloworld”</li>
+<li>change to that directory, <code>cd helloworld</code></li>
+<li>create a file called <a
+href="https://rsdoiel.github.io/blog/2025/09/22/helloworld/helloworld.go">helloworld.go</a></li>
+</ul>
+</div>
+<div id="source-code" class="slide section level1">
+<h1>Source Code</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode go"><code class="sourceCode go"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="kw">package</span> main</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="kw">import</span> <span class="op">(</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>    <span class="st">&quot;fmt&quot;</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="op">)</span> </span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="kw">func</span> main<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>    fmt<span class="op">.</span>Println<span class="op">(</span><span class="st">&quot;Hello World!&quot;</span><span class="op">)</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+</div>
+<div id="running-hello-world" class="slide section level1">
+<h1>Running Hello World</h1>
+<pre class="shell"><code>go run helloworld.go</code></pre>
+</div>
+<div id="compiling-hello-world" class="slide section level1">
+<h1>Compiling Hello World</h1>
+<pre class="shell"><code>go build helloworld.go</code></pre>
+<p>Congradulations!</p>
+</div>
+<div id="continuing-with-a-web-server" class="slide section level1">
+<h1>Continuing with a Web Server</h1>
+<ul>
+<li>create a new dorectory called webserver</li>
+<li>change into the directory called webserver</li>
+<li>create a file called <a
+href="https://pkg.go.dev/net/http#example-FileServer-DotFileHiding">webserver.go</a></li>
+</ul>
+</div>
+<div id="source-code-1" class="slide section level1">
+<h1>Source Code</h1>
+<p>See <a
+href="https://pkg.go.dev/net/http#example-FileServer-DotFileHiding"
+class="uri">https://pkg.go.dev/net/http#example-FileServer-DotFileHiding</a></p>
+</div>
+<div id="run-web-server" class="slide section level1">
+<h1>Run Web Server</h1>
+<pre class="shell"><code>go run webserver.go</code></pre>
+</div>
+<div id="compile-web-server" class="slide section level1">
+<h1>Compile Web Server</h1>
+<pre class="shell"><code>go build webserver.go</code></pre>
+</div>
+<div id="things-to-notice" class="slide section level1">
+<h1>Things to notice</h1>
+<ul>
+<li>documentation website for Go package</li>
+<li>http is a standard package</li>
+<li>Good packages have example code</li>
+<li>You have a handy little (fast) static web server</li>
+</ul>
+</div>
+<div id="wrapping-up-putting-things-together"
+class="slide section level1">
+<h1>Wrapping up, putting things together</h1>
+<ul>
+<li>Create our own package</li>
+<li>Create a Markdown server using both a standard and 3rd party
+package</li>
+</ul>
+</div>
+<div id="mdserver" class="slide section level1">
+<h1>mdserver</h1>
+<ul>
+<li>open a Terminal session</li>
+<li>create a directory called “mdserver”</li>
+<li>create a directory called “cmd/mdserver”</li>
+</ul>
+</div>
+<div id="download-and-create-the-following-files"
+class="slide section level1">
+<h1>Download and create the following files</h1>
+<ul>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go">markdown.go</a>
+<ul>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go"
+class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go</a></li>
+</ul></li>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go">handler.go</a>
+<ul>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go"
+class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go</a></li>
+</ul></li>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go">main.go</a>
+<ul>
+<li><a
+href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go"
+class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go</a></li>
+<li>put this in in the “cmd/mdserver/” directory</li>
+</ul></li>
+</ul>
+</div>
+<div id="initialize-your-package" class="slide section level1">
+<h1>Initialize your package</h1>
+<pre class="shell"><code>go mod init &#39;github.com/caltechlibrary/mdserver&#39;
+go mod tidy</code></pre>
+</div>
+<div id="pull-in-the-goldmark-package-markdown"
+class="slide section level1">
+<h1>Pull in the goldmark package (Markdown)</h1>
+<pre class="shell"><code>go get &quot;github.com/yuin/goldmark&quot;</code></pre>
+<p>We use “go get” because this is not a standard library package.</p>
+</div>
+<div id="create-a-markdown-document-to-test-with"
+class="slide section level1">
+<h1>Create a Markdown document to test with</h1>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu"># Hello World</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>This isn&#39;t HTML but you&#39;ll see HTML using mdserver</span></code></pre></div>
+<p>Save this as helloworld.md</p>
+</div>
+<div id="run-mdserver" class="slide section level1">
+<h1>Run mdserver</h1>
+<pre class="shell"><code>go run cmd/mdserver/main.go</code></pre>
+</div>
+<div id="compile-mdserver" class="slide section level1">
+<h1>Compile mdserver</h1>
+<pre class="shell"><code>go build -o bin/mdserver cmd/mdserver/main.go</code></pre>
+</div>
+<div id="next-steps" class="slide section level1">
+<h1>Next steps</h1>
+<ul>
+<li>Review this presentation, <a
+href="https://caltechlibrary.github.io/presentations/getting_started_with_go.html"
+class="uri">https://caltechlibrary.github.io/presentations/getting_started_with_go.html</a></li>
+<li>Read blog post, <a
+href="https://rsdoiel.github.io/blog/2025/09/22/getting_started_with_go.html"
+class="uri">https://rsdoiel.github.io/blog/2025/09/22/getting_started_with_go.html</a></li>
+<li><a href="https://go.dev/learn/"
+class="uri">https://go.dev/learn/</a></li>
+<li><a href="https://pkg.go.dev/"
+class="uri">https://pkg.go.dev/</a></li>
+</ul>
+</div>
+</body>
+</html>

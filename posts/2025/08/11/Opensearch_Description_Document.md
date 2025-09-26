@@ -95,7 +95,7 @@ Firefox works seamlessly with OSD documents.  You land on a web page where it is
 
 ![Picture of the pull down for search choices](FireFox_URL_Box.png)
 
-The image on the left with the downward caret is the menu that exposes the search options. Click on it and you'll see the list. If you see an icon with a plus symbol overlayed in the upper right of the icon it's a new search you can add to the ones available. Clicking on it will add it as an option to your web browser.
+The image on the left with the downward caret is the menu that exposes the search options. Click on it and you'll see the list. If you see an icon with a plus symbol overlaid in the upper right of the icon it's a new search you can add to the ones available. Clicking on it will add it as an option to your web browser.
 
 You can also add a search engine by going to <about:preferences#search>, scroll down to Search Shortcuts and press the "add" button. This will let you add the search manually.
 
