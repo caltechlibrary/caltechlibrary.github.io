@@ -125,15 +125,23 @@ go build webserver.go
 - create a directory called "mdserver"
 - create a directory called "cmd/mdserver"
 
-# Download and create the following files
+# create the following files
 
-- [markdown.go](https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go)
-  - <https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go>
+- [markdown.go](mdserver/markdown.go)
 - [handler.go](https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go)
   - <https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go>
-- [main.go](https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go)
+- cmd/mdserver/[main.go](https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go)
   - <https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go>
   - put this in in the "cmd/mdserver/" directory
+
+# Or use curl to grab them. 
+
+~~~shell
+curl -O https://caltechlibrary/presentations/mdserver/markdown.go
+curl -O https://caltechlibrary/presentations/mdserver/handler.go
+curl https://caltechlibrary/presentations/mdserver/cmd/mdserver/main.go \
+  >cmd/mdserver/main.go
+~~~
 
 # Initialize your package
 

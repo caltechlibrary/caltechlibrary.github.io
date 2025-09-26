@@ -231,17 +231,10 @@ package</li>
 <li>create a directory called “cmd/mdserver”</li>
 </ul>
 </div>
-<div id="download-and-create-the-following-files"
-class="slide section level1">
-<h1>Download and create the following files</h1>
+<div id="create-the-following-files" class="slide section level1">
+<h1>create the following files</h1>
 <ul>
-<li><a
-href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go">markdown.go</a>
-<ul>
-<li><a
-href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go"
-class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/markdown.go</a></li>
-</ul></li>
+<li><a href="mdserver/markdown.go">markdown.go</a></li>
 <li><a
 href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go">handler.go</a>
 <ul>
@@ -249,7 +242,7 @@ href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go">handler.go<
 href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go"
 class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/handler.go</a></li>
 </ul></li>
-<li><a
+<li>cmd/mdserver/<a
 href="https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main.go">main.go</a>
 <ul>
 <li><a
@@ -258,6 +251,13 @@ class="uri">https://rsdoiel.github.io/blog/2025/09/22/mdserver/cmd/mdserver/main
 <li>put this in in the “cmd/mdserver/” directory</li>
 </ul></li>
 </ul>
+</div>
+<div id="or-use-curl-to-grab-them." class="slide section level1">
+<h1>Or use curl to grab them.</h1>
+<pre class="shell"><code>curl -O https://caltechlibrary/presentations/mdserver/markdown.go
+curl -O https://caltechlibrary/presentations/mdserver/handler.go
+curl https://caltechlibrary/presentations/mdserver/cmd/mdserver/main.go \
+  &gt;cmd/mdserver/main.go</code></pre>
 </div>
 <div id="initialize-your-package" class="slide section level1">
 <h1>Initialize your package</h1>
@@ -273,11 +273,11 @@ class="slide section level1">
 <div id="create-a-markdown-document-to-test-with"
 class="slide section level1">
 <h1>Create a Markdown document to test with</h1>
-<div class="sourceCode" id="cb8"><pre
-class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu"># Hello World</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>This isn&#39;t HTML but you&#39;ll see HTML using mdserver</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu"># Hello World</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>This isn&#39;t HTML but you&#39;ll see HTML using mdserver</span></code></pre></div>
 <p>Save this as helloworld.md</p>
 </div>
 <div id="run-mdserver" class="slide section level1">
