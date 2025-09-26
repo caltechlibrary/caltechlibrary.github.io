@@ -2,7 +2,8 @@
 title: "Getting started with Go"
 author: "R. S. Doiel, <rsdoiel@caltech.edu>"
 abstract: |
-  This is a presentation of a blog post I write for a Brown Bag Meetup
+  This is a presentation of a blog post I wrote at about getting started with Go.
+  It is intended for a for a Brown Bag Meetup discussion.
 institute: |
   Caltech Library,
   Digital Library Development
