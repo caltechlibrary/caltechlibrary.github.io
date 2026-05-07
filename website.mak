@@ -14,7 +14,7 @@ MD_PAGES = $(shell find . -type f | grep '\.md$$' | grep -v '.venv' | grep -v 'n
 HTML_PAGES = $(shell find . -type f | grep '\.md$$' | grep -v '.venv' | grep -v 'nav.md' | grep -v './presentations/' | sed -E 's/.md/.html/g')
 
 # Setup for presentations
-build: $(HTML_PAGES) $(MD_PAGES) rss.xml pagefind
+build: $(HTML_PAGES) $(MD_PAGES) rss.xml # pagefind
 
 $(HTML_PAGES): $(MD_PAGES) .FORCE
 	if [ -f $(PANDOC) ]; then $(PANDOC) --metadata title=$(basename $@) -s --to html5 $(basename $@).md -o $(basename $@).html \
@@ -26,9 +26,9 @@ $(HTML_PRESENTATIONS): $(MD_PRESENTATIONS) .FORCE
 	pandoc -V lang=en -s -t $(SLIDE_FORMAT) $(basename $@).md -o $(basename $@).html
 	git add $(basename $@).html
 
-pagefind: .FORCE
-	pagefind --verbose --exclude-selectors="nav,header,footer" --site .
-	git add pagefind
+#pagefind: .FORCE
+#	pagefind --verbose --exclude-selectors="nav,header,footer" --site .
+#	git add pagefind
 
 clean:
 	@if [ -f index.html ]; then rm *.html; fi
