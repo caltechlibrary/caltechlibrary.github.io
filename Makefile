@@ -28,12 +28,4 @@ website: .FORCE
 presentations: .FORCE
 	cd presentations && make
 
-# NOTE: I'm not using publish.bash here because this website doesn't
-# require publication via gh-pages branch. Publish in this case
-# Just makes sure the project index is updated (takes a while before a push)
-#project_index.md: project_index save
-
-project_index: .FORCE
-	uv run mk_project_index.py caltechlibrary project_index.md
-
 .FORCE:
